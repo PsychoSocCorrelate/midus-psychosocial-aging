@@ -1,0 +1,55 @@
+outcome,outcome_key,profile,feature,label,var_type,focal_value,shap,shap_ci_lo,shap_ci_hi
+Frailty,FInoPsy_W1,favorable,controlOverHealth,Control Over Health,continuous,10,-0.0174,-0.0194,-0.0133
+Frailty,FInoPsy_W1,favorable,posAffect,Pos Affect,continuous,4.5,-0.0037,-0.0056,-0.0022
+Frailty,FInoPsy_W1,favorable,workStatus,Work Status,categorical,Self-employed,-0.0011,-0.0027,0.0002
+Frailty,FInoPsy_W1,favorable,lifeSatisfaction,Life Satisfaction,continuous,1.0869,-0.0069,-0.01,-0.0039
+Frailty,FInoPsy_W1,favorable,intellAging,Intell Aging,continuous,6.2222,-0.004,-0.0054,-0.0019
+Frailty,FInoPsy_W1,favorable,workIndustry,Work Industry,categorical,Wholesale,-0.0037,-0.0069,0.0001
+Frailty,FInoPsy_W1,neutral,controlOverHealth,Control Over Health,continuous,8,-0.0088,-0.0126,-0.0064
+Frailty,FInoPsy_W1,neutral,posAffect,Pos Affect,continuous,3.75,-0.0021,-0.0042,-0.0008
+Frailty,FInoPsy_W1,neutral,workStatus,Work Status,categorical,Working now,-0.0006,-0.001,0.0001
+Frailty,FInoPsy_W1,neutral,lifeSatisfaction,Life Satisfaction,continuous,0.0845,0.0012,-0.001,0.0029
+Frailty,FInoPsy_W1,neutral,intellAging,Intell Aging,continuous,4.8889,-0.0015,-0.0022,0.0004
+Frailty,FInoPsy_W1,neutral,workIndustry,Work Industry,categorical,Education,0.0023,0.0007,0.0037
+Frailty,FInoPsy_W1,unfavorable,controlOverHealth,Control Over Health,continuous,5,0.0367,0.0255,0.0476
+Frailty,FInoPsy_W1,unfavorable,posAffect,Pos Affect,continuous,2.5,0.0104,0.0053,0.0172
+Frailty,FInoPsy_W1,unfavorable,workStatus,Work Status,categorical,Disabled,0.007,0.0006,0.0141
+Frailty,FInoPsy_W1,unfavorable,lifeSatisfaction,Life Satisfaction,continuous,-1.4262,0.0069,0.0031,0.0105
+Frailty,FInoPsy_W1,unfavorable,intellAging,Intell Aging,continuous,3.6667,0.0027,0.0012,0.0045
+Frailty,FInoPsy_W1,unfavorable,workIndustry,Work Industry,categorical,Other,0.005,-0.0002,0.0071
+Cognition,btactComp_W1,favorable,education,Education,continuous,11,0.2066,0.155,0.2351
+Cognition,btactComp_W1,favorable,wordGames,Word Games,continuous,5,0.1221,0.0885,0.1558
+Cognition,btactComp_W1,favorable,useComputer,Use Computer,continuous,5,0.038,0.0223,0.0537
+Cognition,btactComp_W1,favorable,occGroup,Occ Group,categorical,Professional,0.047,0.0249,0.0715
+Cognition,btactComp_W1,favorable,whr,Waist-hip ratio,continuous,0.7848,0.0487,0.0236,0.0786
+Cognition,btactComp_W1,favorable,intellAging,Intell Aging,continuous,6.2222,0.0313,0.0137,0.063
+Cognition,btactComp_W1,neutral,education,Education,continuous,8,-0.1031,-0.1425,-0.0277
+Cognition,btactComp_W1,neutral,wordGames,Word Games,continuous,1,-0.0322,-0.0654,0.0101
+Cognition,btactComp_W1,neutral,useComputer,Use Computer,continuous,5,0.0458,0.0235,0.0663
+Cognition,btactComp_W1,neutral,occGroup,Occ Group,categorical,Professional,0.0472,0.0256,0.0752
+Cognition,btactComp_W1,neutral,whr,Waist-hip ratio,continuous,0.9111,0.0323,0.0062,0.0563
+Cognition,btactComp_W1,neutral,intellAging,Intell Aging,continuous,4.8889,0.0175,-0.0014,0.037
+Cognition,btactComp_W1,unfavorable,education,Education,continuous,5,-0.2208,-0.2575,-0.1645
+Cognition,btactComp_W1,unfavorable,wordGames,Word Games,continuous,0,-0.0845,-0.1153,-0.0556
+Cognition,btactComp_W1,unfavorable,useComputer,Use Computer,continuous,0,-0.1344,-0.1806,-0.0731
+Cognition,btactComp_W1,unfavorable,occGroup,Occ Group,categorical,Operation/Labor,-0.0799,-0.1396,-0.0417
+Cognition,btactComp_W1,unfavorable,whr,Waist-hip ratio,continuous,1.0385,-0.1056,-0.157,-0.0532
+Cognition,btactComp_W1,unfavorable,intellAging,Intell Aging,continuous,3.6667,-0.0426,-0.1064,-0.0064
+Allostatic load,ALcomp_W1,favorable,bmi,BMI,continuous,22,-0.2062,-0.2329,-0.1717
+Allostatic load,ALcomp_W1,favorable,whr,Waist-hip ratio,continuous,0.7778,-0.065,-0.0896,-0.042
+Allostatic load,ALcomp_W1,favorable,lifeSatisfaction,Life Satisfaction,continuous,1.0332,-0.019,-0.0295,-0.0052
+Allostatic load,ALcomp_W1,favorable,drinkStatus,Drink Status,categorical,"Frequent, no binge (≥3 days/wk)",-0.0376,-0.0496,-0.0116
+Allostatic load,ALcomp_W1,favorable,vmLeisureAct_vig,Vigorous leisure activity,continuous,6,-0.0319,-0.0566,-0.0091
+Allostatic load,ALcomp_W1,favorable,workIndustry,Work Industry,categorical,Agriculture,-0.0018,-0.0246,0.0129
+Allostatic load,ALcomp_W1,neutral,bmi,BMI,continuous,27.2912,-0.0302,-0.0604,-0.0016
+Allostatic load,ALcomp_W1,neutral,whr,Waist-hip ratio,continuous,0.907,0.0058,-0.016,0.0295
+Allostatic load,ALcomp_W1,neutral,lifeSatisfaction,Life Satisfaction,continuous,0.1289,-0.0068,-0.0171,0.0036
+Allostatic load,ALcomp_W1,neutral,drinkStatus,Drink Status,categorical,"Infrequent, no binge (≤2 days/wk)",0.0032,-0.0109,0.0145
+Allostatic load,ALcomp_W1,neutral,vmLeisureAct_vig,Vigorous leisure activity,continuous,1.5,0.0107,0.0,0.0223
+Allostatic load,ALcomp_W1,neutral,workIndustry,Work Industry,categorical,Education,-0.0079,-0.0217,0.0008
+Allostatic load,ALcomp_W1,unfavorable,bmi,BMI,continuous,34,0.1763,0.1363,0.2126
+Allostatic load,ALcomp_W1,unfavorable,whr,Waist-hip ratio,continuous,1.0375,0.0529,0.0266,0.0754
+Allostatic load,ALcomp_W1,unfavorable,lifeSatisfaction,Life Satisfaction,continuous,-1.3985,0.0696,0.0151,0.0902
+Allostatic load,ALcomp_W1,unfavorable,drinkStatus,Drink Status,categorical,Past-month abstainer,0.0217,0.0069,0.035
+Allostatic load,ALcomp_W1,unfavorable,vmLeisureAct_vig,Vigorous leisure activity,continuous,0,0.0107,0.0038,0.0223
+Allostatic load,ALcomp_W1,unfavorable,workIndustry,Work Industry,categorical,Other,0.0076,-0.0069,0.0259

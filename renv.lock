@@ -1,0 +1,37 @@
+{
+  "R": {
+    "Version": "4.5.3",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://packagemanager.posit.co/cran/__linux__/noble/latest"
+      }
+    ]
+  },
+  "Packages": {
+    "lavaan": {
+      "Package": "lavaan",
+      "Version": "0.7.2",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "purrr": {
+      "Package": "purrr",
+      "Version": "1.2.2",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "sirt": {
+      "Package": "sirt",
+      "Version": "4.2.133",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    }
+  }
+}

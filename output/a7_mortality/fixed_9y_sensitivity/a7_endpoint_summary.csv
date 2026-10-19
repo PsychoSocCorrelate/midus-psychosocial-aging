@@ -1,0 +1,2 @@
+endpoint,endpoint_label,source_file,source_sha256,n,n_events,event_rate,mean_follow_up,pre_baseline_excluded,nonpositive_death_follow_up,censor_year,horizon_years,events_by_cohort
+fixed_9y,fixed 9-year mortality sensitivity,MIDUS_Core_MortalityCauseData_N2822_20260511.sav + MIDUS_Refresher_MortalityCauseData_N454_20260511.sav,core:bd0312848b8560a57779f81fdc11132c47519a6d21bb973ed1543494b50c169b; refresher:06f114566cd6dcb1c2289d39469b2187b6a2a4630bf1c35c393fcb3af7aebc06,6651,608,0.09141482483837017,8.638301548680467,0,0,2025,9,"{'MIDUS2': 393, 'MIDUSR': 215}"

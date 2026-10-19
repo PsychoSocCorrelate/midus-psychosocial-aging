@@ -1,0 +1,7 @@
+model,outcome,outcome_label,tier_config,estimator,n,n_features,r2_mean,r2_std,delta_r2
+T1_only_primary,FInoPsy_W1,canonical,T1_only,canonical_cs1_tuned_xgboost,5410,16,0.1218989517631366,0.0248627228541391,0.0
+T1T2_primary,FInoPsy_W1,canonical,T1T2,canonical_cs1_tuned_xgboost,5410,177,0.5011087251077505,0.0050727293738478,0.3792097733446139
+canonical_T1_only,FInoPsy_W1,canonical,T1_only,fixed_xgboost,5410,16,-0.034616251868662726,0.03273256761781135,0.0
+canonical_T1T2,FInoPsy_W1,canonical,T1T2,fixed_xgboost,5410,177,0.47381419836630456,0.007682222632343275,0.5084304502349672
+excluding_lonely_T1_only,FInoPsyNoLonely_W1,excluding_lonely,T1_only,fixed_xgboost,5410,16,-0.03895831266880991,0.03305361295704029,0.0
+excluding_lonely_T1T2,FInoPsyNoLonely_W1,excluding_lonely,T1T2,fixed_xgboost,5410,177,0.4574551705385311,0.015288572203152122,0.49641348320734097

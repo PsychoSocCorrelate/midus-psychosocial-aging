@@ -1,0 +1,2 @@
+seq,pipeline,stage,outcome,flag_passed,age_column,scope,longitudinal,concurrent,cohort_filter,n_rows
+0,a6_family_decomposition,no load_master call in this run,,,,none,,,,

@@ -1,0 +1,2 @@
+contrast,drinkStatus,biomarker_n,non_biomarker_n,biomarker_total_n,non_biomarker_total_n,biomarker_pct,non_biomarker_pct,chi2,p_chi2,dof
+past_month_abstainer_representation,Past-month abstainer,492,1691,1684,4524,29.216152019002372,37.378426171529625,46.15166894504716,5.265601427932565e-10,3

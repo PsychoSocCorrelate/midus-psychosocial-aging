@@ -1,0 +1,168 @@
+analysis,outcome,group,variable,denominator_type,n_pairs,note
+cs,FInoPsy,All_paired,controlOverHealth,model-complete coefficient row,409,
+cs,FInoPsy,All_paired,bmi,model-complete coefficient row,372,
+cs,FInoPsy,All_paired,negAffect,model-complete coefficient row,404,
+cs,FInoPsy,All_paired,physicianDiet,model-complete coefficient row,395,
+cs,FInoPsy,All_paired,physicalPTFreq,model-complete coefficient row,398,
+cs,FInoPsy,All_paired,posAffect,model-complete coefficient row,405,
+cs,FInoPsy,All_paired,mentalHealth,model-complete coefficient row,408,
+cs,FInoPsy,All_paired,workStatus__not_working,model-complete coefficient row,405,
+cs,FInoPsy,All_paired,workStatus__retired,model-complete coefficient row,405,
+cs,FInoPsy,All_paired,lifeSatisfaction,model-complete coefficient row,408,
+cs,FInoPsy,All_paired,manageRole,model-complete coefficient row,221,
+cs,FInoPsy,All_paired,intellAging,model-complete coefficient row,404,
+cs,FInoPsy,All_paired,workIndustry__goods_production,model-complete coefficient row,385,
+cs,FInoPsy,All_paired,workIndustry__knowledge_govt,model-complete coefficient row,385,
+cs,FInoPsy,All_paired,workIndustry__trade_transport,model-complete coefficient row,385,
+cs,FInoPsy,All_paired,sleepAvg,model-complete coefficient row,399,
+cs,FInoPsy,All_paired,lifeDiscriminate,model-complete coefficient row,379,
+cs,FInoPsy,All_paired,householdIncome,model-complete coefficient row,377,
+cs,FInoPsy,MZ_sensitivity,controlOverHealth,model-complete coefficient row,173,
+cs,FInoPsy,MZ_sensitivity,bmi,model-complete coefficient row,161,
+cs,FInoPsy,MZ_sensitivity,negAffect,model-complete coefficient row,172,
+cs,FInoPsy,MZ_sensitivity,physicianDiet,model-complete coefficient row,167,
+cs,FInoPsy,MZ_sensitivity,physicalPTFreq,model-complete coefficient row,167,
+cs,FInoPsy,MZ_sensitivity,posAffect,model-complete coefficient row,172,
+cs,FInoPsy,MZ_sensitivity,mentalHealth,model-complete coefficient row,173,
+cs,FInoPsy,MZ_sensitivity,workStatus__not_working,model-complete coefficient row,172,
+cs,FInoPsy,MZ_sensitivity,workStatus__retired,model-complete coefficient row,172,
+cs,FInoPsy,MZ_sensitivity,lifeSatisfaction,model-complete coefficient row,172,
+cs,FInoPsy,MZ_sensitivity,manageRole,model-complete coefficient row,96,
+cs,FInoPsy,MZ_sensitivity,intellAging,model-complete coefficient row,170,
+cs,FInoPsy,MZ_sensitivity,workIndustry__goods_production,model-complete coefficient row,166,
+cs,FInoPsy,MZ_sensitivity,workIndustry__knowledge_govt,model-complete coefficient row,166,
+cs,FInoPsy,MZ_sensitivity,workIndustry__trade_transport,model-complete coefficient row,166,
+cs,FInoPsy,MZ_sensitivity,sleepAvg,model-complete coefficient row,168,
+cs,FInoPsy,MZ_sensitivity,lifeDiscriminate,model-complete coefficient row,163,
+cs,FInoPsy,MZ_sensitivity,householdIncome,model-complete coefficient row,161,
+cs,btactComp,All_paired,education,model-complete coefficient row,308,
+cs,btactComp,All_paired,wordGames,model-complete coefficient row,306,
+cs,btactComp,All_paired,useComputer,model-complete coefficient row,306,
+cs,btactComp,All_paired,occGroup__blue_collar,model-complete coefficient row,302,
+cs,btactComp,All_paired,occGroup__professional_mgmt,model-complete coefficient row,302,
+cs,btactComp,All_paired,whr,model-complete coefficient row,280,
+cs,btactComp,All_paired,race,model-complete coefficient row,307,
+cs,btactComp,All_paired,intellAging,model-complete coefficient row,306,
+cs,btactComp,All_paired,workStatus__not_working,model-complete coefficient row,307,
+cs,btactComp,All_paired,workStatus__retired,model-complete coefficient row,307,
+cs,btactComp,All_paired,educationACE_3item,model-complete coefficient row,310,
+cs,btactComp,All_paired,endMiddleAge,model-complete coefficient row,302,
+cs,btactComp,All_paired,recSupport,model-complete coefficient row,280,
+cs,btactComp,All_paired,workIndustry__goods_production,model-complete coefficient row,294,
+cs,btactComp,All_paired,workIndustry__knowledge_govt,model-complete coefficient row,294,
+cs,btactComp,All_paired,workIndustry__trade_transport,model-complete coefficient row,294,
+cs,btactComp,All_paired,socContribution,model-complete coefficient row,306,
+cs,btactComp,All_paired,interdependence,model-complete coefficient row,307,
+cs,btactComp,All_paired,householdIncome,model-complete coefficient row,295,
+cs,btactComp,All_paired,mpqCloseness,model-complete coefficient row,308,
+cs,btactComp,MZ_sensitivity,education,model-complete coefficient row,133,
+cs,btactComp,MZ_sensitivity,wordGames,model-complete coefficient row,132,
+cs,btactComp,MZ_sensitivity,useComputer,model-complete coefficient row,132,
+cs,btactComp,MZ_sensitivity,occGroup__blue_collar,model-complete coefficient row,131,
+cs,btactComp,MZ_sensitivity,occGroup__professional_mgmt,model-complete coefficient row,131,
+cs,btactComp,MZ_sensitivity,whr,model-complete coefficient row,121,
+cs,btactComp,MZ_sensitivity,race,model-complete coefficient row,134,
+cs,btactComp,MZ_sensitivity,intellAging,model-complete coefficient row,133,
+cs,btactComp,MZ_sensitivity,workStatus__not_working,model-complete coefficient row,135,
+cs,btactComp,MZ_sensitivity,workStatus__retired,model-complete coefficient row,135,
+cs,btactComp,MZ_sensitivity,educationACE_3item,model-complete coefficient row,135,
+cs,btactComp,MZ_sensitivity,endMiddleAge,model-complete coefficient row,132,
+cs,btactComp,MZ_sensitivity,recSupport,model-complete coefficient row,125,
+cs,btactComp,MZ_sensitivity,workIndustry__goods_production,model-complete coefficient row,131,
+cs,btactComp,MZ_sensitivity,workIndustry__knowledge_govt,model-complete coefficient row,131,
+cs,btactComp,MZ_sensitivity,workIndustry__trade_transport,model-complete coefficient row,131,
+cs,btactComp,MZ_sensitivity,socContribution,model-complete coefficient row,133,
+cs,btactComp,MZ_sensitivity,interdependence,model-complete coefficient row,134,
+cs,btactComp,MZ_sensitivity,householdIncome,model-complete coefficient row,129,
+cs,btactComp,MZ_sensitivity,mpqCloseness,model-complete coefficient row,135,
+cs,ALcomp,All_paired,bmi,model-complete coefficient row,139,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,whr,model-complete coefficient row,133,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,physicianDiet,model-complete coefficient row,142,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,lifeSatisfaction,model-complete coefficient row,146,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,vmLeisureAct_vig,model-complete coefficient row,146,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,workIndustry__goods_production,model-complete coefficient row,138,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,workIndustry__knowledge_govt,model-complete coefficient row,138,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,workIndustry__trade_transport,model-complete coefficient row,138,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,occGroup__blue_collar,model-complete coefficient row,140,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,occGroup__professional_mgmt,model-complete coefficient row,140,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,bmi,model-complete coefficient row,76,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,whr,model-complete coefficient row,73,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,physicianDiet,model-complete coefficient row,80,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,lifeSatisfaction,model-complete coefficient row,81,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,vmLeisureAct_vig,model-complete coefficient row,81,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,workIndustry__goods_production,model-complete coefficient row,76,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,workIndustry__knowledge_govt,model-complete coefficient row,76,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,workIndustry__trade_transport,model-complete coefficient row,76,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,occGroup__blue_collar,model-complete coefficient row,77,ALcomp biomarker-specific denominator
+cs,ALcomp,MZ_sensitivity,occGroup__professional_mgmt,model-complete coefficient row,77,ALcomp biomarker-specific denominator
+change,FInoPsy,All_paired,bmi,model-complete coefficient row,198,
+change,FInoPsy,All_paired,workIndustry__goods_production,model-complete coefficient row,197,
+change,FInoPsy,All_paired,workIndustry__knowledge_govt,model-complete coefficient row,197,
+change,FInoPsy,All_paired,workIndustry__trade_transport,model-complete coefficient row,197,
+change,FInoPsy,All_paired,mentalHealth,model-complete coefficient row,207,
+change,FInoPsy,All_paired,controlOverHealth,model-complete coefficient row,208,
+change,FInoPsy,All_paired,workStatus__not_working,model-complete coefficient row,206,
+change,FInoPsy,All_paired,workStatus__retired,model-complete coefficient row,206,
+change,FInoPsy,All_paired,smokeDuration,model-complete coefficient row,203,
+change,FInoPsy,All_paired,householdIncome,model-complete coefficient row,198,
+change,FInoPsy,All_paired,dailyDiscriminate,model-complete coefficient row,203,
+change,FInoPsy,All_paired,healthLocOther,model-complete coefficient row,206,
+change,FInoPsy,All_paired,friendQuality,model-complete coefficient row,204,
+change,FInoPsy,MZ_sensitivity,bmi,model-complete coefficient row,85,
+change,FInoPsy,MZ_sensitivity,workIndustry__goods_production,model-complete coefficient row,85,
+change,FInoPsy,MZ_sensitivity,workIndustry__knowledge_govt,model-complete coefficient row,85,
+change,FInoPsy,MZ_sensitivity,workIndustry__trade_transport,model-complete coefficient row,85,
+change,FInoPsy,MZ_sensitivity,mentalHealth,model-complete coefficient row,89,
+change,FInoPsy,MZ_sensitivity,controlOverHealth,model-complete coefficient row,89,
+change,FInoPsy,MZ_sensitivity,workStatus__not_working,model-complete coefficient row,89,
+change,FInoPsy,MZ_sensitivity,workStatus__retired,model-complete coefficient row,89,
+change,FInoPsy,MZ_sensitivity,smokeDuration,model-complete coefficient row,87,
+change,FInoPsy,MZ_sensitivity,householdIncome,model-complete coefficient row,86,
+change,FInoPsy,MZ_sensitivity,dailyDiscriminate,model-complete coefficient row,88,
+change,FInoPsy,MZ_sensitivity,healthLocOther,model-complete coefficient row,88,
+change,FInoPsy,MZ_sensitivity,friendQuality,model-complete coefficient row,87,
+change,btactComp,All_paired,workStatus__not_working,model-complete coefficient row,166,
+change,btactComp,All_paired,workStatus__retired,model-complete coefficient row,166,
+change,btactComp,All_paired,whr,model-complete coefficient row,157,
+change,btactComp,All_paired,householdIncome,model-complete coefficient row,163,
+change,btactComp,All_paired,workIndustry__goods_production,model-complete coefficient row,161,
+change,btactComp,All_paired,workIndustry__knowledge_govt,model-complete coefficient row,161,
+change,btactComp,All_paired,workIndustry__trade_transport,model-complete coefficient row,161,
+change,btactComp,All_paired,occGroup__blue_collar,model-complete coefficient row,164,
+change,btactComp,All_paired,occGroup__professional_mgmt,model-complete coefficient row,164,
+change,btactComp,All_paired,education,model-complete coefficient row,167,
+change,btactComp,All_paired,socMeaningful,model-complete coefficient row,166,
+change,btactComp,All_paired,educationACE_3item,model-complete coefficient row,168,
+change,btactComp,All_paired,lightAct,model-complete coefficient row,165,
+change,btactComp,All_paired,activeCoping,model-complete coefficient row,168,
+change,btactComp,All_paired,recSupport,model-complete coefficient row,154,
+change,btactComp,MZ_sensitivity,workStatus__not_working,model-complete coefficient row,70,
+change,btactComp,MZ_sensitivity,workStatus__retired,model-complete coefficient row,70,
+change,btactComp,MZ_sensitivity,whr,model-complete coefficient row,65,
+change,btactComp,MZ_sensitivity,householdIncome,model-complete coefficient row,69,
+change,btactComp,MZ_sensitivity,workIndustry__goods_production,model-complete coefficient row,68,
+change,btactComp,MZ_sensitivity,workIndustry__knowledge_govt,model-complete coefficient row,68,
+change,btactComp,MZ_sensitivity,workIndustry__trade_transport,model-complete coefficient row,68,
+change,btactComp,MZ_sensitivity,occGroup__blue_collar,model-complete coefficient row,67,
+change,btactComp,MZ_sensitivity,occGroup__professional_mgmt,model-complete coefficient row,67,
+change,btactComp,MZ_sensitivity,education,model-complete coefficient row,69,
+change,btactComp,MZ_sensitivity,socMeaningful,model-complete coefficient row,69,
+change,btactComp,MZ_sensitivity,educationACE_3item,model-complete coefficient row,70,
+change,btactComp,MZ_sensitivity,lightAct,model-complete coefficient row,68,
+change,btactComp,MZ_sensitivity,activeCoping,model-complete coefficient row,70,
+change,btactComp,MZ_sensitivity,recSupport,model-complete coefficient row,66,
+change,ALcomp,All_paired,bmi,model-complete coefficient row,74,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,workIndustry__goods_production,model-complete coefficient row,76,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,workIndustry__knowledge_govt,model-complete coefficient row,76,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,workIndustry__trade_transport,model-complete coefficient row,76,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,vmLeisureAct_vig,model-complete coefficient row,79,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,jobDiscrimination,model-complete coefficient row,54,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,whr,model-complete coefficient row,72,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,ageFirstCig,model-complete coefficient row,26,ALcomp biomarker-specific denominator
+change,ALcomp,MZ_sensitivity,bmi,model-complete coefficient row,40,ALcomp biomarker-specific denominator
+change,ALcomp,MZ_sensitivity,workIndustry__goods_production,model-complete coefficient row,42,ALcomp biomarker-specific denominator
+change,ALcomp,MZ_sensitivity,workIndustry__knowledge_govt,model-complete coefficient row,42,ALcomp biomarker-specific denominator
+change,ALcomp,MZ_sensitivity,workIndustry__trade_transport,model-complete coefficient row,42,ALcomp biomarker-specific denominator
+change,ALcomp,MZ_sensitivity,vmLeisureAct_vig,model-complete coefficient row,44,ALcomp biomarker-specific denominator
+change,ALcomp,MZ_sensitivity,jobDiscrimination,model-complete coefficient row,30,ALcomp biomarker-specific denominator
+change,ALcomp,MZ_sensitivity,whr,model-complete coefficient row,39,ALcomp biomarker-specific denominator

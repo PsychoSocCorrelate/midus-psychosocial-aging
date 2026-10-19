@@ -1,0 +1,4 @@
+outcome,n_shared,spearman_rho,p_value,top20_overlap
+FInoPsy_W2,148,0.708,8.153532136757513e-24,9/20
+btactComp_W2,177,0.798,2.2444280982369815e-40,11/20
+ALcomp_W2,177,0.803,3.841574675324848e-41,12/20

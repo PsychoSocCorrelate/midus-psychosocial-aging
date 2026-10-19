@@ -1,0 +1,4 @@
+Outcome,N,r_Pearson,r_Spearman,r_age_residualized,sd_change
+Frailty Index,3991,0.744,0.713,0.722,0.080
+Cognitive Composite,3461,0.777,0.767,0.744,0.599
+Allostatic Load,576,0.685,0.713,0.681,0.313

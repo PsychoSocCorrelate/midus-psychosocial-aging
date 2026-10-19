@@ -1,0 +1,4 @@
+Outcome Domain,N_W1,N_W2,N_dropout,Retention%,Age_d,Age_p,Female_d,Female_p,Education_d,Education_p,Frailty Index_W1_d,Frailty Index_W1_p,Cognitive Composite_W1_d,Cognitive Composite_W1_p,Allostatic Load_W1_d,Allostatic Load_W1_p
+Frailty Index,6587,3991,2596,60.6,-0.047,0.070,+0.040,0.110,+0.261,1.2e-24,-0.235,4.1e-19,,,,
+Cognitive Composite,5535,3461,2074,62.5,-0.239,2.8e-16,+0.053,0.055,+0.306,1.9e-27,,,+0.443,1.4e-53,,
+Allostatic Load,1782,576,1206,32.3,-0.168,2.3e-04,+0.031,0.534,-0.005,0.916,,,,,-0.171,3.5e-04

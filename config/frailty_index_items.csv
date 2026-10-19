@@ -1,0 +1,41 @@
+number,code,item,domain,midus2,midus3,refresher1,refresher2,scoring
+1,migraine,Migraine,Pain,B1SA11V,C1SA11V,RA1SA11V,RB1SA11V,Yes = 1; no = 0
+2,dental,Dental problems,General health,B1SA11R/B1SA11Q,C1SA11R/C1SA11Q,RA1SA11R/RA1SA11Q,RB1SA11R/RB1SA11Q,Yes = 1; no = 0
+3,SRH,Self-rated general health,General health,B1PA1,C1PA1,RA1PA1,RB1PA1,Excellent = 0; very good = .25; good = .5; fair = .75; poor = 1
+4,limitShower,Limitation: bathing or showering,Functional limitation,B1SA28B,C1SA24B,RA1SA24B,RB1SA24B,A lot = 1; some = .66; a little = .33; not at all = 0
+5,limitWalking,Limitation: walking,Functional limitation,B1SA28H,C1SA24H,RA1SA24H,RB1SA24H,A lot = 1; some = .66; a little = .33; not at all = 0
+6,limitGrocery,Limitation: grocery shopping,Functional limitation,B1SA28A,C1SA24A,RA1SA24A,RB1SA24A,A lot = 1; some = .66; a little = .33; not at all = 0
+7,limitRecreation,Pain interference with recreational activities,Functional limitation,B1SA15/B1SA16/B1SA20,C1SA15/C1SA16A/C1SA16E,RA1SA15/RA1SA16A/RA1SA16E,RB1SA15/RB1SA16A/RB1SA16E,"0 without chronic pain; with chronic pain, scored from two 0-10 pain-interference ratings rescaled to 0-1"
+8,limitTravel,Limitation: traveling longer distances,Functional limitation,B1SA28F,C1SA24F,RA1SA24F,RB1SA24F,A lot = 1; some = .66; a little = .33; not at all = 0
+9,lonely,Loneliness,General health,B1SA24G,C1SA20G,RA1SA20G,RB1SA20G,All of the time = 1; most of the time = .75; some of the time = .5; a little of the time = .25; none of the time = 0
+10,insomnia,Insomnia,General health,B1SA11W,C1SA11W,RA1SA11W,RB1SA11W,Yes = 1; no = 0
+11,chronicIllness,Chronic conditions (count),Chronic condition,B1SCHRON,C1SCHRON,RA1SCHRON,RB1SCHRON,"Count divided by 18, capped at 1"
+12,diabetes,Diabetes,Cardiometabolic condition,B1SA11X/B1SA12B,C1SA11X/C1SA12B,RA1SA11X/RA1SA12B,RB1SA11X/RB1SA12B,"No = 0; yes, scored by medication frequency in the past 30 days: daily = 1, few times a week = .8, once a week = .6, few times a month = .4, once a month = .2, not at all = 0"
+13,heartAttack,Heart attack,Cardiometabolic condition,B1PA7/B1PA8/B1PA23CA,C1PA7/C1PA8/C1PA23CA,RA1PA7/RA1PA8/RA1PA23CA,RB1PA7/RB1PA8,1 if the first two items are both endorsed or the third is; 0 if either of the first two is denied
+14,angina,Angina,Cardiometabolic condition,B1PANGIN,C1PANGIN,RA1PANGIN,,Grade 0 = 0; 1 = .33; 2 = .66; 3 = 1
+15,chestPain,Chest pain,Pain,B1PA23,C1PA23,RA1PA23,,Yes = 1; no = 0
+16,stroke,Stroke,Cardiometabolic condition,B1SA11Z/B1PA6A,C1SA11Z/C1PA6A,RA1SA11Z/RA1PA6A,RB1SA11Z/RB1PA6A,1 if either item is endorsed; 0 if both are denied
+17,highBP,High blood pressure,Cardiometabolic condition,B1PA24,C1PA24,RA1PA24,RB1PA24,Yes = 1; suspected = .5; no = 0
+18,irregularHeart,Irregular heart rhythm or atrial fibrillation,Cardiometabolic condition,B1PA7/B1PA7BG/B1PA23CG,C1PA7/C1PA7BG/C1PA23CG,RA1PA7/RA1PA7BG/RA1PA23CG,RB1PA7/RB1PA7BG,1 if the first two items are both endorsed or the third is; 0 if either of the first two is denied
+19,cholesterol,High cholesterol,Cardiometabolic condition,B1SA12C/B1SA12CY,C1SA12C,RA1SA12C,RB1SA12C,"No = 0; yes, scored by medication frequency in the past 30 days: daily = 1, few times a week = .8, once a week = .6, few times a month = .4, once a month = .2, not at all = 0"
+20,lungProb,Chronic bronchitis or emphysema,Chronic condition,B1SA11C,C1SA11C,RA1SA11C,RB1SA11C,Yes = 1; no = 0
+21,asthma,Asthma,Chronic condition,B1SA11A,C1SA11A,RA1SA11A,RB1SA11A,Yes = 1; no = 0
+22,arthritis,Rheumatoid arthritis,Chronic condition,B1SA12G/B1SA12GY,C1SA12G,RA1SA12G,RB1SA12G,"No = 0; yes, scored by medication frequency in the past 30 days: daily = 1, few times a week = .8, once a week = .6, few times a month = .4, once a month = .2, not at all = 0"
+23,allergic,"Eczema, allergic rhinitis, or other allergy",Chronic condition,B1SA11H,C1SA11H,RA1SA11H,RB1SA11H,Yes = 1; no = 0
+24,skinProb,Psoriasis,Chronic condition,B1SA11F,C1SA11F,RA1SA11F,RB1SA11F,Yes = 1; no = 0
+25,cancer,Cancer or leukemia,Chronic condition,B1PA26,C1PA26,RA1PA26,RB1PA26,Yes = 1; no = 0
+26,multiCancer,Multiple cancers,Chronic condition,B1PA26/B1PA28A/B1PA28B/B1PA28C/B1PA28D/B1PA28E/B1PA28F/B1PA28G/B1PA28H/B1PA28I/B1PA28J,C1PA26/C1PA28A/C1PA28B/C1PA28C/C1PA28D/C1PA28E/C1PA28F/C1PA28G/C1PA28H/C1PA28I/C1PA28J,RA1PA26/RA1PA28A/RA1PA28B/RA1PA28C/RA1PA28D/RA1PA28E/RA1PA28F/RA1PA28G/RA1PA28H/RA1PA28I/RA1PA28J,RB1PA26/RB1PA28A/RB1PA28B/RB1PA28C/RB1PA28D/RB1PA28E/RB1PA28F/RB1PA28G/RB1PA28H/RB1PA28I/RB1PA28J,1 if two or more of 11 cancer types are reported; 0 otherwise
+27,jointPain,Joint pain,Pain,B1SA10F,C1SA10F,RA1SA10F,RB1SA10F,Almost every day = 1; several times a week = .8; once a week = .6; several times a month = .4; once a month = .2; not at all = 0
+28,backPain,Back pain,Pain,B1SA10B,C1SA10B,RA1SA10B,RB1SA10B,Almost every day = 1; several times a week = .8; once a week = .6; several times a month = .4; once a month = .2; not at all = 0
+29,hipPain,Hip pain,Pain,B1SA15/B1SA21G,C1SA15/C1SA17G,RA1SA15/RA1SA17G,RB1SA15/RB1SA17G,1 if both items are endorsed; 0 if either is denied
+30,kneePain,Knee pain,Pain,B1SA15/B1SA21H,C1SA15/C1SA17H,RA1SA15/RA1SA17H,RB1SA15/RB1SA17H,1 if both items are endorsed; 0 if either is denied
+31,headPain,Head or neck pain,Pain,B1SA10A,C1SA10A,RA1SA10A,RB1SA10A,Almost every day = 1; several times a week = .8; once a week = .6; several times a month = .4; once a month = .2; not at all = 0
+32,stomachPain,Stomach or abdominal pain,Pain,B1SA11I,C1SA11I,RA1SA11I,RB1SA11I,Yes = 1; no = 0
+33,bladderProb,Recurring urinary tract problems,General health,B1SA10H,C1SA10H,RA1SA10H,RB1SA10H,Almost every day = 1; several times a week = .8; once a week = .6; several times a month = .4; once a month = .2; not at all = 0
+34,sciatica,Sciatica,Pain,B1SA11E,C1SA11E,RA1SA11E,RB1SA11E,Yes = 1; no = 0
+35,hernia,Hernia,Chronic condition,B1SA11BB,C1SA11BB,RA1SA11BB,RB1SA11BB,Yes = 1; no = 0
+36,thyroidDisease,Thyroid disease,Chronic condition,B1SA11G,C1SA11G,RA1SA11G,RB1SA11G,Yes = 1; no = 0
+37,gallbladderProb,Gallbladder trouble,Chronic condition,B1SA11L,C1SA11L,RA1SA11L,RB1SA11L,Yes = 1; no = 0
+38,painDiagnosed,Chronic pain,Chronic condition,B1SA15,C1SA15,RA1SA15,RB1SA15,Yes = 1; no = 0
+39,limitModAct,Limitation: moderate activity,Functional limitation,B1SA28J,C1SA24J,RA1SA24J,RB1SA24J,A lot = 1; some = .66; a little = .33; not at all = 0
+40,heartTrouble,Other heart trouble,Cardiometabolic condition,B1PA7/B1PA7BD/B1PA7BE/B1PA7BF/B1PA23CD/B1PA23CE/B1PA23CF,C1PA7/C1PA7BD/C1PA7BE/C1PA7BF/C1PA23CD/C1PA23CE/C1PA23CF,RA1PA7/RA1PA7BD/RA1PA7BE/RA1PA7BF/RA1PA23CD/RA1PA23CE/RA1PA23CF,RB1PA7/RB1PA7BD/RB1PA7BE/RB1PA7BF,1 if any listed heart condition is reported; 0 if heart trouble is denied

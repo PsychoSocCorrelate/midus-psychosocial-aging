@@ -1,0 +1,22 @@
+Variable,Statistic
+N (total),"6,651"
+  MIDUS2,"4,041 (60.8%)"
+  MIDUSR,"2,610 (39.2%)"
+Age (W1),"54.6 (13.3), N=6,651"
+Female,"3,627 (54.5%), N=6,651"
+Hispanic,"221 (3.3%), N=6,634"
+Race,
+  1.0,"5,881 (88.4%)"
+  2.0,324 (4.9%)
+  3.0,166 (2.5%)
+  4.0,246 (3.7%)
+Education (years),"7.5 (2.5), N=6,643"
+,
+--- Outcomes ---,
+Frailty Index (W1),"0.146 (0.110), N=6,587"
+Frailty Index (W2),"0.174 (0.117), N=4,018"
+Cognitive Composite (W1),"0.015 (1.001), N=5,535"
+Cognitive Composite (W2),"-0.031 (0.701), N=3,861"
+Allostatic Load (W1),"-0.022 (0.417), N=1,782"
+Allostatic Load (W2),"0.043 (0.417), N=622"
+PhenoAge (residualized),"0.000 (11.521), N=1,047"

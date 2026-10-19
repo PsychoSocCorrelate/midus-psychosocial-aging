@@ -1,0 +1,10 @@
+seq,pipeline,stage,outcome,flag_passed,age_column,scope,longitudinal,concurrent,cohort_filter,n_rows
+0,a9_concurrent,load_master,FInoPsy_W2,False,age_W2,within_fold,False,True,,3543
+1,a9_concurrent,load_master,FInoPsy_W2,False,age_W2,within_fold,False,True,,3543
+2,a9_concurrent,load_master,btactComp_W2,False,age_W2,within_fold,False,True,,3112
+3,a9_concurrent,load_master,btactComp_W2,False,age_W2,within_fold,False,True,,3112
+4,a9_concurrent,load_master,ALcomp_W2,False,age_W2,within_fold,False,True,,594
+5,a9_concurrent,load_master,ALcomp_W2,False,age_W2,within_fold,False,True,,594
+6,a9_concurrent,load_master,FInoPsy_W2,True,age_W2,global_whole_sample,False,True,,3543
+7,a9_concurrent,load_master,btactComp_W2,True,age_W2,global_whole_sample,False,True,,3112
+8,a9_concurrent,load_master,ALcomp_W2,True,age_W2,global_whole_sample,False,True,,594

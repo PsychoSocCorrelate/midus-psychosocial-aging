@@ -1,0 +1,709 @@
+Variable,Display label,Wave,Type,Sibling stratum,N_pairs,Metric,Value,Pct_Agreement,Unique_var_n
+female,Female,Wave 1,binary,MZ,173,Cohen's kappa,1.0,100.0,2
+female,Female,Wave 1,binary,DZ_SS,141,Cohen's kappa,1.0,100.0,2
+female,Female,Wave 1,binary,DZ_OS,95,Cohen's kappa,-0.907,0.0,2
+female,Female,Wave 1,binary,All_paired,409,Cohen's kappa,0.519,76.8,2
+hispanic,Hispanic,Wave 1,binary,MZ,172,Cohen's kappa,0.496,98.8,2
+hispanic,Hispanic,Wave 1,binary,DZ_SS,140,Cohen's kappa,0.39,97.9,2
+hispanic,Hispanic,Wave 1,binary,DZ_OS,95,Cohen's kappa,-0.011,97.9,2
+hispanic,Hispanic,Wave 1,binary,All_paired,407,Cohen's kappa,0.355,98.3,2
+race,Race,Wave 1,nominal,MZ,171,Cohen's kappa,0.657,97.1,4
+race,Race,Wave 1,nominal,DZ_SS,139,Cohen's kappa,0.57,95.0,4
+race,Race,Wave 1,nominal,DZ_OS,95,Cohen's kappa,0.796,98.9,4
+race,Race,Wave 1,nominal,All_paired,405,Cohen's kappa,0.638,96.8,4
+sexualOrientation,Sexual Orientation,Wave 1,nominal,MZ,164,Cohen's kappa,-0.011,97.0,3
+sexualOrientation,Sexual Orientation,Wave 1,nominal,DZ_SS,133,Cohen's kappa,-0.018,95.5,3
+sexualOrientation,Sexual Orientation,Wave 1,nominal,DZ_OS,88,Cohen's kappa,-0.038,90.9,3
+sexualOrientation,Sexual Orientation,Wave 1,nominal,All_paired,385,Cohen's kappa,-0.019,95.1,3
+education,Education,Wave 1,ordinal,MZ,170,Spearman rho,0.681,40.6,>5
+education,Education,Wave 1,ordinal,DZ_SS,141,Spearman rho,0.599,32.6,>5
+education,Education,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.364,30.5,>5
+education,Education,Wave 1,ordinal,All_paired,406,Spearman rho,0.575,35.5,>5
+ageFirstWork,Age First Work,Wave 1,continuous,MZ,171,Pearson r,0.384,,>5
+ageFirstWork,Age First Work,Wave 1,continuous,DZ_SS,138,Pearson r,0.188,,>5
+ageFirstWork,Age First Work,Wave 1,continuous,DZ_OS,95,Pearson r,0.073,,>5
+ageFirstWork,Age First Work,Wave 1,continuous,All_paired,404,Pearson r,0.227,,>5
+ageFirstCig,Age First Cig,Wave 1,continuous,MZ,95,Pearson r,0.311,,>5
+ageFirstCig,Age First Cig,Wave 1,continuous,DZ_SS,71,Pearson r,0.297,,>5
+ageFirstCig,Age First Cig,Wave 1,continuous,DZ_OS,45,Pearson r,-0.163,,>5
+ageFirstCig,Age First Cig,Wave 1,continuous,All_paired,211,Pearson r,0.215,,>5
+ageFirstAlcoh,Age First Alcoh,Wave 1,continuous,MZ,151,Pearson r,0.577,,>5
+ageFirstAlcoh,Age First Alcoh,Wave 1,continuous,DZ_SS,113,Pearson r,0.363,,>5
+ageFirstAlcoh,Age First Alcoh,Wave 1,continuous,DZ_OS,82,Pearson r,0.295,,>5
+ageFirstAlcoh,Age First Alcoh,Wave 1,continuous,All_paired,346,Pearson r,0.438,,>5
+educationACE_3item,Childhood educ. adversity,Wave 1,ordinal,MZ,173,Spearman rho,0.605,83.2,4
+educationACE_3item,Childhood educ. adversity,Wave 1,ordinal,DZ_SS,141,Spearman rho,0.426,73.0,4
+educationACE_3item,Childhood educ. adversity,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.165,70.5,4
+educationACE_3item,Childhood educ. adversity,Wave 1,ordinal,All_paired,409,Spearman rho,0.445,76.8,4
+famDysfuncACE_3item,Family dysfunction ACE,Wave 1,ordinal,MZ,173,Spearman rho,0.523,86.1,4
+famDysfuncACE_3item,Family dysfunction ACE,Wave 1,ordinal,DZ_SS,141,Spearman rho,0.703,90.1,4
+famDysfuncACE_3item,Family dysfunction ACE,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.813,92.6,4
+famDysfuncACE_3item,Family dysfunction ACE,Wave 1,ordinal,All_paired,409,Spearman rho,0.651,89.0,4
+ecoACE_1item,Economic adversity ACE,Wave 1,binary,MZ,173,Cohen's kappa,0.363,85.5,2
+ecoACE_1item,Economic adversity ACE,Wave 1,binary,DZ_SS,141,Cohen's kappa,0.312,92.2,2
+ecoACE_1item,Economic adversity ACE,Wave 1,binary,DZ_OS,95,Cohen's kappa,0.349,90.5,2
+ecoACE_1item,Economic adversity ACE,Wave 1,binary,All_paired,409,Cohen's kappa,0.355,89.0,2
+lossChild,Loss Child,Wave 1,binary,MZ,173,Cohen's kappa,0.068,86.1,2
+lossChild,Loss Child,Wave 1,binary,DZ_SS,141,Cohen's kappa,-0.06,88.7,2
+lossChild,Loss Child,Wave 1,binary,DZ_OS,95,Cohen's kappa,-0.019,89.5,2
+lossChild,Loss Child,Wave 1,binary,All_paired,409,Cohen's kappa,0.009,87.8,2
+familyCancer,Family Cancer,Wave 1,nominal,MZ,173,Cohen's kappa,0.633,78.6,4
+familyCancer,Family Cancer,Wave 1,nominal,DZ_SS,141,Cohen's kappa,0.689,80.9,4
+familyCancer,Family Cancer,Wave 1,nominal,DZ_OS,94,Cohen's kappa,0.556,72.3,4
+familyCancer,Family Cancer,Wave 1,nominal,All_paired,408,Cohen's kappa,0.635,77.9,4
+householdIncome,Household Income,Wave 1,continuous,MZ,161,Pearson r,0.336,,>5
+householdIncome,Household Income,Wave 1,continuous,DZ_SS,131,Pearson r,0.273,,>5
+householdIncome,Household Income,Wave 1,continuous,DZ_OS,85,Pearson r,0.224,,>5
+householdIncome,Household Income,Wave 1,continuous,All_paired,377,Pearson r,0.287,,>5
+hhPension,HH pension income,Wave 1,continuous,MZ,121,Pearson r,0.294,,>5
+hhPension,HH pension income,Wave 1,continuous,DZ_SS,88,Pearson r,0.044,,>5
+hhPension,HH pension income,Wave 1,continuous,DZ_OS,60,Pearson r,0.341,,>5
+hhPension,HH pension income,Wave 1,continuous,All_paired,269,Pearson r,0.196,,>5
+hhSocialSecurity,HH Social Security,Wave 1,continuous,MZ,123,Pearson r,0.158,,>5
+hhSocialSecurity,HH Social Security,Wave 1,continuous,DZ_SS,93,Pearson r,0.2,,>5
+hhSocialSecurity,HH Social Security,Wave 1,continuous,DZ_OS,60,Pearson r,0.41,,>5
+hhSocialSecurity,HH Social Security,Wave 1,continuous,All_paired,276,Pearson r,0.182,,>5
+agreeableness,Agreeableness,Wave 1,continuous,MZ,170,Pearson r,0.422,,>5
+agreeableness,Agreeableness,Wave 1,continuous,DZ_SS,141,Pearson r,0.204,,>5
+agreeableness,Agreeableness,Wave 1,continuous,DZ_OS,93,Pearson r,-0.04,,>5
+agreeableness,Agreeableness,Wave 1,continuous,All_paired,404,Pearson r,0.234,,>5
+extraversion,Extraversion,Wave 1,continuous,MZ,170,Pearson r,0.395,,>5
+extraversion,Extraversion,Wave 1,continuous,DZ_SS,141,Pearson r,0.258,,>5
+extraversion,Extraversion,Wave 1,continuous,DZ_OS,93,Pearson r,0.083,,>5
+extraversion,Extraversion,Wave 1,continuous,All_paired,404,Pearson r,0.267,,>5
+neuroticism,Neuroticism,Wave 1,continuous,MZ,169,Pearson r,0.489,,>5
+neuroticism,Neuroticism,Wave 1,continuous,DZ_SS,141,Pearson r,0.025,,>5
+neuroticism,Neuroticism,Wave 1,continuous,DZ_OS,93,Pearson r,0.23,,>5
+neuroticism,Neuroticism,Wave 1,continuous,All_paired,403,Pearson r,0.281,,>5
+conscientiousness,Conscientiousness,Wave 1,continuous,MZ,170,Pearson r,0.313,,>5
+conscientiousness,Conscientiousness,Wave 1,continuous,DZ_SS,141,Pearson r,0.229,,>5
+conscientiousness,Conscientiousness,Wave 1,continuous,DZ_OS,93,Pearson r,0.234,,>5
+conscientiousness,Conscientiousness,Wave 1,continuous,All_paired,404,Pearson r,0.26,,>5
+openness,Openness,Wave 1,continuous,MZ,168,Pearson r,0.365,,>5
+openness,Openness,Wave 1,continuous,DZ_SS,140,Pearson r,0.175,,>5
+openness,Openness,Wave 1,continuous,DZ_OS,91,Pearson r,0.133,,>5
+openness,Openness,Wave 1,continuous,All_paired,399,Pearson r,0.239,,>5
+mpqWellbeing,MPQ Well-being,Wave 1,continuous,MZ,171,Pearson r,0.307,,>5
+mpqWellbeing,MPQ Well-being,Wave 1,continuous,DZ_SS,141,Pearson r,0.208,,>5
+mpqWellbeing,MPQ Well-being,Wave 1,continuous,DZ_OS,94,Pearson r,-0.05,,>5
+mpqWellbeing,MPQ Well-being,Wave 1,continuous,All_paired,406,Pearson r,0.2,,>5
+mpqPotency,MPQ Potency,Wave 1,continuous,MZ,172,Pearson r,0.409,,>5
+mpqPotency,MPQ Potency,Wave 1,continuous,DZ_SS,141,Pearson r,0.301,,>5
+mpqPotency,MPQ Potency,Wave 1,continuous,DZ_OS,93,Pearson r,0.1,,>5
+mpqPotency,MPQ Potency,Wave 1,continuous,All_paired,406,Pearson r,0.293,,>5
+mpqAchievement,MPQ Achievement,Wave 1,continuous,MZ,171,Pearson r,0.344,,>5
+mpqAchievement,MPQ Achievement,Wave 1,continuous,DZ_SS,141,Pearson r,0.177,,>5
+mpqAchievement,MPQ Achievement,Wave 1,continuous,DZ_OS,93,Pearson r,0.03,,>5
+mpqAchievement,MPQ Achievement,Wave 1,continuous,All_paired,405,Pearson r,0.214,,>5
+mpqCloseness,MPQ Closeness,Wave 1,continuous,MZ,172,Pearson r,0.42,,>5
+mpqCloseness,MPQ Closeness,Wave 1,continuous,DZ_SS,141,Pearson r,0.254,,>5
+mpqCloseness,MPQ Closeness,Wave 1,continuous,DZ_OS,93,Pearson r,0.097,,>5
+mpqCloseness,MPQ Closeness,Wave 1,continuous,All_paired,406,Pearson r,0.292,,>5
+mpqStress,MPQ Stress reaction,Wave 1,continuous,MZ,171,Pearson r,0.348,,>5
+mpqStress,MPQ Stress reaction,Wave 1,continuous,DZ_SS,140,Pearson r,0.208,,>5
+mpqStress,MPQ Stress reaction,Wave 1,continuous,DZ_OS,94,Pearson r,0.083,,>5
+mpqStress,MPQ Stress reaction,Wave 1,continuous,All_paired,405,Pearson r,0.248,,>5
+mpqAggression,MPQ Aggression,Wave 1,continuous,MZ,171,Pearson r,0.455,,>5
+mpqAggression,MPQ Aggression,Wave 1,continuous,DZ_SS,141,Pearson r,0.168,,>5
+mpqAggression,MPQ Aggression,Wave 1,continuous,DZ_OS,94,Pearson r,0.128,,>5
+mpqAggression,MPQ Aggression,Wave 1,continuous,All_paired,406,Pearson r,0.289,,>5
+mpqAlienation,MPQ Alienation,Wave 1,continuous,MZ,171,Pearson r,0.5,,>5
+mpqAlienation,MPQ Alienation,Wave 1,continuous,DZ_SS,141,Pearson r,0.29,,>5
+mpqAlienation,MPQ Alienation,Wave 1,continuous,DZ_OS,93,Pearson r,0.081,,>5
+mpqAlienation,MPQ Alienation,Wave 1,continuous,All_paired,405,Pearson r,0.318,,>5
+mpqControl,MPQ Control,Wave 1,continuous,MZ,172,Pearson r,0.286,,>5
+mpqControl,MPQ Control,Wave 1,continuous,DZ_SS,141,Pearson r,0.115,,>5
+mpqControl,MPQ Control,Wave 1,continuous,DZ_OS,93,Pearson r,0.277,,>5
+mpqControl,MPQ Control,Wave 1,continuous,All_paired,406,Pearson r,0.224,,>5
+mpqTradition,MPQ Traditionalism,Wave 1,continuous,MZ,169,Pearson r,0.418,,>5
+mpqTradition,MPQ Traditionalism,Wave 1,continuous,DZ_SS,139,Pearson r,0.344,,>5
+mpqTradition,MPQ Traditionalism,Wave 1,continuous,DZ_OS,94,Pearson r,0.243,,>5
+mpqTradition,MPQ Traditionalism,Wave 1,continuous,All_paired,402,Pearson r,0.356,,>5
+mpqHarmAvoid,MPQ Harm avoidance,Wave 1,continuous,MZ,171,Pearson r,0.339,,>5
+mpqHarmAvoid,MPQ Harm avoidance,Wave 1,continuous,DZ_SS,141,Pearson r,0.081,,>5
+mpqHarmAvoid,MPQ Harm avoidance,Wave 1,continuous,DZ_OS,94,Pearson r,0.337,,>5
+mpqHarmAvoid,MPQ Harm avoidance,Wave 1,continuous,All_paired,406,Pearson r,0.252,,>5
+worry1item,Worry1item,Wave 1,ordinal,MZ,173,Spearman rho,0.397,35.3,4
+worry1item,Worry1item,Wave 1,ordinal,DZ_SS,141,Spearman rho,0.185,43.3,4
+worry1item,Worry1item,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.113,34.7,4
+worry1item,Worry1item,Wave 1,ordinal,All_paired,409,Spearman rho,0.268,37.9,4
+curious1item,Curious1item,Wave 1,ordinal,MZ,173,Spearman rho,0.224,43.9,4
+curious1item,Curious1item,Wave 1,ordinal,DZ_SS,141,Spearman rho,0.127,42.6,4
+curious1item,Curious1item,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.052,45.3,4
+curious1item,Curious1item,Wave 1,ordinal,All_paired,409,Spearman rho,0.149,43.8,4
+optim1item,Optim1item,Wave 1,ordinal,MZ,173,Spearman rho,0.293,44.5,4
+optim1item,Optim1item,Wave 1,ordinal,DZ_SS,141,Spearman rho,0.266,50.4,4
+optim1item,Optim1item,Wave 1,ordinal,DZ_OS,94,Spearman rho,-0.015,38.3,4
+optim1item,Optim1item,Wave 1,ordinal,All_paired,408,Spearman rho,0.218,45.1,4
+outgoing1item,Outgoing1item,Wave 1,ordinal,MZ,173,Spearman rho,0.299,43.9,4
+outgoing1item,Outgoing1item,Wave 1,ordinal,DZ_SS,141,Spearman rho,0.182,44.7,4
+outgoing1item,Outgoing1item,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.282,47.4,4
+outgoing1item,Outgoing1item,Wave 1,ordinal,All_paired,409,Spearman rho,0.257,45.0,4
+psychWellbeing,Psych Wellbeing,Wave 1,continuous,MZ,173,Pearson r,0.458,,>5
+psychWellbeing,Psych Wellbeing,Wave 1,continuous,DZ_SS,141,Pearson r,0.265,,>5
+psychWellbeing,Psych Wellbeing,Wave 1,continuous,DZ_OS,94,Pearson r,0.117,,>5
+psychWellbeing,Psych Wellbeing,Wave 1,continuous,All_paired,408,Pearson r,0.313,,>5
+posAffect,Pos Affect,Wave 1,continuous,MZ,172,Pearson r,0.341,,>5
+posAffect,Pos Affect,Wave 1,continuous,DZ_SS,140,Pearson r,0.165,,>5
+posAffect,Pos Affect,Wave 1,continuous,DZ_OS,93,Pearson r,0.125,,>5
+posAffect,Pos Affect,Wave 1,continuous,All_paired,405,Pearson r,0.233,,>5
+controlOverHealth,Control Over Health,Wave 1,continuous,MZ,173,Pearson r,0.132,,>5
+controlOverHealth,Control Over Health,Wave 1,continuous,DZ_SS,141,Pearson r,0.139,,>5
+controlOverHealth,Control Over Health,Wave 1,continuous,DZ_OS,95,Pearson r,0.118,,>5
+controlOverHealth,Control Over Health,Wave 1,continuous,All_paired,409,Pearson r,0.12,,>5
+effortInHealth,Effort In Health,Wave 1,continuous,MZ,172,Pearson r,0.425,,>5
+effortInHealth,Effort In Health,Wave 1,continuous,DZ_SS,140,Pearson r,0.2,,>5
+effortInHealth,Effort In Health,Wave 1,continuous,DZ_OS,95,Pearson r,-0.048,,>5
+effortInHealth,Effort In Health,Wave 1,continuous,All_paired,407,Pearson r,0.247,,>5
+healthLocControl,Health Loc Control,Wave 1,continuous,MZ,171,Pearson r,0.253,,>5
+healthLocControl,Health Loc Control,Wave 1,continuous,DZ_SS,138,Pearson r,0.101,,>5
+healthLocControl,Health Loc Control,Wave 1,continuous,DZ_OS,95,Pearson r,0.014,,>5
+healthLocControl,Health Loc Control,Wave 1,continuous,All_paired,404,Pearson r,0.138,,>5
+healthLocOther,Health Loc Other,Wave 1,continuous,MZ,171,Pearson r,0.319,,>5
+healthLocOther,Health Loc Other,Wave 1,continuous,DZ_SS,138,Pearson r,0.302,,>5
+healthLocOther,Health Loc Other,Wave 1,continuous,DZ_OS,95,Pearson r,0.109,,>5
+healthLocOther,Health Loc Other,Wave 1,continuous,All_paired,404,Pearson r,0.264,,>5
+interdependence,Interdependence,Wave 1,continuous,MZ,171,Pearson r,0.177,,>5
+interdependence,Interdependence,Wave 1,continuous,DZ_SS,140,Pearson r,0.249,,>5
+interdependence,Interdependence,Wave 1,continuous,DZ_OS,93,Pearson r,0.311,,>5
+interdependence,Interdependence,Wave 1,continuous,All_paired,404,Pearson r,0.232,,>5
+independence,Independence,Wave 1,continuous,MZ,171,Pearson r,0.343,,>5
+independence,Independence,Wave 1,continuous,DZ_SS,140,Pearson r,0.16,,>5
+independence,Independence,Wave 1,continuous,DZ_OS,93,Pearson r,0.056,,>5
+independence,Independence,Wave 1,continuous,All_paired,404,Pearson r,0.219,,>5
+agency,Agency,Wave 1,continuous,MZ,170,Pearson r,0.414,,>5
+agency,Agency,Wave 1,continuous,DZ_SS,141,Pearson r,0.241,,>5
+agency,Agency,Wave 1,continuous,DZ_OS,93,Pearson r,0.037,,>5
+agency,Agency,Wave 1,continuous,All_paired,404,Pearson r,0.263,,>5
+optimism,Optimism,Wave 1,continuous,MZ,171,Pearson r,0.395,,>5
+optimism,Optimism,Wave 1,continuous,DZ_SS,141,Pearson r,0.125,,>5
+optimism,Optimism,Wave 1,continuous,DZ_OS,94,Pearson r,0.163,,>5
+optimism,Optimism,Wave 1,continuous,All_paired,406,Pearson r,0.248,,>5
+pessimism,Pessimism,Wave 1,continuous,MZ,171,Pearson r,0.405,,>5
+pessimism,Pessimism,Wave 1,continuous,DZ_SS,141,Pearson r,0.417,,>5
+pessimism,Pessimism,Wave 1,continuous,DZ_OS,94,Pearson r,0.105,,>5
+pessimism,Pessimism,Wave 1,continuous,All_paired,406,Pearson r,0.348,,>5
+subAchievement,Sub Achievement,Wave 1,ordinal,MZ,173,Spearman rho,0.235,51.4,>5
+subAchievement,Sub Achievement,Wave 1,ordinal,DZ_SS,138,Spearman rho,0.097,35.5,>5
+subAchievement,Sub Achievement,Wave 1,ordinal,DZ_OS,93,Spearman rho,0.103,39.8,>5
+subAchievement,Sub Achievement,Wave 1,ordinal,All_paired,404,Spearman rho,0.164,43.3,>5
+generativity,Generativity,Wave 1,continuous,MZ,168,Pearson r,0.275,,>5
+generativity,Generativity,Wave 1,continuous,DZ_SS,135,Pearson r,0.27,,>5
+generativity,Generativity,Wave 1,continuous,DZ_OS,95,Pearson r,0.142,,>5
+generativity,Generativity,Wave 1,continuous,All_paired,398,Pearson r,0.244,,>5
+mindfulness,Mindfulness,Wave 1,continuous,MZ,168,Pearson r,0.237,,>5
+mindfulness,Mindfulness,Wave 1,continuous,DZ_SS,137,Pearson r,0.212,,>5
+mindfulness,Mindfulness,Wave 1,continuous,DZ_OS,93,Pearson r,0.022,,>5
+mindfulness,Mindfulness,Wave 1,continuous,All_paired,398,Pearson r,0.181,,>5
+religiosity,Religiosity,Wave 1,continuous,MZ,171,Pearson r,0.646,,>5
+religiosity,Religiosity,Wave 1,continuous,DZ_SS,140,Pearson r,0.441,,>5
+religiosity,Religiosity,Wave 1,continuous,DZ_OS,95,Pearson r,0.172,,>5
+religiosity,Religiosity,Wave 1,continuous,All_paired,406,Pearson r,0.459,,>5
+dailtySpirtural,Dailty Spirtural,Wave 1,continuous,MZ,170,Pearson r,0.389,,>5
+dailtySpirtural,Dailty Spirtural,Wave 1,continuous,DZ_SS,137,Pearson r,0.207,,>5
+dailtySpirtural,Dailty Spirtural,Wave 1,continuous,DZ_OS,93,Pearson r,0.072,,>5
+dailtySpirtural,Dailty Spirtural,Wave 1,continuous,All_paired,400,Pearson r,0.23,,>5
+prayerFreq,Prayer Freq,Wave 1,ordinal,MZ,171,Spearman rho,0.407,53.8,5
+prayerFreq,Prayer Freq,Wave 1,ordinal,DZ_SS,136,Spearman rho,0.249,47.8,5
+prayerFreq,Prayer Freq,Wave 1,ordinal,DZ_OS,93,Spearman rho,0.207,46.2,5
+prayerFreq,Prayer Freq,Wave 1,ordinal,All_paired,400,Spearman rho,0.307,50.0,5
+depressedAffect,Depressed Affect,Wave 1,continuous,MZ,173,Pearson r,0.387,,>5
+depressedAffect,Depressed Affect,Wave 1,continuous,DZ_SS,141,Pearson r,0.174,,>5
+depressedAffect,Depressed Affect,Wave 1,continuous,DZ_OS,95,Pearson r,-0.086,,>5
+depressedAffect,Depressed Affect,Wave 1,continuous,All_paired,409,Pearson r,0.218,,>5
+anhedonia,Anhedonia,Wave 1,continuous,MZ,173,Pearson r,-0.013,,>5
+anhedonia,Anhedonia,Wave 1,continuous,DZ_SS,141,Pearson r,-0.025,,>5
+anhedonia,Anhedonia,Wave 1,continuous,DZ_OS,95,Pearson r,-0.023,,>5
+anhedonia,Anhedonia,Wave 1,continuous,All_paired,409,Pearson r,-0.022,,>5
+anxietyScore,Anxiety Score,Wave 1,continuous,MZ,173,Pearson r,-0.019,,>5
+anxietyScore,Anxiety Score,Wave 1,continuous,DZ_SS,141,Pearson r,-0.019,,>5
+anxietyScore,Anxiety Score,Wave 1,continuous,DZ_OS,95,Pearson r,-0.026,,>5
+anxietyScore,Anxiety Score,Wave 1,continuous,All_paired,409,Pearson r,-0.02,,>5
+panicScore,Panic Score,Wave 1,continuous,MZ,173,Pearson r,0.13,,>5
+panicScore,Panic Score,Wave 1,continuous,DZ_SS,141,Pearson r,-0.008,,>5
+panicScore,Panic Score,Wave 1,continuous,DZ_OS,95,Pearson r,-0.002,,>5
+panicScore,Panic Score,Wave 1,continuous,All_paired,409,Pearson r,0.044,,>5
+mentalHealth,Mental Health,Wave 1,ordinal,MZ,173,Spearman rho,0.279,37.6,5
+mentalHealth,Mental Health,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.143,40.0,5
+mentalHealth,Mental Health,Wave 1,ordinal,DZ_OS,95,Spearman rho,-0.027,34.7,5
+mentalHealth,Mental Health,Wave 1,ordinal,All_paired,408,Spearman rho,0.173,37.7,5
+negAffect,Neg Affect,Wave 1,continuous,MZ,172,Pearson r,0.306,,>5
+negAffect,Neg Affect,Wave 1,continuous,DZ_SS,139,Pearson r,0.152,,>5
+negAffect,Neg Affect,Wave 1,continuous,DZ_OS,93,Pearson r,0.046,,>5
+negAffect,Neg Affect,Wave 1,continuous,All_paired,404,Pearson r,0.195,,>5
+activeCoping,Active Coping,Wave 1,continuous,MZ,173,Pearson r,0.395,,>5
+activeCoping,Active Coping,Wave 1,continuous,DZ_SS,141,Pearson r,0.128,,>5
+activeCoping,Active Coping,Wave 1,continuous,DZ_OS,95,Pearson r,0.104,,>5
+activeCoping,Active Coping,Wave 1,continuous,All_paired,409,Pearson r,0.244,,>5
+secondControl,Second Control,Wave 1,continuous,MZ,172,Pearson r,0.257,,>5
+secondControl,Second Control,Wave 1,continuous,DZ_SS,141,Pearson r,0.168,,>5
+secondControl,Second Control,Wave 1,continuous,DZ_OS,95,Pearson r,0.092,,>5
+secondControl,Second Control,Wave 1,continuous,All_paired,408,Pearson r,0.189,,>5
+selfPlanning,Self Planning,Wave 1,continuous,MZ,172,Pearson r,0.345,,>5
+selfPlanning,Self Planning,Wave 1,continuous,DZ_SS,141,Pearson r,0.283,,>5
+selfPlanning,Self Planning,Wave 1,continuous,DZ_OS,95,Pearson r,-0.017,,>5
+selfPlanning,Self Planning,Wave 1,continuous,All_paired,408,Pearson r,0.243,,>5
+ventEmotion,Vent Emotion,Wave 1,continuous,MZ,172,Pearson r,0.338,,>5
+ventEmotion,Vent Emotion,Wave 1,continuous,DZ_SS,140,Pearson r,0.167,,>5
+ventEmotion,Vent Emotion,Wave 1,continuous,DZ_OS,93,Pearson r,-0.02,,>5
+ventEmotion,Vent Emotion,Wave 1,continuous,All_paired,405,Pearson r,0.211,,>5
+denial,Denial,Wave 1,continuous,MZ,172,Pearson r,0.211,,>5
+denial,Denial,Wave 1,continuous,DZ_SS,140,Pearson r,0.13,,>5
+denial,Denial,Wave 1,continuous,DZ_OS,93,Pearson r,0.04,,>5
+denial,Denial,Wave 1,continuous,All_paired,405,Pearson r,0.144,,>5
+behavDisengage,Behav Disengage,Wave 1,continuous,MZ,172,Pearson r,0.246,,>5
+behavDisengage,Behav Disengage,Wave 1,continuous,DZ_SS,140,Pearson r,0.133,,>5
+behavDisengage,Behav Disengage,Wave 1,continuous,DZ_OS,93,Pearson r,0.018,,>5
+behavDisengage,Behav Disengage,Wave 1,continuous,All_paired,405,Pearson r,0.149,,>5
+foodCope,Food Cope,Wave 1,continuous,MZ,172,Pearson r,0.344,,>5
+foodCope,Food Cope,Wave 1,continuous,DZ_SS,140,Pearson r,0.195,,>5
+foodCope,Food Cope,Wave 1,continuous,DZ_OS,93,Pearson r,-0.063,,>5
+foodCope,Food Cope,Wave 1,continuous,All_paired,405,Pearson r,0.185,,>5
+live4Today,Live4Today,Wave 1,continuous,MZ,171,Pearson r,0.367,,>5
+live4Today,Live4Today,Wave 1,continuous,DZ_SS,141,Pearson r,0.308,,>5
+live4Today,Live4Today,Wave 1,continuous,DZ_OS,95,Pearson r,0.085,,>5
+live4Today,Live4Today,Wave 1,continuous,All_paired,407,Pearson r,0.292,,>5
+insightPast,Insight Past,Wave 1,continuous,MZ,171,Pearson r,0.091,,>5
+insightPast,Insight Past,Wave 1,continuous,DZ_SS,141,Pearson r,0.046,,>5
+insightPast,Insight Past,Wave 1,continuous,DZ_OS,95,Pearson r,0.261,,>5
+insightPast,Insight Past,Wave 1,continuous,All_paired,407,Pearson r,0.109,,>5
+foresight,Foresight,Wave 1,ordinal,MZ,171,Spearman rho,0.266,39.2,4
+foresight,Foresight,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.161,39.3,4
+foresight,Foresight,Wave 1,ordinal,DZ_OS,94,Spearman rho,-0.215,35.1,4
+foresight,Foresight,Wave 1,ordinal,All_paired,405,Spearman rho,0.117,38.3,4
+selfSufficiency,Self Sufficiency,Wave 1,continuous,MZ,171,Pearson r,0.342,,>5
+selfSufficiency,Self Sufficiency,Wave 1,continuous,DZ_SS,141,Pearson r,0.226,,>5
+selfSufficiency,Self Sufficiency,Wave 1,continuous,DZ_OS,95,Pearson r,0.125,,>5
+selfSufficiency,Self Sufficiency,Wave 1,continuous,All_paired,407,Pearson r,0.253,,>5
+lifeSatisfaction,Life Satisfaction,Wave 1,continuous,MZ,172,Pearson r,0.327,,>5
+lifeSatisfaction,Life Satisfaction,Wave 1,continuous,DZ_SS,141,Pearson r,0.158,,>5
+lifeSatisfaction,Life Satisfaction,Wave 1,continuous,DZ_OS,95,Pearson r,0.17,,>5
+lifeSatisfaction,Life Satisfaction,Wave 1,continuous,All_paired,408,Pearson r,0.229,,>5
+lifeTenYearsAgo,Life Ten Years Ago,Wave 1,continuous,MZ,169,Pearson r,0.072,,>5
+lifeTenYearsAgo,Life Ten Years Ago,Wave 1,continuous,DZ_SS,137,Pearson r,0.11,,>5
+lifeTenYearsAgo,Life Ten Years Ago,Wave 1,continuous,DZ_OS,94,Pearson r,0.069,,>5
+lifeTenYearsAgo,Life Ten Years Ago,Wave 1,continuous,All_paired,400,Pearson r,0.082,,>5
+lifeFuture,Life Future,Wave 1,continuous,MZ,165,Pearson r,0.439,,>5
+lifeFuture,Life Future,Wave 1,continuous,DZ_SS,134,Pearson r,0.239,,>5
+lifeFuture,Life Future,Wave 1,continuous,DZ_OS,94,Pearson r,0.321,,>5
+lifeFuture,Life Future,Wave 1,continuous,All_paired,393,Pearson r,0.327,,>5
+lifeControl,Life Control,Wave 1,continuous,MZ,169,Pearson r,0.331,,>5
+lifeControl,Life Control,Wave 1,continuous,DZ_SS,137,Pearson r,0.037,,>5
+lifeControl,Life Control,Wave 1,continuous,DZ_OS,95,Pearson r,0.068,,>5
+lifeControl,Life Control,Wave 1,continuous,All_paired,401,Pearson r,0.15,,>5
+lifeEffort,Life Effort,Wave 1,continuous,MZ,169,Pearson r,0.44,,>5
+lifeEffort,Life Effort,Wave 1,continuous,DZ_SS,137,Pearson r,0.082,,>5
+lifeEffort,Life Effort,Wave 1,continuous,DZ_OS,95,Pearson r,-0.062,,>5
+lifeEffort,Life Effort,Wave 1,continuous,All_paired,401,Pearson r,0.198,,>5
+lifeDiscriminate,Life Discriminate,Wave 1,continuous,MZ,163,Pearson r,0.255,,>5
+lifeDiscriminate,Life Discriminate,Wave 1,continuous,DZ_SS,131,Pearson r,0.46,,>5
+lifeDiscriminate,Life Discriminate,Wave 1,continuous,DZ_OS,85,Pearson r,0.079,,>5
+lifeDiscriminate,Life Discriminate,Wave 1,continuous,All_paired,379,Pearson r,0.286,,>5
+dailyDiscriminate,Daily Discriminate,Wave 1,continuous,MZ,171,Pearson r,0.31,,>5
+dailyDiscriminate,Daily Discriminate,Wave 1,continuous,DZ_SS,137,Pearson r,0.459,,>5
+dailyDiscriminate,Daily Discriminate,Wave 1,continuous,DZ_OS,93,Pearson r,0.243,,>5
+dailyDiscriminate,Daily Discriminate,Wave 1,continuous,All_paired,401,Pearson r,0.347,,>5
+startMiddleAge,Start Middle Age,Wave 1,continuous,MZ,170,Pearson r,0.361,,>5
+startMiddleAge,Start Middle Age,Wave 1,continuous,DZ_SS,140,Pearson r,0.255,,>5
+startMiddleAge,Start Middle Age,Wave 1,continuous,DZ_OS,94,Pearson r,0.188,,>5
+startMiddleAge,Start Middle Age,Wave 1,continuous,All_paired,404,Pearson r,0.279,,>5
+endMiddleAge,End Middle Age,Wave 1,continuous,MZ,169,Pearson r,0.31,,>5
+endMiddleAge,End Middle Age,Wave 1,continuous,DZ_SS,138,Pearson r,0.11,,>5
+endMiddleAge,End Middle Age,Wave 1,continuous,DZ_OS,93,Pearson r,0.113,,>5
+endMiddleAge,End Middle Age,Wave 1,continuous,All_paired,400,Pearson r,0.193,,>5
+contributeToOthers,Contribute To Others,Wave 1,ordinal,MZ,173,Spearman rho,0.277,46.8,5
+contributeToOthers,Contribute To Others,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.161,41.4,5
+contributeToOthers,Contribute To Others,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.01,44.2,5
+contributeToOthers,Contribute To Others,Wave 1,ordinal,All_paired,408,Spearman rho,0.179,44.4,5
+socMeaningful,Soc Meaningful,Wave 1,continuous,MZ,171,Pearson r,0.3,,>5
+socMeaningful,Soc Meaningful,Wave 1,continuous,DZ_SS,139,Pearson r,0.273,,>5
+socMeaningful,Soc Meaningful,Wave 1,continuous,DZ_OS,94,Pearson r,0.1,,>5
+socMeaningful,Soc Meaningful,Wave 1,continuous,All_paired,404,Pearson r,0.253,,>5
+socIntegration,Soc Integration,Wave 1,continuous,MZ,171,Pearson r,0.255,,>5
+socIntegration,Soc Integration,Wave 1,continuous,DZ_SS,139,Pearson r,0.255,,>5
+socIntegration,Soc Integration,Wave 1,continuous,DZ_OS,94,Pearson r,0.157,,>5
+socIntegration,Soc Integration,Wave 1,continuous,All_paired,404,Pearson r,0.236,,>5
+acceptOthers,Accept Others,Wave 1,continuous,MZ,171,Pearson r,0.392,,>5
+acceptOthers,Accept Others,Wave 1,continuous,DZ_SS,139,Pearson r,0.242,,>5
+acceptOthers,Accept Others,Wave 1,continuous,DZ_OS,94,Pearson r,0.046,,>5
+acceptOthers,Accept Others,Wave 1,continuous,All_paired,404,Pearson r,0.261,,>5
+socContribution,Soc Contribution,Wave 1,continuous,MZ,171,Pearson r,0.354,,>5
+socContribution,Soc Contribution,Wave 1,continuous,DZ_SS,139,Pearson r,0.307,,>5
+socContribution,Soc Contribution,Wave 1,continuous,DZ_OS,94,Pearson r,0.165,,>5
+socContribution,Soc Contribution,Wave 1,continuous,All_paired,404,Pearson r,0.296,,>5
+socActualization,Soc Actualization,Wave 1,continuous,MZ,171,Pearson r,0.412,,>5
+socActualization,Soc Actualization,Wave 1,continuous,DZ_SS,139,Pearson r,0.185,,>5
+socActualization,Soc Actualization,Wave 1,continuous,DZ_OS,94,Pearson r,-0.037,,>5
+socActualization,Soc Actualization,Wave 1,continuous,All_paired,404,Pearson r,0.237,,>5
+sympathy,Sympathy,Wave 1,continuous,MZ,170,Pearson r,0.33,,>5
+sympathy,Sympathy,Wave 1,continuous,DZ_SS,137,Pearson r,0.271,,>5
+sympathy,Sympathy,Wave 1,continuous,DZ_OS,92,Pearson r,0.092,,>5
+sympathy,Sympathy,Wave 1,continuous,All_paired,399,Pearson r,0.259,,>5
+contactNeighb,Contact Neighb,Wave 1,ordinal,MZ,170,Spearman rho,0.218,37.6,>5
+contactNeighb,Contact Neighb,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.218,39.3,>5
+contactNeighb,Contact Neighb,Wave 1,ordinal,DZ_OS,92,Spearman rho,0.126,30.4,>5
+contactNeighb,Contact Neighb,Wave 1,ordinal,All_paired,402,Spearman rho,0.198,36.6,>5
+talkNeighb,Talk Neighb,Wave 1,ordinal,MZ,170,Spearman rho,0.331,24.1,>5
+talkNeighb,Talk Neighb,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.199,19.3,>5
+talkNeighb,Talk Neighb,Wave 1,ordinal,DZ_OS,92,Spearman rho,0.157,23.9,>5
+talkNeighb,Talk Neighb,Wave 1,ordinal,All_paired,402,Spearman rho,0.247,22.4,>5
+yearsNeighb,Years Neighb,Wave 1,continuous,MZ,166,Pearson r,0.466,,>5
+yearsNeighb,Years Neighb,Wave 1,continuous,DZ_SS,140,Pearson r,0.375,,>5
+yearsNeighb,Years Neighb,Wave 1,continuous,DZ_OS,90,Pearson r,0.256,,>5
+yearsNeighb,Years Neighb,Wave 1,continuous,All_paired,396,Pearson r,0.383,,>5
+neighborQual,Neighbor Qual,Wave 1,continuous,MZ,171,Pearson r,0.245,,>5
+neighborQual,Neighbor Qual,Wave 1,continuous,DZ_SS,141,Pearson r,0.249,,>5
+neighborQual,Neighbor Qual,Wave 1,continuous,DZ_OS,95,Pearson r,0.062,,>5
+neighborQual,Neighbor Qual,Wave 1,continuous,All_paired,407,Pearson r,0.2,,>5
+homeInequal,Home Inequal,Wave 1,continuous,MZ,170,Pearson r,0.179,,>5
+homeInequal,Home Inequal,Wave 1,continuous,DZ_SS,140,Pearson r,0.21,,>5
+homeInequal,Home Inequal,Wave 1,continuous,DZ_OS,95,Pearson r,0.18,,>5
+homeInequal,Home Inequal,Wave 1,continuous,All_paired,405,Pearson r,0.191,,>5
+familyQuality,Family Quality,Wave 1,continuous,MZ,171,Pearson r,0.268,,>5
+familyQuality,Family Quality,Wave 1,continuous,DZ_SS,141,Pearson r,0.262,,>5
+familyQuality,Family Quality,Wave 1,continuous,DZ_OS,95,Pearson r,0.019,,>5
+familyQuality,Family Quality,Wave 1,continuous,All_paired,407,Pearson r,0.205,,>5
+famContact,Fam Contact,Wave 1,ordinal,MZ,171,Spearman rho,0.481,35.1,>5
+famContact,Fam Contact,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.336,30.0,>5
+famContact,Fam Contact,Wave 1,ordinal,DZ_OS,95,Spearman rho,0.052,16.8,>5
+famContact,Fam Contact,Wave 1,ordinal,All_paired,406,Spearman rho,0.325,29.1,>5
+childRelationQuality,Child Relation Quality,Wave 1,continuous,MZ,140,Pearson r,0.158,,>5
+childRelationQuality,Child Relation Quality,Wave 1,continuous,DZ_SS,103,Pearson r,-0.011,,>5
+childRelationQuality,Child Relation Quality,Wave 1,continuous,DZ_OS,74,Pearson r,0.098,,>5
+childRelationQuality,Child Relation Quality,Wave 1,continuous,All_paired,317,Pearson r,0.081,,>5
+childRelationInequality,Child Relation Inequality,Wave 1,continuous,MZ,142,Pearson r,0.287,,>5
+childRelationInequality,Child Relation Inequality,Wave 1,continuous,DZ_SS,105,Pearson r,0.08,,>5
+childRelationInequality,Child Relation Inequality,Wave 1,continuous,DZ_OS,75,Pearson r,0.139,,>5
+childRelationInequality,Child Relation Inequality,Wave 1,continuous,All_paired,322,Pearson r,0.183,,>5
+giveSupport,Give Support,Wave 1,continuous,MZ,162,Pearson r,0.267,,>5
+giveSupport,Give Support,Wave 1,continuous,DZ_SS,134,Pearson r,0.21,,>5
+giveSupport,Give Support,Wave 1,continuous,DZ_OS,88,Pearson r,0.114,,>5
+giveSupport,Give Support,Wave 1,continuous,All_paired,384,Pearson r,0.226,,>5
+recSupport,Rec Support,Wave 1,continuous,MZ,158,Pearson r,0.234,,>5
+recSupport,Rec Support,Wave 1,continuous,DZ_SS,124,Pearson r,0.127,,>5
+recSupport,Rec Support,Wave 1,continuous,DZ_OS,80,Pearson r,0.032,,>5
+recSupport,Rec Support,Wave 1,continuous,All_paired,362,Pearson r,0.175,,>5
+friendQuality,Friend Quality,Wave 1,continuous,MZ,170,Pearson r,0.419,,>5
+friendQuality,Friend Quality,Wave 1,continuous,DZ_SS,140,Pearson r,0.203,,>5
+friendQuality,Friend Quality,Wave 1,continuous,DZ_OS,94,Pearson r,-0.036,,>5
+friendQuality,Friend Quality,Wave 1,continuous,All_paired,404,Pearson r,0.24,,>5
+friendContact,Friend Contact,Wave 1,ordinal,MZ,171,Spearman rho,0.225,18.7,>5
+friendContact,Friend Contact,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.167,27.9,>5
+friendContact,Friend Contact,Wave 1,ordinal,DZ_OS,94,Spearman rho,0.078,25.5,>5
+friendContact,Friend Contact,Wave 1,ordinal,All_paired,405,Spearman rho,0.173,23.5,>5
+spouseQuality,Spouse Quality,Wave 1,continuous,MZ,117,Pearson r,0.299,,>5
+spouseQuality,Spouse Quality,Wave 1,continuous,DZ_SS,92,Pearson r,0.235,,>5
+spouseQuality,Spouse Quality,Wave 1,continuous,DZ_OS,63,Pearson r,0.047,,>5
+spouseQuality,Spouse Quality,Wave 1,continuous,All_paired,272,Pearson r,0.218,,>5
+spouseWork,Spouse Work,Wave 1,nominal,MZ,116,Cohen's kappa,0.191,49.1,>5
+spouseWork,Spouse Work,Wave 1,nominal,DZ_SS,88,Cohen's kappa,0.202,47.7,>5
+spouseWork,Spouse Work,Wave 1,nominal,DZ_OS,61,Cohen's kappa,0.012,37.7,>5
+spouseWork,Spouse Work,Wave 1,nominal,All_paired,265,Cohen's kappa,0.152,46.0,>5
+relatCohabLength,Relat Cohab Length,Wave 1,continuous,MZ,172,Pearson r,0.485,,>5
+relatCohabLength,Relat Cohab Length,Wave 1,continuous,DZ_SS,138,Pearson r,0.487,,>5
+relatCohabLength,Relat Cohab Length,Wave 1,continuous,DZ_OS,93,Pearson r,0.565,,>5
+relatCohabLength,Relat Cohab Length,Wave 1,continuous,All_paired,403,Pearson r,0.507,,>5
+timesMarried,Times Married,Wave 1,continuous,MZ,173,Pearson r,0.307,,>5
+timesMarried,Times Married,Wave 1,continuous,DZ_SS,141,Pearson r,0.236,,>5
+timesMarried,Times Married,Wave 1,continuous,DZ_OS,95,Pearson r,0.148,,>5
+timesMarried,Times Married,Wave 1,continuous,All_paired,409,Pearson r,0.25,,>5
+partnerAgeGap,Partner Age Gap,Wave 1,continuous,MZ,116,Pearson r,0.43,,>5
+partnerAgeGap,Partner Age Gap,Wave 1,continuous,DZ_SS,88,Pearson r,0.419,,>5
+partnerAgeGap,Partner Age Gap,Wave 1,continuous,DZ_OS,61,Pearson r,-0.201,,>5
+partnerAgeGap,Partner Age Gap,Wave 1,continuous,All_paired,265,Pearson r,0.28,,>5
+partnerEduGap,Partner Edu Gap,Wave 1,continuous,MZ,114,Pearson r,0.212,,>5
+partnerEduGap,Partner Edu Gap,Wave 1,continuous,DZ_SS,88,Pearson r,0.31,,>5
+partnerEduGap,Partner Edu Gap,Wave 1,continuous,DZ_OS,61,Pearson r,-0.134,,>5
+partnerEduGap,Partner Edu Gap,Wave 1,continuous,All_paired,263,Pearson r,0.171,,>5
+sexualSatisfaction,Sexual Satisfaction,Wave 1,continuous,MZ,162,Pearson r,0.202,,>5
+sexualSatisfaction,Sexual Satisfaction,Wave 1,continuous,DZ_SS,125,Pearson r,0.091,,>5
+sexualSatisfaction,Sexual Satisfaction,Wave 1,continuous,DZ_OS,81,Pearson r,0.094,,>5
+sexualSatisfaction,Sexual Satisfaction,Wave 1,continuous,All_paired,368,Pearson r,0.139,,>5
+sexPartner,Sex Partner,Wave 1,ordinal,MZ,162,Spearman rho,0.277,77.2,>5
+sexPartner,Sex Partner,Wave 1,ordinal,DZ_SS,133,Spearman rho,0.145,66.2,>5
+sexPartner,Sex Partner,Wave 1,ordinal,DZ_OS,91,Spearman rho,0.311,73.6,>5
+sexPartner,Sex Partner,Wave 1,ordinal,All_paired,386,Spearman rho,0.237,72.5,>5
+sexFrequency,Sex Frequency,Wave 1,ordinal,MZ,116,Spearman rho,0.119,24.1,>5
+sexFrequency,Sex Frequency,Wave 1,ordinal,DZ_SS,84,Spearman rho,0.015,23.8,>5
+sexFrequency,Sex Frequency,Wave 1,ordinal,DZ_OS,60,Spearman rho,0.191,21.7,>5
+sexFrequency,Sex Frequency,Wave 1,ordinal,All_paired,260,Spearman rho,0.098,23.5,>5
+sexImportance,Sex Importance,Wave 1,ordinal,MZ,117,Spearman rho,0.157,41.0,4
+sexImportance,Sex Importance,Wave 1,ordinal,DZ_SS,84,Spearman rho,0.03,27.4,4
+sexImportance,Sex Importance,Wave 1,ordinal,DZ_OS,61,Spearman rho,-0.041,34.4,4
+sexImportance,Sex Importance,Wave 1,ordinal,All_paired,262,Spearman rho,0.076,35.1,4
+householdSize,Household Size,Wave 1,continuous,MZ,173,Pearson r,0.567,,>5
+householdSize,Household Size,Wave 1,continuous,DZ_SS,141,Pearson r,0.404,,>5
+householdSize,Household Size,Wave 1,continuous,DZ_OS,95,Pearson r,0.3,,>5
+householdSize,Household Size,Wave 1,continuous,All_paired,409,Pearson r,0.465,,>5
+childInHH,Child In HH,Wave 1,continuous,MZ,173,Pearson r,0.598,,>5
+childInHH,Child In HH,Wave 1,continuous,DZ_SS,141,Pearson r,0.447,,>5
+childInHH,Child In HH,Wave 1,continuous,DZ_OS,95,Pearson r,0.355,,>5
+childInHH,Child In HH,Wave 1,continuous,All_paired,409,Pearson r,0.508,,>5
+adultKidHome,Adult Kid Home,Wave 1,continuous,MZ,140,Pearson r,0.351,,5
+adultKidHome,Adult Kid Home,Wave 1,continuous,DZ_SS,107,Pearson r,0.19,,5
+adultKidHome,Adult Kid Home,Wave 1,continuous,DZ_OS,78,Pearson r,0.057,,5
+adultKidHome,Adult Kid Home,Wave 1,continuous,All_paired,325,Pearson r,0.222,,5
+homeless,Homeless,Wave 1,binary,MZ,173,Cohen's kappa,0.0,98.8,2
+homeless,Homeless,Wave 1,binary,DZ_SS,141,Cohen's kappa,0.0,99.3,2
+homeless,Homeless,Wave 1,binary,DZ_OS,95,Cohen's kappa,,100.0,2
+homeless,Homeless,Wave 1,binary,All_paired,409,Cohen's kappa,0.0,99.3,2
+housingStatus,Housing Status,Wave 1,binary,MZ,163,Cohen's kappa,0.136,83.4,2
+housingStatus,Housing Status,Wave 1,binary,DZ_SS,129,Cohen's kappa,0.09,80.6,2
+housingStatus,Housing Status,Wave 1,binary,DZ_OS,86,Cohen's kappa,0.197,87.2,2
+housingStatus,Housing Status,Wave 1,binary,All_paired,378,Cohen's kappa,0.13,83.3,2
+relatStatus,Relat Status,Wave 1,nominal,MZ,173,Cohen's kappa,0.244,68.8,>5
+relatStatus,Relat Status,Wave 1,nominal,DZ_SS,141,Cohen's kappa,0.109,61.7,>5
+relatStatus,Relat Status,Wave 1,nominal,DZ_OS,95,Cohen's kappa,0.137,65.3,>5
+relatStatus,Relat Status,Wave 1,nominal,All_paired,409,Cohen's kappa,0.172,65.5,>5
+careGivStatus,Care Giv Status,Wave 1,nominal,MZ,173,Cohen's kappa,0.157,60.7,3
+careGivStatus,Care Giv Status,Wave 1,nominal,DZ_SS,141,Cohen's kappa,0.12,56.0,3
+careGivStatus,Care Giv Status,Wave 1,nominal,DZ_OS,95,Cohen's kappa,0.305,67.4,3
+careGivStatus,Care Giv Status,Wave 1,nominal,All_paired,409,Cohen's kappa,0.176,60.6,3
+careGivIntensity,Care Giv Intensity,Wave 1,continuous,MZ,169,Pearson r,-0.027,,>5
+careGivIntensity,Care Giv Intensity,Wave 1,continuous,DZ_SS,139,Pearson r,0.215,,>5
+careGivIntensity,Care Giv Intensity,Wave 1,continuous,DZ_OS,95,Pearson r,-0.029,,>5
+careGivIntensity,Care Giv Intensity,Wave 1,continuous,All_paired,403,Pearson r,0.157,,>5
+chiropractorFreq,Chiropractor Freq,Wave 1,ordinal,MZ,169,Spearman rho,0.282,71.6,5
+chiropractorFreq,Chiropractor Freq,Wave 1,ordinal,DZ_SS,138,Spearman rho,0.319,77.5,5
+chiropractorFreq,Chiropractor Freq,Wave 1,ordinal,DZ_OS,93,Spearman rho,0.284,74.2,5
+chiropractorFreq,Chiropractor Freq,Wave 1,ordinal,All_paired,400,Spearman rho,0.295,74.2,5
+vmJobAct_vig,Vigorous job activity,Wave 1,continuous,MZ,159,Pearson r,0.347,,>5
+vmJobAct_vig,Vigorous job activity,Wave 1,continuous,DZ_SS,129,Pearson r,0.185,,>5
+vmJobAct_vig,Vigorous job activity,Wave 1,continuous,DZ_OS,85,Pearson r,0.004,,>5
+vmJobAct_vig,Vigorous job activity,Wave 1,continuous,All_paired,373,Pearson r,0.228,,>5
+vmLeisureAct_vig,Vigorous leisure activity,Wave 1,continuous,MZ,170,Pearson r,0.217,,>5
+vmLeisureAct_vig,Vigorous leisure activity,Wave 1,continuous,DZ_SS,137,Pearson r,0.155,,>5
+vmLeisureAct_vig,Vigorous leisure activity,Wave 1,continuous,DZ_OS,94,Pearson r,0.213,,>5
+vmLeisureAct_vig,Vigorous leisure activity,Wave 1,continuous,All_paired,401,Pearson r,0.193,,>5
+vmChoresAct_vig,Vigorous chores activity,Wave 1,continuous,MZ,169,Pearson r,0.279,,>5
+vmChoresAct_vig,Vigorous chores activity,Wave 1,continuous,DZ_SS,137,Pearson r,0.159,,>5
+vmChoresAct_vig,Vigorous chores activity,Wave 1,continuous,DZ_OS,94,Pearson r,0.238,,>5
+vmChoresAct_vig,Vigorous chores activity,Wave 1,continuous,All_paired,400,Pearson r,0.213,,>5
+lightAct,Light Act,Wave 1,continuous,MZ,167,Pearson r,0.296,,>5
+lightAct,Light Act,Wave 1,continuous,DZ_SS,138,Pearson r,-0.005,,>5
+lightAct,Light Act,Wave 1,continuous,DZ_OS,92,Pearson r,0.036,,>5
+lightAct,Light Act,Wave 1,continuous,All_paired,397,Pearson r,0.135,,>5
+sleepAvg,Sleep Avg,Wave 1,continuous,MZ,168,Pearson r,0.359,,>5
+sleepAvg,Sleep Avg,Wave 1,continuous,DZ_SS,137,Pearson r,0.09,,>5
+sleepAvg,Sleep Avg,Wave 1,continuous,DZ_OS,94,Pearson r,0.133,,>5
+sleepAvg,Sleep Avg,Wave 1,continuous,All_paired,399,Pearson r,0.219,,>5
+napFreq,Nap Freq,Wave 1,continuous,MZ,169,Pearson r,0.32,,>5
+napFreq,Nap Freq,Wave 1,continuous,DZ_SS,141,Pearson r,0.388,,>5
+napFreq,Nap Freq,Wave 1,continuous,DZ_OS,92,Pearson r,0.221,,>5
+napFreq,Nap Freq,Wave 1,continuous,All_paired,402,Pearson r,0.319,,>5
+physicianDiet,Physician Diet,Wave 1,ordinal,MZ,167,Spearman rho,0.25,73.1,5
+physicianDiet,Physician Diet,Wave 1,ordinal,DZ_SS,137,Spearman rho,0.052,72.3,5
+physicianDiet,Physician Diet,Wave 1,ordinal,DZ_OS,91,Spearman rho,-0.019,65.9,5
+physicianDiet,Physician Diet,Wave 1,ordinal,All_paired,395,Spearman rho,0.118,71.1,5
+weightControl,Weight Control,Wave 1,ordinal,MZ,171,Spearman rho,0.402,67.3,5
+weightControl,Weight Control,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.335,65.7,5
+weightControl,Weight Control,Wave 1,ordinal,DZ_OS,91,Spearman rho,0.11,53.8,5
+weightControl,Weight Control,Wave 1,ordinal,All_paired,402,Spearman rho,0.295,63.7,5
+suppAmount,Supp Amount,Wave 1,continuous,MZ,173,Pearson r,0.471,,>5
+suppAmount,Supp Amount,Wave 1,continuous,DZ_SS,141,Pearson r,0.149,,>5
+suppAmount,Supp Amount,Wave 1,continuous,DZ_OS,95,Pearson r,0.1,,>5
+suppAmount,Supp Amount,Wave 1,continuous,All_paired,409,Pearson r,0.29,,>5
+herbalPTFreq,Herbal PTFreq,Wave 1,ordinal,MZ,169,Spearman rho,0.419,84.6,5
+herbalPTFreq,Herbal PTFreq,Wave 1,ordinal,DZ_SS,139,Spearman rho,0.053,88.5,5
+herbalPTFreq,Herbal PTFreq,Wave 1,ordinal,DZ_OS,93,Spearman rho,0.141,77.4,5
+herbalPTFreq,Herbal PTFreq,Wave 1,ordinal,All_paired,401,Spearman rho,0.254,84.3,5
+megaVitaminFreq,Mega Vitamin Freq,Wave 1,ordinal,MZ,168,Spearman rho,0.108,81.0,5
+megaVitaminFreq,Mega Vitamin Freq,Wave 1,ordinal,DZ_SS,139,Spearman rho,0.108,84.9,5
+megaVitaminFreq,Mega Vitamin Freq,Wave 1,ordinal,DZ_OS,93,Spearman rho,-0.036,77.4,5
+megaVitaminFreq,Mega Vitamin Freq,Wave 1,ordinal,All_paired,400,Spearman rho,0.068,81.5,5
+massageFreq,Massage Freq,Wave 1,ordinal,MZ,165,Spearman rho,0.173,73.3,5
+massageFreq,Massage Freq,Wave 1,ordinal,DZ_SS,138,Spearman rho,0.208,73.9,5
+massageFreq,Massage Freq,Wave 1,ordinal,DZ_OS,92,Spearman rho,0.139,68.5,5
+massageFreq,Massage Freq,Wave 1,ordinal,All_paired,395,Spearman rho,0.176,72.4,5
+mediateFreq,Mediate Freq,Wave 1,ordinal,MZ,168,Spearman rho,0.343,67.3,5
+mediateFreq,Mediate Freq,Wave 1,ordinal,DZ_SS,138,Spearman rho,0.061,55.8,5
+mediateFreq,Mediate Freq,Wave 1,ordinal,DZ_OS,92,Spearman rho,0.252,59.8,5
+mediateFreq,Mediate Freq,Wave 1,ordinal,All_paired,398,Spearman rho,0.22,61.6,5
+exercisePTFreq,Exercise PTFreq,Wave 1,ordinal,MZ,169,Spearman rho,0.268,79.9,5
+exercisePTFreq,Exercise PTFreq,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.073,73.6,5
+exercisePTFreq,Exercise PTFreq,Wave 1,ordinal,DZ_OS,93,Spearman rho,0.193,72.0,5
+exercisePTFreq,Exercise PTFreq,Wave 1,ordinal,All_paired,402,Spearman rho,0.176,75.9,5
+physicalPTFreq,Physical PTFreq,Wave 1,ordinal,MZ,167,Spearman rho,0.057,83.2,5
+physicalPTFreq,Physical PTFreq,Wave 1,ordinal,DZ_SS,139,Spearman rho,0.045,78.4,5
+physicalPTFreq,Physical PTFreq,Wave 1,ordinal,DZ_OS,92,Spearman rho,0.04,72.8,5
+physicalPTFreq,Physical PTFreq,Wave 1,ordinal,All_paired,398,Spearman rho,0.052,79.1,5
+whr,Waist-hip ratio,Wave 1,continuous,MZ,154,Pearson r,0.405,,>5
+whr,Waist-hip ratio,Wave 1,continuous,DZ_SS,128,Pearson r,0.411,,>5
+whr,Waist-hip ratio,Wave 1,continuous,DZ_OS,86,Pearson r,-0.186,,>5
+whr,Waist-hip ratio,Wave 1,continuous,All_paired,368,Pearson r,0.235,,>5
+bmi,BMI,Wave 1,continuous,MZ,161,Pearson r,0.625,,>5
+bmi,BMI,Wave 1,continuous,DZ_SS,128,Pearson r,0.273,,>5
+bmi,BMI,Wave 1,continuous,DZ_OS,83,Pearson r,0.34,,>5
+bmi,BMI,Wave 1,continuous,All_paired,372,Pearson r,0.432,,>5
+readBook,Read Book,Wave 1,ordinal,MZ,169,Spearman rho,0.443,58.6,>5
+readBook,Read Book,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.262,51.4,>5
+readBook,Read Book,Wave 1,ordinal,DZ_OS,94,Spearman rho,0.181,55.3,>5
+readBook,Read Book,Wave 1,ordinal,All_paired,403,Spearman rho,0.318,55.3,>5
+wordGames,Word Games,Wave 1,ordinal,MZ,168,Spearman rho,0.331,36.3,>5
+wordGames,Word Games,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.176,40.7,>5
+wordGames,Word Games,Wave 1,ordinal,DZ_OS,94,Spearman rho,0.181,41.5,>5
+wordGames,Word Games,Wave 1,ordinal,All_paired,402,Spearman rho,0.238,39.1,>5
+playCard,Play Card,Wave 1,ordinal,MZ,168,Spearman rho,0.264,46.4,>5
+playCard,Play Card,Wave 1,ordinal,DZ_SS,139,Spearman rho,0.036,32.4,>5
+playCard,Play Card,Wave 1,ordinal,DZ_OS,93,Spearman rho,0.18,40.9,>5
+playCard,Play Card,Wave 1,ordinal,All_paired,400,Spearman rho,0.159,40.2,>5
+attendLectu,Attend Lectu,Wave 1,ordinal,MZ,166,Spearman rho,0.326,52.4,>5
+attendLectu,Attend Lectu,Wave 1,ordinal,DZ_SS,139,Spearman rho,0.118,48.2,>5
+attendLectu,Attend Lectu,Wave 1,ordinal,DZ_OS,92,Spearman rho,0.285,47.8,>5
+attendLectu,Attend Lectu,Wave 1,ordinal,All_paired,397,Spearman rho,0.247,49.9,>5
+writing,Writing,Wave 1,ordinal,MZ,168,Spearman rho,0.374,38.7,>5
+writing,Writing,Wave 1,ordinal,DZ_SS,139,Spearman rho,0.201,33.1,>5
+writing,Writing,Wave 1,ordinal,DZ_OS,93,Spearman rho,-0.0,21.5,>5
+writing,Writing,Wave 1,ordinal,All_paired,400,Spearman rho,0.228,32.8,>5
+useComputer,Use Computer,Wave 1,ordinal,MZ,169,Spearman rho,0.556,50.9,>5
+useComputer,Use Computer,Wave 1,ordinal,DZ_SS,140,Spearman rho,0.375,45.0,>5
+useComputer,Use Computer,Wave 1,ordinal,DZ_OS,94,Spearman rho,0.431,47.9,>5
+useComputer,Use Computer,Wave 1,ordinal,All_paired,403,Spearman rho,0.463,48.1,>5
+intellAging,Intell Aging,Wave 1,continuous,MZ,170,Pearson r,0.319,,>5
+intellAging,Intell Aging,Wave 1,continuous,DZ_SS,141,Pearson r,0.287,,>5
+intellAging,Intell Aging,Wave 1,continuous,DZ_OS,93,Pearson r,0.156,,>5
+intellAging,Intell Aging,Wave 1,continuous,All_paired,404,Pearson r,0.278,,>5
+attendMeetingFreq,Attend Meeting Freq,Wave 1,continuous,MZ,154,Pearson r,0.023,,>5
+attendMeetingFreq,Attend Meeting Freq,Wave 1,continuous,DZ_SS,127,Pearson r,0.059,,>5
+attendMeetingFreq,Attend Meeting Freq,Wave 1,continuous,DZ_OS,77,Pearson r,-0.036,,>5
+attendMeetingFreq,Attend Meeting Freq,Wave 1,continuous,All_paired,358,Pearson r,0.02,,>5
+attendSportsFreq,Attend Sports Freq,Wave 1,continuous,MZ,154,Pearson r,0.22,,>5
+attendSportsFreq,Attend Sports Freq,Wave 1,continuous,DZ_SS,123,Pearson r,0.116,,>5
+attendSportsFreq,Attend Sports Freq,Wave 1,continuous,DZ_OS,75,Pearson r,0.084,,>5
+attendSportsFreq,Attend Sports Freq,Wave 1,continuous,All_paired,352,Pearson r,0.15,,>5
+smokeStatus,Smoke Status,Wave 1,nominal,MZ,169,Cohen's kappa,0.422,65.1,5
+smokeStatus,Smoke Status,Wave 1,nominal,DZ_SS,140,Cohen's kappa,0.322,57.9,5
+smokeStatus,Smoke Status,Wave 1,nominal,DZ_OS,93,Cohen's kappa,0.215,50.5,5
+smokeStatus,Smoke Status,Wave 1,nominal,All_paired,402,Cohen's kappa,0.338,59.2,5
+smokeDuration,Smoke Duration,Wave 1,continuous,MZ,167,Pearson r,0.617,,>5
+smokeDuration,Smoke Duration,Wave 1,continuous,DZ_SS,137,Pearson r,0.417,,>5
+smokeDuration,Smoke Duration,Wave 1,continuous,DZ_OS,92,Pearson r,0.314,,>5
+smokeDuration,Smoke Duration,Wave 1,continuous,All_paired,396,Pearson r,0.486,,>5
+smokeAmount,Smoke Amount,Wave 1,continuous,MZ,95,Pearson r,0.582,,>5
+smokeAmount,Smoke Amount,Wave 1,continuous,DZ_SS,75,Pearson r,0.381,,>5
+smokeAmount,Smoke Amount,Wave 1,continuous,DZ_OS,50,Pearson r,0.17,,>5
+smokeAmount,Smoke Amount,Wave 1,continuous,All_paired,220,Pearson r,0.421,,>5
+smokeExposure_3item,Smoke exposure (3-item),Wave 1,continuous,MZ,172,Pearson r,0.28,,5
+smokeExposure_3item,Smoke exposure (3-item),Wave 1,continuous,DZ_SS,138,Pearson r,0.27,,5
+smokeExposure_3item,Smoke exposure (3-item),Wave 1,continuous,DZ_OS,95,Pearson r,0.021,,5
+smokeExposure_3item,Smoke exposure (3-item),Wave 1,continuous,All_paired,405,Pearson r,0.22,,5
+drinkStatus,Drink Status,Wave 1,nominal,MZ,151,Cohen's kappa,0.242,49.0,4
+drinkStatus,Drink Status,Wave 1,nominal,DZ_SS,119,Cohen's kappa,0.18,46.2,4
+drinkStatus,Drink Status,Wave 1,nominal,DZ_OS,80,Cohen's kappa,0.203,45.0,4
+drinkStatus,Drink Status,Wave 1,nominal,All_paired,350,Cohen's kappa,0.213,47.1,4
+drinkExposure_PA59,Drink exposure (PA59),Wave 1,binary,MZ,173,Cohen's kappa,0.066,82.1,2
+drinkExposure_PA59,Drink exposure (PA59),Wave 1,binary,DZ_SS,140,Cohen's kappa,-0.003,65.0,2
+drinkExposure_PA59,Drink exposure (PA59),Wave 1,binary,DZ_OS,95,Cohen's kappa,0.005,71.6,2
+drinkExposure_PA59,Drink exposure (PA59),Wave 1,binary,All_paired,408,Cohen's kappa,0.028,73.8,2
+alcohMoreIntended,Alcoh More Intended,Wave 1,ordinal,MZ,167,Spearman rho,0.245,71.9,>5
+alcohMoreIntended,Alcoh More Intended,Wave 1,ordinal,DZ_SS,137,Spearman rho,0.165,70.8,>5
+alcohMoreIntended,Alcoh More Intended,Wave 1,ordinal,DZ_OS,91,Spearman rho,0.187,76.9,>5
+alcohMoreIntended,Alcoh More Intended,Wave 1,ordinal,All_paired,395,Spearman rho,0.205,72.7,>5
+alcohProb,Alcoh Prob,Wave 1,binary,MZ,167,Cohen's kappa,0.093,92.2,2
+alcohProb,Alcoh Prob,Wave 1,binary,DZ_SS,136,Cohen's kappa,-0.023,95.6,2
+alcohProb,Alcoh Prob,Wave 1,binary,DZ_OS,92,Cohen's kappa,0.258,94.6,2
+alcohProb,Alcoh Prob,Wave 1,binary,All_paired,395,Cohen's kappa,0.111,93.9,2
+workStatus,Work Status,Wave 1,nominal,MZ,172,Cohen's kappa,0.336,58.7,>5
+workStatus,Work Status,Wave 1,nominal,DZ_SS,140,Cohen's kappa,0.258,51.4,>5
+workStatus,Work Status,Wave 1,nominal,DZ_OS,93,Cohen's kappa,0.117,46.2,>5
+workStatus,Work Status,Wave 1,nominal,All_paired,405,Cohen's kappa,0.259,53.3,>5
+manageRole,Manage Role,Wave 1,binary,MZ,96,Cohen's kappa,0.309,65.6,2
+manageRole,Manage Role,Wave 1,binary,DZ_SS,73,Cohen's kappa,0.287,65.8,2
+manageRole,Manage Role,Wave 1,binary,DZ_OS,52,Cohen's kappa,0.012,50.0,2
+manageRole,Manage Role,Wave 1,binary,All_paired,221,Cohen's kappa,0.23,62.0,2
+rateCurrentWork,Rate Current Work,Wave 1,continuous,MZ,155,Pearson r,0.243,,>5
+rateCurrentWork,Rate Current Work,Wave 1,continuous,DZ_SS,123,Pearson r,-0.034,,>5
+rateCurrentWork,Rate Current Work,Wave 1,continuous,DZ_OS,81,Pearson r,0.03,,>5
+rateCurrentWork,Rate Current Work,Wave 1,continuous,All_paired,359,Pearson r,0.099,,>5
+jobSkillDiscretion,Job Skill Discretion,Wave 1,continuous,MZ,96,Pearson r,0.207,,>5
+jobSkillDiscretion,Job Skill Discretion,Wave 1,continuous,DZ_SS,74,Pearson r,0.293,,>5
+jobSkillDiscretion,Job Skill Discretion,Wave 1,continuous,DZ_OS,55,Pearson r,-0.184,,>5
+jobSkillDiscretion,Job Skill Discretion,Wave 1,continuous,All_paired,225,Pearson r,0.16,,>5
+jobDecisionAuthority,Job Decision Authority,Wave 1,continuous,MZ,96,Pearson r,0.151,,>5
+jobDecisionAuthority,Job Decision Authority,Wave 1,continuous,DZ_SS,74,Pearson r,0.199,,>5
+jobDecisionAuthority,Job Decision Authority,Wave 1,continuous,DZ_OS,55,Pearson r,-0.025,,>5
+jobDecisionAuthority,Job Decision Authority,Wave 1,continuous,All_paired,225,Pearson r,0.13,,>5
+jobDemands,Job Demands,Wave 1,continuous,MZ,94,Pearson r,0.494,,>5
+jobDemands,Job Demands,Wave 1,continuous,DZ_SS,74,Pearson r,-0.018,,>5
+jobDemands,Job Demands,Wave 1,continuous,DZ_OS,55,Pearson r,-0.0,,>5
+jobDemands,Job Demands,Wave 1,continuous,All_paired,223,Pearson r,0.2,,>5
+jobCoworkerSupp,Job Coworker Supp,Wave 1,continuous,MZ,82,Pearson r,0.17,,>5
+jobCoworkerSupp,Job Coworker Supp,Wave 1,continuous,DZ_SS,61,Pearson r,0.219,,>5
+jobCoworkerSupp,Job Coworker Supp,Wave 1,continuous,DZ_OS,47,Pearson r,-0.142,,>5
+jobCoworkerSupp,Job Coworker Supp,Wave 1,continuous,All_paired,190,Pearson r,0.125,,>5
+jobSupervisorSupp,Job Supervisor Supp,Wave 1,continuous,MZ,75,Pearson r,0.189,,>5
+jobSupervisorSupp,Job Supervisor Supp,Wave 1,continuous,DZ_SS,55,Pearson r,0.043,,>5
+jobSupervisorSupp,Job Supervisor Supp,Wave 1,continuous,DZ_OS,40,Pearson r,-0.062,,>5
+jobSupervisorSupp,Job Supervisor Supp,Wave 1,continuous,All_paired,170,Pearson r,0.079,,>5
+jobDiscrimination,Job Discrimination,Wave 1,continuous,MZ,94,Pearson r,0.439,,>5
+jobDiscrimination,Job Discrimination,Wave 1,continuous,DZ_SS,74,Pearson r,0.133,,>5
+jobDiscrimination,Job Discrimination,Wave 1,continuous,DZ_OS,54,Pearson r,0.045,,>5
+jobDiscrimination,Job Discrimination,Wave 1,continuous,All_paired,222,Pearson r,0.237,,>5
+workInequality,Work Inequality,Wave 1,continuous,MZ,95,Pearson r,0.355,,>5
+workInequality,Work Inequality,Wave 1,continuous,DZ_SS,75,Pearson r,0.375,,>5
+workInequality,Work Inequality,Wave 1,continuous,DZ_OS,55,Pearson r,-0.117,,>5
+workInequality,Work Inequality,Wave 1,continuous,All_paired,225,Pearson r,0.238,,>5
+occGroup,Occ Group,Wave 1,nominal,MZ,167,Cohen's kappa,0.246,35.9,>5
+occGroup,Occ Group,Wave 1,nominal,DZ_SS,136,Cohen's kappa,0.193,30.9,>5
+occGroup,Occ Group,Wave 1,nominal,DZ_OS,92,Cohen's kappa,0.101,22.8,>5
+occGroup,Occ Group,Wave 1,nominal,All_paired,395,Cohen's kappa,0.198,31.1,>5
+workIndustry,Work Industry,Wave 1,nominal,MZ,166,Cohen's kappa,0.162,26.5,>5
+workIndustry,Work Industry,Wave 1,nominal,DZ_SS,130,Cohen's kappa,0.106,26.9,>5
+workIndustry,Work Industry,Wave 1,nominal,DZ_OS,89,Cohen's kappa,0.055,18.0,>5
+workIndustry,Work Industry,Wave 1,nominal,All_paired,385,Cohen's kappa,0.123,24.7,>5
+financialControl,Financial Control,Wave 1,continuous,MZ,167,Pearson r,0.283,,>5
+financialControl,Financial Control,Wave 1,continuous,DZ_SS,138,Pearson r,0.138,,>5
+financialControl,Financial Control,Wave 1,continuous,DZ_OS,94,Pearson r,0.101,,>5
+financialControl,Financial Control,Wave 1,continuous,All_paired,399,Pearson r,0.184,,>5
+financialEffort,Financial Effort,Wave 1,continuous,MZ,167,Pearson r,0.348,,>5
+financialEffort,Financial Effort,Wave 1,continuous,DZ_SS,138,Pearson r,0.134,,>5
+financialEffort,Financial Effort,Wave 1,continuous,DZ_OS,95,Pearson r,0.154,,>5
+financialEffort,Financial Effort,Wave 1,continuous,All_paired,400,Pearson r,0.227,,>5
+moneyForNeeds,Money For Needs,Wave 1,ordinal,MZ,169,Spearman rho,0.179,49.1,3
+moneyForNeeds,Money For Needs,Wave 1,ordinal,DZ_SS,139,Spearman rho,0.181,43.9,3
+moneyForNeeds,Money For Needs,Wave 1,ordinal,DZ_OS,94,Spearman rho,0.145,35.1,3
+moneyForNeeds,Money For Needs,Wave 1,ordinal,All_paired,402,Spearman rho,0.175,44.0,3
+financial10YrAgo,Financial10Yr Ago,Wave 1,continuous,MZ,169,Pearson r,0.166,,>5
+financial10YrAgo,Financial10Yr Ago,Wave 1,continuous,DZ_SS,138,Pearson r,0.104,,>5
+financial10YrAgo,Financial10Yr Ago,Wave 1,continuous,DZ_OS,95,Pearson r,0.205,,>5
+financial10YrAgo,Financial10Yr Ago,Wave 1,continuous,All_paired,402,Pearson r,0.157,,>5
+financial10YrFuture,Financial10Yr Future,Wave 1,continuous,MZ,168,Pearson r,0.307,,>5
+financial10YrFuture,Financial10Yr Future,Wave 1,continuous,DZ_SS,135,Pearson r,0.201,,>5
+financial10YrFuture,Financial10Yr Future,Wave 1,continuous,DZ_OS,94,Pearson r,0.077,,>5
+financial10YrFuture,Financial10Yr Future,Wave 1,continuous,All_paired,397,Pearson r,0.21,,>5
+haveHealthInsurance,Have Health Insurance,Wave 1,binary,MZ,172,Cohen's kappa,0.257,91.9,2
+haveHealthInsurance,Have Health Insurance,Wave 1,binary,DZ_SS,140,Cohen's kappa,0.243,85.0,2
+haveHealthInsurance,Have Health Insurance,Wave 1,binary,DZ_OS,94,Cohen's kappa,-0.044,91.5,2
+haveHealthInsurance,Have Health Insurance,Wave 1,binary,All_paired,406,Cohen's kappa,0.215,89.4,2
+medicare,Medicare,Wave 1,binary,MZ,140,Cohen's kappa,0.825,92.9,2
+medicare,Medicare,Wave 1,binary,DZ_SS,108,Cohen's kappa,0.806,91.7,2
+medicare,Medicare,Wave 1,binary,DZ_OS,76,Cohen's kappa,0.696,86.8,2
+medicare,Medicare,Wave 1,binary,All_paired,324,Cohen's kappa,0.787,91.0,2
+medicaid,Medicaid,Wave 1,binary,MZ,121,Cohen's kappa,0.323,89.3,2
+medicaid,Medicaid,Wave 1,binary,DZ_SS,88,Cohen's kappa,-0.071,86.4,2
+medicaid,Medicaid,Wave 1,binary,DZ_OS,58,Cohen's kappa,-0.063,87.9,2
+medicaid,Medicaid,Wave 1,binary,All_paired,267,Cohen's kappa,0.135,88.0,2
+privateClinic,Private Clinic,Wave 1,binary,MZ,172,Cohen's kappa,0.199,72.7,2
+privateClinic,Private Clinic,Wave 1,binary,DZ_SS,141,Cohen's kappa,-0.107,60.3,2
+privateClinic,Private Clinic,Wave 1,binary,DZ_OS,95,Cohen's kappa,0.229,75.8,2
+privateClinic,Private Clinic,Wave 1,binary,All_paired,408,Cohen's kappa,0.095,69.1,2
+HMOClinic,HMO clinic visits,Wave 1,binary,MZ,172,Cohen's kappa,0.208,83.7,2
+HMOClinic,HMO clinic visits,Wave 1,binary,DZ_SS,141,Cohen's kappa,0.031,81.6,2
+HMOClinic,HMO clinic visits,Wave 1,binary,DZ_OS,95,Cohen's kappa,0.267,87.4,2
+HMOClinic,HMO clinic visits,Wave 1,binary,All_paired,408,Cohen's kappa,0.16,83.8,2
+publicClinic,Public Clinic,Wave 1,binary,MZ,172,Cohen's kappa,0.122,93.6,2
+publicClinic,Public Clinic,Wave 1,binary,DZ_SS,141,Cohen's kappa,-0.035,89.4,2
+publicClinic,Public Clinic,Wave 1,binary,DZ_OS,95,Cohen's kappa,-0.017,94.7,2
+publicClinic,Public Clinic,Wave 1,binary,All_paired,408,Cohen's kappa,0.021,92.4,2
+outPatient,Out Patient,Wave 1,binary,MZ,172,Cohen's kappa,0.076,91.3,2
+outPatient,Out Patient,Wave 1,binary,DZ_SS,141,Cohen's kappa,0.099,91.5,2
+outPatient,Out Patient,Wave 1,binary,DZ_OS,95,Cohen's kappa,0.0,96.8,2
+outPatient,Out Patient,Wave 1,binary,All_paired,408,Cohen's kappa,0.081,92.6,2
+emergencyCare,Emergency Care,Wave 1,binary,MZ,172,Cohen's kappa,0.139,79.7,2
+emergencyCare,Emergency Care,Wave 1,binary,DZ_SS,141,Cohen's kappa,-0.113,72.3,2
+emergencyCare,Emergency Care,Wave 1,binary,DZ_OS,95,Cohen's kappa,0.142,85.3,2
+emergencyCare,Emergency Care,Wave 1,binary,All_paired,408,Cohen's kappa,0.046,78.4,2
+urgentCare,Urgent Care,Wave 1,binary,MZ,172,Cohen's kappa,0.093,78.5,2
+urgentCare,Urgent Care,Wave 1,binary,DZ_SS,141,Cohen's kappa,-0.097,82.3,2
+urgentCare,Urgent Care,Wave 1,binary,DZ_OS,95,Cohen's kappa,0.092,88.4,2
+urgentCare,Urgent Care,Wave 1,binary,All_paired,408,Cohen's kappa,0.043,82.1,2

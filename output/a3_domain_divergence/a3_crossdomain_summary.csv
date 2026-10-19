@@ -1,0 +1,3 @@
+layer,al_construction,n_pairs,k_unique_target_gt_shared,k_full_ordering,n_pairs_null,k_partition_null_p05,closest_nonsig_p
+concurrent,Allostatic Load,6,6,4,6,3,0.057
+longitudinal,Allostatic Load,6,4,2,6,0,0.065

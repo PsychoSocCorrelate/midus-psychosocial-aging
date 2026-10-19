@@ -1,0 +1,215 @@
+# Reader-facing labels for the 177 analyzed predictors (and the two configured but
+# excluded), used by the SI tables. Worded from each variable's MIDUS item or scale
+# (data/key_map/midus2R_key_extended.xlsx, "Variable Label_M2") and, where the SI or
+# main text names a predictor, in the text's own words. Figures keep their own short
+# labels; SI Table S1 maps every code to the label printed here.
+
+labels:
+  # Tier 1, background
+  female: Female sex
+  hispanic: Hispanic ethnicity
+  race: Race
+  sexualOrientation: Sexual orientation
+  education: Education
+  ageFirstWork: Age at first paid work
+  ageFirstCig: Age at first cigarette
+  ageFirstAlcoh: Age at first alcoholic drink
+  educationACE_3item: Childhood educational adversity
+  famDysfuncACE_3item: Childhood family dysfunction
+  ecoACE_1item: Childhood economic adversity
+  lossChild: Death of a child
+  familyHeartAttack: Family history of heart attack
+  familyCancer: Family history of cancer
+  householdIncome: Household income
+  hhPension: Household pension income
+  hhSocialSecurity: Household Social Security income
+  # Personality
+  agreeableness: Agreeableness
+  extraversion: Extraversion
+  neuroticism: Neuroticism
+  conscientiousness: Conscientiousness
+  openness: Openness to experience
+  mpqWellbeing: MPQ well-being
+  mpqPotency: MPQ social potency
+  mpqAchievement: MPQ achievement
+  mpqCloseness: MPQ social closeness
+  mpqStress: MPQ stress reaction
+  mpqAggression: MPQ aggression
+  mpqAlienation: MPQ alienation
+  mpqControl: MPQ control
+  mpqTradition: MPQ traditionalism
+  mpqHarmAvoid: MPQ harm avoidance
+  worry1item: Worrying (single item)
+  curious1item: Curiosity (single item)
+  optim1item: Optimism (single item)
+  outgoing1item: Outgoingness (single item)
+  # Psychological well-being
+  psychWellbeing: Psychological well-being
+  posAffect: Positive affect
+  controlOverHealth: Perceived control over health
+  effortInHealth: Effort put into health
+  healthLocControl: Health locus of control, self
+  healthLocOther: Health locus of control, others
+  interdependence: Interdependent self-construal
+  independence: Independent self-construal
+  agency: Agency
+  optimism: Optimism
+  pessimism: Pessimism
+  subAchievement: Subjective achievement
+  generativity: Generativity
+  mindfulness: Mindfulness
+  religiosity: Religiosity
+  dailtySpirtural: Daily spiritual experiences
+  prayerFreq: Prayer or spiritual practice
+  # Mental health symptoms
+  depressedAffect: Depressed affect
+  anhedonia: Anhedonia
+  anxietyScore: Anxiety disorder symptoms
+  panicScore: Panic attack symptoms
+  mentalHealth: Self-rated mental health
+  negAffect: Negative affect
+  # Coping and resilience
+  activeCoping: Active coping
+  secondControl: Lowering aspirations
+  selfPlanning: Self-directedness and planning
+  ventEmotion: Venting of emotion
+  denial: Denial
+  behavDisengage: Behavioral disengagement
+  foodCope: Eating to cope
+  live4Today: Living for today
+  insightPast: Insight into the past
+  foresight: Foresight and anticipation
+  selfSufficiency: Self-sufficiency
+  # Life evaluation
+  lifeSatisfaction: Life satisfaction
+  lifeTenYearsAgo: Life rating, 10 years ago
+  lifeFuture: Life rating, 10 years ahead
+  lifeControl: Control over life
+  lifeEffort: Effort put into life
+  lifeDiscriminate: Lifetime discrimination
+  dailyDiscriminate: Daily discrimination
+  startMiddleAge: Perceived start of middle age
+  endMiddleAge: Perceived end of middle age
+  # Social relationships
+  contributeToOthers: Contribution to others
+  socMeaningful: Meaningfulness of society
+  socIntegration: Social integration
+  acceptOthers: Acceptance of others
+  socContribution: Social contribution
+  socActualization: Social actualization
+  sympathy: Sympathy
+  contactNeighb: Contact with neighbors
+  talkNeighb: Socializing with neighbors
+  yearsNeighb: Years in neighborhood
+  neighborQual: Neighborhood quality
+  homeInequal: Perceived inequality at home
+  familyQuality: Family relationship quality
+  famContact: Contact with family
+  childRelationQuality: Relationship with children
+  childRelationInequality: Perceived inequality in family
+  giveSupport: Given emotional support
+  recSupport: Received emotional support
+  friendQuality: Friendship quality
+  friendContact: Contact with friends
+  # Intimate partnership
+  spouseQuality: Partner relationship quality
+  spouseWork: Partner employment status
+  relatCohabLength: Relationship length
+  timesMarried: Times married
+  partnerAgeGap: Age gap with partner
+  partnerEduGap: Education gap with partner
+  sexualSatisfaction: Sexual satisfaction
+  sexPartner: Number of sexual partners
+  sexFrequency: Sexual frequency
+  sexImportance: Importance of sex in relationship
+  # Household and caregiving
+  householdSize: Household size
+  childInHH: Own children in household
+  adultKidHome: Adult children at home
+  homeless: Homelessness since last interview
+  housingStatus: Home ownership
+  relatStatus: Relationship status
+  careGivStatus: Caregiving status
+  careGivIntensity: Caregiving intensity
+  # Health behaviors
+  chiropractorFreq: Chiropractor visits
+  vmJobAct_vig: Vigorous job activity
+  vmLeisureAct_vig: Vigorous leisure activity
+  vmChoresAct_vig: Vigorous household activity
+  lightAct: Light physical activity
+  sleepAvg: Sleep duration
+  napFreq: Napping frequency
+  physicianDiet: Physician-directed diet
+  weightControl: Weight-control diet
+  weightChangeExercise: Weight loss by diet or exercise
+  suppAmount: Number of supplements
+  herbalPTFreq: Herbal therapy
+  megaVitaminFreq: High-dose vitamins
+  massageFreq: Massage therapy
+  mediateFreq: Relaxation or meditation
+  exercisePTFreq: Exercise or movement therapy
+  physicalPTFreq: Physical or occupational therapy
+  whr: Waist-hip ratio
+  bmi: BMI
+  # Cognitive activities
+  readBook: Reading
+  wordGames: Word games
+  playCard: Card or other games
+  attendLectu: Lectures or courses
+  writing: Writing
+  useComputer: Computer use
+  intellAging: Perceived intellectual aging
+  attendMeetingFreq: Union or professional meetings
+  attendSportsFreq: Sports or social group meetings
+  # Substance use
+  smokeStatus: Smoking status
+  smokeDuration: Smoking duration
+  smokeAmount: Cigarettes per day
+  smokeExposure_3item: Secondhand smoke exposure
+  drinkStatus: Drinking status
+  drinkExposure_PA59: Alcohol exposure
+  alcohMoreIntended: Drinking more than intended
+  alcohProb: Alcohol problems
+  # Work and occupation
+  workStatus: Work status
+  manageRole: Supervisory role
+  rateCurrentWork: Current work rating
+  jobSkillDiscretion: Job skill discretion
+  jobDecisionAuthority: Job decision authority
+  jobDemands: Job demands
+  jobCoworkerSupp: Coworker support
+  jobSupervisorSupp: Supervisor support
+  jobDiscrimination: Job discrimination
+  workInequality: Perceived inequality at work
+  occGroup: Occupational group
+  workIndustry: Work industry
+  # Subjective socioeconomic resources
+  financialControl: Control over finances
+  financialEffort: Effort put into finances
+  moneyForNeeds: Money to meet needs
+  financial10YrAgo: Financial situation, 10 years ago
+  financial10YrFuture: Financial situation, 10 years ahead
+  haveHealthInsurance: Health insurance
+  medicare: Medicare
+  medicaid: Medicaid
+  # Healthcare access
+  privateClinic: Usual care at a private clinic
+  HMOClinic: Usual care at an HMO
+  publicClinic: Usual care at a public clinic
+  outPatient: Usual care at a hospital outpatient clinic
+  emergencyCare: Usual care at an emergency room
+  urgentCare: Usual care at urgent care
+
+# Levels of the indicator contrasts the within-family models fit for categorical
+# predictors (analysis/pipelines/a6_sibling_decomposition.py, CATEGORICAL_CONFIG).
+contrasts:
+  workStatus:
+    reference: employed
+    levels: {retired: retired, not_working: not working}
+  occGroup:
+    reference: service, sales, or office
+    levels: {professional_mgmt: professional or managerial, blue_collar: blue-collar}
+  workIndustry:
+    reference: services and arts
+    levels: {goods_production: goods production, trade_transport: trade and transport,
+             knowledge_govt: knowledge and government}

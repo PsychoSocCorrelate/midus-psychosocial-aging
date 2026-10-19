@@ -1,0 +1,3 @@
+layer,outcome,n_heldout,n_canonical,r2_base_heldout,r2_full_heldout,delta_r2_T2_heldout,r2_base_canonical,r2_full_canonical,delta_r2_T2_canonical,top20_overlap,top20_jaccard,top_feature_heldout,top_feature_canonical
+cross_sectional,ALcomp_W1,1403,1782,0.0390355486269325,0.3022301272829782,0.2631945786560457,0.0419977153248056,0.329760385537916,0.2877626702131103,17,0.7391304347826086,bmi,bmi
+longitudinal,ALcomp_W2,360,576,0.3866553976294073,0.419275567169874,0.0326201695404667,0.4154990849934243,0.426948850201303,0.0114497652078787,,,,

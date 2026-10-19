@@ -1,0 +1,1281 @@
+{
+  "version": "2026-05-27",
+  "policy": {
+    "default_mode": "dry-run",
+    "execute_flag": "--execute",
+    "heavy_guard": "--include-heavy",
+    "optional_guard": "--include GROUP",
+    "raw_output_boundary": "Individual-level data is never tracked. .gitignore encodes the boundary: data/ is ignored except three canonical key maps and two raw-data READMEs; under output/ only *.csv is tracked, and shap_raw/** never is.",
+    "versioning": "The commit that last changed this file is the registry's version. The top-level version field is a fixed label and is not bumped."
+  },
+  "steps": [
+    {
+      "id": "raw_inputs_check",
+      "group": "preprocess",
+      "role": "Raw-input presence check",
+      "kind": "check_exists",
+      "default": true,
+      "heavy": false,
+      "description": "Check that the raw MIDUS and IGEMS files and the key maps required for preprocessing are present.",
+      "inputs": [],
+      "outputs": [
+        "data/raw/wave1/M2_P1_SURVEY_N4963_20200720.sav",
+        "data/raw/wave1/MR1_P1_SURVEY_N3577_20250407.sav",
+        "data/raw/wave1/M2_P3_BTACT_N4512_20211123.sav",
+        "data/raw/wave1/MR1_P3_BTACT_N2763_20251119.SAV",
+        "data/raw/wave2/M3_P1_SURVEY_N3294_20251029.sav",
+        "data/raw/wave2/MR2_P1_SURVEY_N2154_20251003.sav",
+        "data/raw/wave2/M3_P3_BTACT_N3291_20210922.sav",
+        "data/raw/wave2/MR2_P3_BTACT+MOCA_N1934_20260224.sav",
+        "data/raw/biomarker/M2_BIO_AGGREGATE_N1255_20240405.sav",
+        "data/raw/biomarker/M2_BIO_MEDICATION_STACKED_N7174_20240404.SAV",
+        "data/raw/biomarker/M3_BIO_AGGREGATE_N747_20231016.sav",
+        "data/raw/biomarker/M3_BIO_MEDICATION_STACKED_N5751_20231016.SAV",
+        "data/raw/biomarker/MR1_BIO_AGGREGATE_N863_20240405.sav",
+        "data/raw/biomarker/MR1_BIO_MEDICATION_STACKED_N5118_20240404.sav",
+        "data/raw/biomarker/M2MR1_GEN_DNAmAge_N2118_20230822.sav",
+        "data/raw/admin_midus_20nov2024.sav",
+        "data/raw/mortality/MIDUS_Core_MortalityCauseData_N2822_20260511.sav",
+        "data/raw/mortality/MIDUS_Refresher_MortalityCauseData_N454_20260511.sav",
+        "data/key_map/midus2R_key_extended.xlsx",
+        "data/key_map/midus2_industry_label_map_key.csv",
+        "data/key_map/frailty/frailty_key_MIDUS_canonical.xlsx"
+      ]
+    },
+    {
+      "id": "qc_wave1",
+      "group": "preprocess",
+      "role": "Wave-1 survey preprocessing",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build pooled Wave-1 survey preprocessing file.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.survey.qc_pipeline",
+        "--wave",
+        "1"
+      ],
+      "inputs": [
+        "data/raw/wave1/M2_P1_SURVEY_N4963_20200720.sav",
+        "data/raw/wave1/MR1_P1_SURVEY_N3577_20250407.sav",
+        "data/key_map/midus2R_key_extended.xlsx",
+        "data/key_map/midus2_industry_label_map_key.csv",
+        "config/variable_config.yaml"
+      ],
+      "outputs": [
+        "data/processed/wave1/all_M2MR_py.csv"
+      ]
+    },
+    {
+      "id": "qc_wave2",
+      "group": "preprocess",
+      "role": "Wave-2 survey preprocessing",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build pooled Wave-2 survey preprocessing file.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.survey.qc_pipeline",
+        "--wave",
+        "2"
+      ],
+      "inputs": [
+        "data/raw/wave2/M3_P1_SURVEY_N3294_20251029.sav",
+        "data/raw/wave2/MR2_P1_SURVEY_N2154_20251003.sav",
+        "data/key_map/midus2R_key_extended.xlsx",
+        "config/variable_config.yaml"
+      ],
+      "outputs": [
+        "data/processed/wave2/all_M3MR2_py.csv"
+      ]
+    },
+    {
+      "id": "cfa_composites",
+      "group": "preprocess",
+      "role": "Composite scoring",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Fit CFA composites and write composite scores.",
+      "command": [
+        "Rscript",
+        "preprocess/composites/cfa_composites.R"
+      ],
+      "inputs": [
+        "data/processed/wave1/all_M2MR_py.csv",
+        "data/processed/wave2/all_M3MR2_py.csv"
+      ],
+      "outputs": [
+        "data/processed/shared/composite_cfa_scores.csv",
+        "data/processed/shared/composite_cfa_fit.csv",
+        "data/processed/shared/composite_align_fit.csv"
+      ]
+    },
+    {
+      "id": "analysis_ready_inputs",
+      "group": "preprocess",
+      "role": "Analysis-ready input assembly",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Join CFA composites and write analysis-ready Wave-1/Wave-2 inputs.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.qa.build_analysis_ready"
+      ],
+      "inputs": [
+        "data/processed/wave1/all_M2MR_py.csv",
+        "data/processed/wave2/all_M3MR2_py.csv",
+        "data/processed/shared/composite_cfa_scores.csv"
+      ],
+      "outputs": [
+        "data/processed/wave1/all_M2MR_analysis.csv",
+        "data/processed/wave2/all_M3MR2_analysis.csv"
+      ]
+    },
+    {
+      "id": "cognition_longitudinal",
+      "group": "preprocess",
+      "role": "Cognition outcome build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build per-cohort cognition files. The longitudinal frame is used for the summary and not written.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.cognition.build_cog_longitudinal"
+      ],
+      "inputs": [
+        "data/raw/wave1/M2_P3_BTACT_N4512_20211123.sav",
+        "data/raw/wave1/MR1_P3_BTACT_N2763_20251119.SAV",
+        "data/raw/wave2/M3_P3_BTACT_N3291_20210922.sav",
+        "data/raw/wave2/MR2_P3_BTACT+MOCA_N1934_20260224.sav"
+      ],
+      "outputs": [
+        "data/processed/cognition/cog_M2.csv",
+        "data/processed/cognition/cog_M3.csv",
+        "data/processed/cognition/cog_MR1.csv",
+        "data/processed/cognition/cog_MR2.csv"
+      ]
+    },
+    {
+      "id": "frailty_wave1",
+      "group": "preprocess",
+      "role": "Wave-1 frailty outcome build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build Wave-1 frailty scores.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.frailty.frailty_pipeline",
+        "--wave",
+        "1"
+      ],
+      "inputs": [
+        "data/raw/wave1/M2_P1_SURVEY_N4963_20200720.sav",
+        "data/raw/wave1/MR1_P1_SURVEY_N3577_20250407.sav",
+        "data/key_map/frailty/frailty_key_MIDUS_canonical.xlsx"
+      ],
+      "outputs": [
+        "data/processed/wave1/midus2_frailty.csv",
+        "data/processed/wave1/midusr_frailty.csv",
+        "data/processed/wave1/pooled_frailty_M2R.csv"
+      ]
+    },
+    {
+      "id": "frailty_wave2",
+      "group": "preprocess",
+      "role": "Wave-2 frailty outcome build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build Wave-2 frailty scores.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.frailty.frailty_pipeline",
+        "--wave",
+        "2"
+      ],
+      "inputs": [
+        "data/raw/wave2/M3_P1_SURVEY_N3294_20251029.sav",
+        "data/raw/wave2/MR2_P1_SURVEY_N2154_20251003.sav",
+        "data/key_map/frailty/frailty_key_MIDUS_canonical.xlsx"
+      ],
+      "outputs": [
+        "data/processed/wave2/midus3_frailty.csv",
+        "data/processed/wave2/mr2_frailty.csv",
+        "data/processed/wave2/pooled_frailty_M3MR2.csv"
+      ]
+    },
+    {
+      "id": "allostatic_load",
+      "group": "preprocess",
+      "role": "Allostatic-load outcome build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build the per-wave allostatic-load composite and the wave-1 reference it is scored against.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.biomarkers.allostatic_load"
+      ],
+      "inputs": [
+        "data/raw/biomarker/M2_BIO_AGGREGATE_N1255_20240405.sav",
+        "data/raw/biomarker/M2_BIO_MEDICATION_STACKED_N7174_20240404.SAV",
+        "data/raw/biomarker/M3_BIO_AGGREGATE_N747_20231016.sav",
+        "data/raw/biomarker/M3_BIO_MEDICATION_STACKED_N5751_20231016.SAV",
+        "data/raw/biomarker/MR1_BIO_AGGREGATE_N863_20240405.sav",
+        "data/raw/biomarker/MR1_BIO_MEDICATION_STACKED_N5118_20240404.sav"
+      ],
+      "outputs": [
+        "data/processed/biomarker/allostatic_load_M2.csv",
+        "data/processed/biomarker/allostatic_load_M3.csv",
+        "data/processed/biomarker/allostatic_load_MR1.csv",
+        "data/processed/biomarker/al_reference_wave1.csv"
+      ]
+    },
+    {
+      "id": "dnam_age",
+      "group": "preprocess",
+      "role": "DNAm age outcome build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build residualized DNAm age clocks for Wave-1 core and refresher samples.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.biomarkers.dnam_age"
+      ],
+      "inputs": [
+        "data/raw/biomarker/M2MR1_GEN_DNAmAge_N2118_20230822.sav",
+        "data/processed/wave1/all_M2MR_analysis.csv"
+      ],
+      "outputs": [
+        "data/processed/biomarker/dnam_age_residualized.csv"
+      ]
+    },
+    {
+      "id": "master_analysis",
+      "group": "build",
+      "role": "Primary master dataset build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build the primary master analysis file.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.master.build_master_dataset"
+      ],
+      "inputs": [
+        "data/processed/wave1/all_M2MR_analysis.csv",
+        "data/processed/wave2/all_M3MR2_analysis.csv",
+        "data/processed/cognition/cog_M2.csv",
+        "data/processed/cognition/cog_MR1.csv",
+        "data/processed/cognition/cog_M3.csv",
+        "data/processed/cognition/cog_MR2.csv",
+        "data/processed/wave1/pooled_frailty_M2R.csv",
+        "data/processed/wave2/midus3_frailty.csv",
+        "data/processed/wave2/mr2_frailty.csv",
+        "data/processed/biomarker/allostatic_load_M2.csv",
+        "data/processed/biomarker/allostatic_load_MR1.csv",
+        "data/processed/biomarker/allostatic_load_M3.csv",
+        "data/processed/biomarker/dnam_age_residualized.csv",
+        "data/raw/admin_midus_20nov2024.sav",
+        "data/raw/wave2/M3_P1_SURVEY_N3294_20251029.sav",
+        "data/raw/wave2/MR2_P1_SURVEY_N2154_20251003.sav",
+        "data/key_map/midus2R_key_extended.xlsx"
+      ],
+      "outputs": [
+        "data/processed/master_analysis.csv"
+      ]
+    },
+    {
+      "id": "master_concurrent",
+      "group": "build",
+      "role": "Concurrent master dataset build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build the concurrent Wave-2 predictor master file.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "preprocess.master.build_master_concurrent"
+      ],
+      "inputs": [
+        "data/processed/wave2/all_M3MR2_analysis.csv",
+        "data/processed/wave1/all_M2MR_py.csv",
+        "data/processed/wave1/all_M2MR_analysis.csv",
+        "data/processed/wave1/pooled_frailty_M2R.csv",
+        "data/processed/cognition/cog_M2.csv",
+        "data/processed/cognition/cog_MR1.csv",
+        "data/processed/cognition/cog_M3.csv",
+        "data/processed/cognition/cog_MR2.csv",
+        "data/processed/wave2/midus3_frailty.csv",
+        "data/processed/wave2/mr2_frailty.csv",
+        "data/processed/biomarker/allostatic_load_M2.csv",
+        "data/processed/biomarker/allostatic_load_MR1.csv",
+        "data/processed/biomarker/allostatic_load_M3.csv",
+        "data/raw/admin_midus_20nov2024.sav",
+        "config/variable_config.yaml"
+      ],
+      "outputs": [
+        "data/processed/master_analysis_concurrent.csv"
+      ]
+    },
+    {
+      "id": "d1_descriptive",
+      "group": "analyses",
+      "role": "Primary descriptive layer",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Descriptives, attrition, reliability, and change-score source outputs.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/d1_descriptive.py"
+      ],
+      "outputs": [
+        "output/d1_descriptive/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv"
+      ]
+    },
+    {
+      "id": "cs1_cross_sectional",
+      "group": "analyses",
+      "role": "Primary prediction layer",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Wave-1 cross-sectional models and SHAP for the paper.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/cs1_cross_sectional.py"
+      ],
+      "outputs": [
+        "output/cs1_cross_sectional/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv"
+      ]
+    },
+    {
+      "id": "a4_longitudinal",
+      "group": "analyses",
+      "role": "Primary longitudinal layer",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Primary baseline-conditioned longitudinal models.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a4_longitudinal.py"
+      ],
+      "outputs": [
+        "output/a4_longitudinal/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "output/cs1_cross_sectional"
+      ]
+    },
+    {
+      "id": "a7_mortality_primary",
+      "group": "analyses",
+      "role": "External endpoint validation",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Primary Cox validation using through-2025 mortality endpoint.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a7_mortality.py"
+      ],
+      "outputs": [
+        "output/a7_mortality/a7_endpoint_summary.csv",
+        "output/a7_mortality/a7_c_index_table.csv"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "data/raw/mortality/MIDUS_Core_MortalityCauseData_N2822_20260511.sav",
+        "data/raw/mortality/MIDUS_Refresher_MortalityCauseData_N454_20260511.sav",
+        "data/raw/wave1/M2_P1_SURVEY_N4963_20200720.sav",
+        "data/raw/wave1/MR1_P1_SURVEY_N3577_20250407.sav",
+        "output/a4_longitudinal"
+      ]
+    },
+    {
+      "id": "a7_mortality_fixed9",
+      "group": "analyses",
+      "role": "Endpoint-window sensitivity",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Fixed 9-year Cox validation sensitivity.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a7_mortality.py",
+        "--endpoint",
+        "fixed_9y"
+      ],
+      "outputs": [
+        "output/a7_mortality/fixed_9y_sensitivity/a7_endpoint_summary.csv"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "data/raw/mortality/MIDUS_Core_MortalityCauseData_N2822_20260511.sav",
+        "data/raw/mortality/MIDUS_Refresher_MortalityCauseData_N454_20260511.sav",
+        "data/raw/wave1/M2_P1_SURVEY_N4963_20200720.sav",
+        "data/raw/wave1/MR1_P1_SURVEY_N3577_20250407.sav",
+        "output/a4_longitudinal"
+      ]
+    },
+    {
+      "id": "a4b_concurrent_sensitivity",
+      "group": "analyses",
+      "role": "Timing sensitivity",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Concurrent W2 predictor sensitivity.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a4b_longitudinal.py"
+      ],
+      "outputs": [
+        "output/a4b_longitudinal/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "output/a4_longitudinal"
+      ]
+    },
+    {
+      "id": "a6_family_decomposition",
+      "group": "analyses",
+      "role": "Primary family-comparison layer",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Sibling/twin between-within decomposition.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a6_sibling_decomposition.py"
+      ],
+      "outputs": [
+        "output/a6_sibling/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/wave1/pooled_frailty_M2R.csv",
+        "data/processed/wave2/pooled_frailty_M3MR2.csv",
+        "output/a4_longitudinal",
+        "output/cs1_cross_sectional"
+      ]
+    },
+    {
+      "id": "within_family_mde",
+      "group": "analyses",
+      "role": "Within-family power and minimum detectable effects",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Minimum detectable effects and power for the within-family layer.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/within_family_mde.py"
+      ],
+      "outputs": [
+        "output/within_family_mde/within_family_mde.csv",
+        "output/within_family_mde/within_family_mde_summary.csv",
+        "output/within_family_mde/within_family_mde_concurrent.csv",
+        "output/within_family_mde/within_family_mde_concurrent_summary.csv",
+        "output/within_family_mde/within_family_mde_reference.csv"
+      ],
+      "inputs": [
+        "output/a6_sibling"
+      ]
+    },
+    {
+      "id": "al_twins_heldout",
+      "group": "analyses",
+      "role": "Allostatic-load models with twin pairs held out",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Refit the allostatic-load composite's cross-sectional and change Tier 2 increments and top-20 with every complete sibling/twin pair dropped from training, the one outcome whose twins otherwise straddle folds, and compare with cs1 and a4.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/sensitivity/al_twins_heldout.py"
+      ],
+      "outputs": [
+        "output/al_twins_heldout/al_twins_heldout_summary.csv",
+        "output/al_twins_heldout/al_twins_heldout_top20.csv",
+        "output/al_twins_heldout/ALcomp_W1_heldout_bootstrap_shap.csv"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "output/cs1_cross_sectional/cs1_r2_table.csv",
+        "output/a4_longitudinal/a4_r2_table.csv",
+        "output/cs1_cross_sectional/shap"
+      ]
+    },
+    {
+      "id": "outcome_correlations_by_wave",
+      "group": "analyses",
+      "role": "Outcome correlations by wave",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Age-residualized outcome correlations at each wave, with Fisher-z intervals (SI Table S15).",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/outcome_correlations_by_wave.py"
+      ],
+      "outputs": [
+        "output/outcome_correlations_by_wave/outcome_correlations_by_wave.csv",
+        "output/outcome_correlations_by_wave/outcome_correlations_by_wave_formatted.csv"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "output/d1_descriptive"
+      ]
+    },
+    {
+      "id": "a11_mortality_shap",
+      "group": "analyses",
+      "role": "Mortality model interpretation",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Primary mortality SHAP and CV.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a11_mortality_shap.py"
+      ],
+      "outputs": [
+        "output/a11_mortality_shap/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "data/raw/mortality/MIDUS_Core_MortalityCauseData_N2822_20260511.sav",
+        "data/raw/mortality/MIDUS_Refresher_MortalityCauseData_N454_20260511.sav",
+        "data/raw/wave1/M2_P1_SURVEY_N4963_20200720.sav",
+        "data/raw/wave1/MR1_P1_SURVEY_N3577_20250407.sav",
+        "output/cs1_cross_sectional"
+      ]
+    },
+    {
+      "id": "a12_delta_r2_ci",
+      "group": "analyses",
+      "role": "Delta-R2 interval estimation",
+      "kind": "command",
+      "default": false,
+      "heavy": true,
+      "description": "Repeated-CV intervals for the reported delta-R2 values. Repeat r uses random_state = 42 + r, so repeat 0 is the production seed and reproduces the point estimate. Writes every repeat as well as the summary, so other interval definitions can be computed without refitting. Off by default: the most expensive step.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a12_delta_r2_ci.py",
+        "--shards",
+        "2"
+      ],
+      "outputs": [
+        "output/a12_delta_r2_ci/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv"
+      ]
+    },
+    {
+      "id": "a2_frailty_overlap",
+      "group": "analyses",
+      "role": "Construct-overlap sensitivity",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Frailty construct-overlap sensitivity.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/sensitivity/a2_frailty_overlap.py"
+      ],
+      "outputs": [
+        "output/a2_frailty_overlap/a2_adjusted_r2.csv"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv"
+      ]
+    },
+    {
+      "id": "frailty_lonely_sensitivity",
+      "group": "analyses",
+      "role": "Construct-overlap sensitivity",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Recompute the frailty index without the loneliness item and refit the fixed-estimator Tier 1 and Tier 1+2 models (SI frailty paragraph).",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/sensitivity/frailty_lonely_sensitivity.py"
+      ],
+      "outputs": [
+        "output/frailty_lonely_sensitivity/finopsy_excluding_lonely_score_sensitivity.csv",
+        "output/frailty_lonely_sensitivity/finopsy_excluding_lonely_model_sensitivity.csv",
+        "manuscript/supplement/finopsy_excluding_lonely_score_sensitivity.csv",
+        "manuscript/supplement/finopsy_excluding_lonely_model_sensitivity.csv",
+        "manuscript/supplement/finopsy_excluding_lonely_sensitivity.md"
+      ],
+      "inputs": [
+        "data/processed/wave1/pooled_frailty_M2R.csv",
+        "data/processed/wave2/pooled_frailty_M3MR2.csv",
+        "data/processed/master_analysis.csv",
+        "output/cs1_cross_sectional/cs1_r2_table.csv"
+      ]
+    },
+    {
+      "id": "a2c_al_drink_quick",
+      "group": "analyses",
+      "role": "Outcome-definition sensitivity",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Allostatic load by drinking status: abstainer subtypes, health selection into abstention, and biomarker-sample selection.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/sensitivity/a2c_AL_drinking_sensitivity.py"
+      ],
+      "outputs": [
+        "output/a2c_AL_drinking_sensitivity/"
+      ],
+      "inputs": [
+        "data/processed/biomarker/allostatic_load_M2.csv",
+        "data/processed/biomarker/allostatic_load_MR1.csv",
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "data/raw/wave1/M2_P1_SURVEY_N4963_20200720.sav",
+        "data/raw/wave1/MR1_P1_SURVEY_N3577_20250407.sav"
+      ]
+    },
+    {
+      "id": "a3_domain_divergence",
+      "group": "analyses",
+      "role": "Primary domain-divergence layer",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Cross-domain prediction and divergence decomposition.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a3_domain_divergence.py",
+        "--layer",
+        "all",
+        "--n-perm",
+        "1000"
+      ],
+      "outputs": [
+        "output/a3_domain_divergence/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "output/a4_longitudinal",
+        "output/cs1_cross_sectional"
+      ]
+    },
+    {
+      "id": "recurring_predictors",
+      "group": "analyses",
+      "role": "Recurring predictors",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Derive the recurring predictors from a3's top-20 lists: a feature recurs if it appears in at least four of the six outcome-by-layer lists. Writes per-feature counts and tier. Reads only a3 tables, so it runs without the individual-level master file.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/recurring_predictors.py"
+      ],
+      "outputs": [
+        "output/recurring_predictors/recurring_predictors.csv"
+      ],
+      "inputs": [
+        "output/a3_domain_divergence/a3_cross_prediction_cs1.csv",
+        "output/a3_domain_divergence/a3_cross_prediction.csv"
+      ]
+    },
+    {
+      "id": "a9_concurrent",
+      "group": "analyses",
+      "role": "Timing and model-family sensitivity",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Concurrent Wave-2 model family.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/a9_concurrent.py"
+      ],
+      "outputs": [
+        "output/a9_concurrent/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "data/processed/master_analysis_concurrent.csv",
+        "output/a4_longitudinal",
+        "output/cs1_cross_sectional"
+      ]
+    },
+    {
+      "id": "profile_models",
+      "group": "analyses",
+      "role": "Profile comparison model fitting",
+      "kind": "command",
+      "default": false,
+      "heavy": true,
+      "description": "Fit the three primary cross-sectional models the profile comparison evaluates, with their reference rows and outcome percentiles, to output/profile_comparison/models/. Off by default: retunes and refits.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/profile_comparison/fit_models.py"
+      ],
+      "outputs": [
+        "output/profile_comparison/models/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv"
+      ]
+    },
+    {
+      "id": "profile_specification",
+      "group": "analyses",
+      "role": "Recurring-profile preset build",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build config/profile_specification.yaml, the recurring-profile presets used by profile_comparison.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "analysis.profile_comparison.build_profiles"
+      ],
+      "outputs": [
+        "config/profile_specification.yaml"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "output/cs1_cross_sectional"
+      ]
+    },
+    {
+      "id": "profile_comparison",
+      "group": "analyses",
+      "role": "Exploratory profile comparison",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Recurring-profile prediction and SHAP comparison (exploratory SI result); input to Figure S7.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "analysis.profile_comparison.profile_comparison"
+      ],
+      "outputs": [
+        "output/profile_comparison/"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "config/profile_specification.yaml",
+        "output/cs1_cross_sectional",
+        "output/profile_comparison/models/"
+      ]
+    },
+    {
+      "id": "fig2a",
+      "group": "figures",
+      "role": "Cross-sectional vs longitudinal R2 figure",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Render Figure 2A from the cs1 and a4 output tables.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/fig2a_increments.py"
+      ],
+      "outputs": [
+        "manuscript/figures/fig2/fig2A.png",
+        "manuscript/figures/fig2/fig2A.pdf"
+      ],
+      "inputs": [
+        "output/cs1_cross_sectional",
+        "output/a4_longitudinal"
+      ]
+    },
+    {
+      "id": "fig3b",
+      "group": "figures",
+      "role": "SHAP rank heatmap",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Render the Figure 3B rank heatmap.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/fig3b_rank_heatmap.py"
+      ],
+      "outputs": [
+        "manuscript/figures/fig3/fig3B.png",
+        "manuscript/figures/fig3/fig3B.pdf",
+        "manuscript/figures/fig3/fig3B_cells.csv"
+      ],
+      "inputs": [
+        "output/cs1_cross_sectional"
+      ]
+    },
+    {
+      "id": "fig_s7_profile_comparison",
+      "group": "figures",
+      "role": "Figure S7 builder",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Render Figure S7 (exploratory profile comparison) from output/profile_comparison tables and sync to the supplement.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "analysis.figures.figs7_profile_comparison"
+      ],
+      "outputs": [
+        "manuscript/supplement/fig_s7_profile_comparison.png",
+        "manuscript/supplement/fig_s7_profile_comparison.pdf",
+        "output/table_figure/supplement/fig_s7_profile_comparison.png",
+        "output/table_figure/supplement/fig_s7_profile_comparison.pdf"
+      ],
+      "inputs": [
+        "output/profile_comparison"
+      ]
+    },
+    {
+      "id": "fig3a",
+      "group": "figures",
+      "role": "Figure 3A dependence builder",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Figure 3A: SHAP dependence of selected cs1 features, one row per outcome and four features per row.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/fig3a_shap_dependence.py"
+      ],
+      "outputs": [
+        "manuscript/figures/fig3/fig3A.png"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "output/cs1_cross_sectional/shap",
+        "output/cs1_cross_sectional/shap_raw"
+      ]
+    },
+    {
+      "id": "fig1_subpanels",
+      "group": "figures",
+      "role": "Figure 1 subpanel builder",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Figure 1 panels A-G, each drawn at its print size.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/fig1_subpanels.py"
+      ],
+      "outputs": [
+        "manuscript/figures/fig1/subpanels/"
+      ],
+      "inputs": [
+        "output/cs1_cross_sectional",
+        "output/a4_longitudinal",
+        "output/a12_delta_r2_ci",
+        "output/a3_domain_divergence",
+        "output/a6_sibling",
+        "output/d1_descriptive",
+        "config"
+      ]
+    },
+    {
+      "id": "fig1",
+      "group": "figures",
+      "role": "Schematic figure builder",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Place the generated subpanels in the editable Figure 1 slide deck. Layout, captions and outcome boxes are edited by hand; fig1_panel_manifest.csv records the sha256 of each placed panel so --check can tell whether the deck is current.",
+      "outputs": [
+        "manuscript/figures/fig1/fig1_panels.pptx",
+        "manuscript/figures/fig1/fig1_panels.png",
+        "manuscript/figures/fig1/fig1_panel_manifest.csv"
+      ],
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/fig1_deck.py"
+      ],
+      "inputs": [
+        "manuscript/figures/fig1/subpanels/"
+      ]
+    },
+    {
+      "id": "fig1_panels_current",
+      "group": "local-validation",
+      "role": "Figure 1 deck currency check",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Fail when the Figure 1 deck shows panels that have since been regenerated.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/fig1_deck.py",
+        "--check"
+      ],
+      "inputs": [
+        "manuscript/figures/fig1/fig1_panel_manifest.csv"
+      ],
+      "outputs": []
+    },
+    {
+      "id": "fig2b",
+      "group": "figures",
+      "role": "Figure 2B rank map builder",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Figure 2B rank map.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/fig2b_rank_map.py"
+      ],
+      "outputs": [
+        "manuscript/figures/fig2/fig2B.png",
+        "manuscript/figures/fig2/fig2B.pdf"
+      ],
+      "inputs": [
+        "output/cs1_cross_sectional",
+        "output/a4_longitudinal"
+      ]
+    },
+    {
+      "id": "si_dependence_figures",
+      "group": "figures",
+      "role": "SI dependence figure rendering",
+      "kind": "command",
+      "default": true,
+      "heavy": true,
+      "description": "Redraw the cs1 dependence panels the SI shows (Figures S2-S5) from cs1's persisted SHAP, titled by outcome display name; fits nothing.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/pipelines/cs1_cross_sectional.py",
+        "--outcomes",
+        "FInoPsy_W1",
+        "btactComp_W1",
+        "ALcomp_W1",
+        "phenoAge_res",
+        "--replot_dependence"
+      ],
+      "outputs": [
+        "output/cs1_cross_sectional/figures/FInoPsy_W1_T1T2_dependence.png",
+        "output/cs1_cross_sectional/figures/btactComp_W1_T1T2_dependence.png",
+        "output/cs1_cross_sectional/figures/ALcomp_W1_T1T2_dependence.png",
+        "output/cs1_cross_sectional/figures/phenoAge_res_T1T2_dependence.png"
+      ],
+      "inputs": [
+        "data/processed/master_analysis.csv",
+        "output/cs1_cross_sectional/shap",
+        "output/cs1_cross_sectional/shap_raw"
+      ]
+    },
+    {
+      "id": "publish_si_figures",
+      "group": "figures",
+      "role": "Figure publication copy",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Copy pipeline-produced figures to the paths the paper uses.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/figures/publish_si_figures.py"
+      ],
+      "outputs": [
+        "manuscript/supplement/"
+      ],
+      "inputs": [
+        "output/cs1_cross_sectional",
+        "output/a11_mortality_shap",
+        "output/d1_descriptive"
+      ]
+    },
+    {
+      "id": "table1",
+      "group": "tables",
+      "role": "Family-decomposition table builder",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build the family-decomposition tables and CSV mirrors; the overview sheet is the paper's Table 1.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/tables/build_table1.py"
+      ],
+      "outputs": [
+        "manuscript/tables/family_decomposition/family_decomposition.xlsx",
+        "manuscript/tables/family_decomposition/overview.csv",
+        "manuscript/tables/family_decomposition/icc.csv",
+        "manuscript/tables/family_decomposition/cs_full.csv",
+        "manuscript/tables/family_decomposition/change_full.csv",
+        "manuscript/tables/table1/table1.csv",
+        "manuscript/tables/table1/table1_provenance.csv",
+        "manuscript/tables/table1/table1.md"
+      ],
+      "inputs": [
+        "output/a6_sibling",
+        "output/within_family_mde/within_family_mde_summary.csv"
+      ]
+    },
+    {
+      "id": "supplement_tables",
+      "group": "tables",
+      "role": "Supplement workbook builder",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Build paper Supplementary Tables S1-S18, one APA-style sheet per table (title, body, note at the bottom), each in its own workbook and together in the combined workbook.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/tables/build_supplemental_tables.py"
+      ],
+      "outputs": [
+        "manuscript/supplement/supplementary_tables_combined.xlsx",
+        "manuscript/supplement/table_s10_family_change_allostatic_load.xlsx",
+        "manuscript/supplement/table_s11_sample_descriptives_attrition.xlsx",
+        "manuscript/supplement/table_s12_reliability_correlations.xlsx",
+        "manuscript/supplement/table_s13_AL_biomarkers.xlsx",
+        "manuscript/supplement/table_s14_FInoPsy_items.xlsx",
+        "manuscript/supplement/table_s15_outcome_correlations.xlsx",
+        "manuscript/supplement/table_s16_profile_comparison.xlsx",
+        "manuscript/supplement/table_s1_psychosocial_exposome.xlsx",
+        "manuscript/supplement/table_s2_adjusted_frailty_results.xlsx",
+        "manuscript/supplement/table_s3_cross_domain_prediction.xlsx",
+        "manuscript/supplement/table_s4_family_cs_overview_icc.xlsx",
+        "manuscript/supplement/table_s5_family_cs_frailty.xlsx",
+        "manuscript/supplement/table_s6_family_cs_cognition.xlsx",
+        "manuscript/supplement/table_s7_family_cs_allostatic_load.xlsx",
+        "manuscript/supplement/table_s8_family_change_frailty.xlsx",
+        "manuscript/supplement/table_s9_family_change_cognition.xlsx",
+        "manuscript/supplement/table_s17_importance_stability.xlsx",
+        "manuscript/supplement/table_s18_prediction_robustness.xlsx"
+      ],
+      "inputs": [
+        "output/d1_descriptive",
+        "output/a2_frailty_overlap",
+        "output/a3_domain_divergence",
+        "output/cs1_cross_sectional",
+        "output/profile_comparison",
+        "output/a4_longitudinal",
+        "output/a4b_longitudinal",
+        "output/a9_concurrent",
+        "output/a12_delta_r2_ci",
+        "output/within_family_mde",
+        "output/al_twins_heldout",
+        "output/recurring_predictors",
+        "output/outcome_correlations_by_wave",
+        "output/a6_sibling",
+        "manuscript/tables/family_decomposition",
+        "config/predictor_labels.yaml",
+        "config/al_biomarker_inventory.csv",
+        "config/frailty_index_items.csv",
+        "config/frailty_overlap_audit.csv"
+      ]
+    },
+    {
+      "id": "supplement_tables_docx",
+      "group": "tables",
+      "role": "SI tables document",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Render the combined Supplementary Tables workbook as a Word document in the SI's typography, one captioned table per sheet, for splicing into the SI.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "analysis/tables/build_supplemental_tables_docx.py"
+      ],
+      "outputs": [
+        "manuscript/supplement/supplementary_tables.docx"
+      ],
+      "inputs": [
+        "manuscript/supplement/supplementary_tables_combined.xlsx"
+      ]
+    },
+    {
+      "id": "lint_undefined_names",
+      "group": "validation",
+      "role": "Undefined-name lint",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "ruff F821 (undefined names) over tracked source. py_compile does not execute code, so it misses these.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/validation/check_undefined_names.py"
+      ],
+      "outputs": [],
+      "inputs": []
+    },
+    {
+      "id": "lint_script_imports",
+      "group": "validation",
+      "role": "Script import lint",
+      "kind": "command",
+      "default": true,
+      "heavy": false,
+      "description": "Fail when a step run by path executes a script that imports the package without adding the repository root to sys.path; such a script raises ModuleNotFoundError partway through a run.",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/validation/check_script_imports.py"
+      ],
+      "outputs": [],
+      "inputs": []
+    },
+    {
+      "id": "py_compile_tracked_python",
+      "group": "validation",
+      "role": "Compile check",
+      "kind": "py_compile",
+      "default": true,
+      "heavy": false,
+      "description": "Compile tracked Python files under analysis, scripts, and preprocess.",
+      "paths": [
+        "analysis",
+        "scripts",
+        "preprocess"
+      ]
+    },
+    {
+      "id": "git_clean",
+      "group": "validation",
+      "role": "Clean working tree check",
+      "kind": "git_clean",
+      "default": true,
+      "heavy": false,
+      "description": "Require clean working tree after validation."
+    }
+  ]
+}

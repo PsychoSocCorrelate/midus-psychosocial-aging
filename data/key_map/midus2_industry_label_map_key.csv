@@ -1,0 +1,244 @@
+code,label,industry_code,industry_label,credibility
+10,"Agricultural production, crops",1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+11,"Agricultural production, livestock",1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+12,Veterinary services,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",medium
+20,Landscape and horticultural services,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",medium
+30,"Agricultural services, not elsewhere classified (N.E.C.)",1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+31,Forestry,1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+32,"Fishing, hunting, and trapping",1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+40,Metal mining,1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+41,Coal mining,1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+42,Oil and gas extraction,1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+50,"Nonmetallic mining and quarrying, except fuels",1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",high
+60,Construction,2,CONSTRUCTION,high
+100,Meat products,3,MANUFACTURING,high
+101,Dairy products,3,MANUFACTURING,high
+102,"Canned, frozen, and preserved fruits and vegetables",3,MANUFACTURING,high
+110,Grain mill products,3,MANUFACTURING,high
+111,Bakery products,3,MANUFACTURING,high
+112,Sugar and confectionery products,3,MANUFACTURING,high
+120,Beverage industries,3,MANUFACTURING,high
+121,Miscellaneous food preparations and kindred products,3,MANUFACTURING,high
+122,Not specified food industries,3,MANUFACTURING,high
+130,Tobacco manufactures,3,MANUFACTURING,high
+132,Knitting mills,3,MANUFACTURING,high
+140,"Dyeing and finishing textiles, except wool and knit",3,MANUFACTURING,high
+141,Carpets and rugs,3,MANUFACTURING,high
+142,"Yarn, thread, and fabric mills",3,MANUFACTURING,high
+150,Miscellaneous textile mill products,3,MANUFACTURING,high
+151,"Apparel and accessories, except knit",3,MANUFACTURING,high
+152,Miscellaneous fabricated textile products,3,MANUFACTURING,high
+160,"Pulp, paper, and paperboard mills",3,MANUFACTURING,high
+161,Miscellaneous paper and pulp products,3,MANUFACTURING,high
+162,Paperboard containers and boxes,3,MANUFACTURING,high
+171,Newspaper publishing and printing,7,INFORMATION,medium
+172,"Printing, publishing and allied industries, except newspaper",3,MANUFACTURING,medium
+180,"Plastics, synthetics, and resins",3,MANUFACTURING,high
+181,Drugs,3,MANUFACTURING,high
+182,Soaps and cosmetics,3,MANUFACTURING,high
+190,"Paints, varnishes, and related products",3,MANUFACTURING,high
+191,Agricultural chemicals,3,MANUFACTURING,high
+192,Industrial and miscellaneous chemicals,3,MANUFACTURING,high
+200,Petroleum refining,3,MANUFACTURING,high
+201,Miscellaneous petroleum and coal products,3,MANUFACTURING,high
+210,Tires and inner tubes,3,MANUFACTURING,high
+211,Other rubber products and plastics footwear and belting,3,MANUFACTURING,high
+212,Miscellaneous plastics products,3,MANUFACTURING,high
+220,Leather tanning and finishing,3,MANUFACTURING,high
+221,"Footwear, except rubber and plastic",3,MANUFACTURING,high
+222,"Leather products, except footwear",3,MANUFACTURING,high
+230,Logging,1,"AGRICULTURE, FORESTRY, FISHING, HUNTING, AND MINING",medium
+231,"Sawmills, planing mills and millwork",3,MANUFACTURING,high
+232,Wood buildings and mobile homes,3,MANUFACTURING,high
+241,Miscellaneous wood products,3,MANUFACTURING,high
+242,Furniture and fixtures,3,MANUFACTURING,high
+250,Glass and glass products,3,MANUFACTURING,high
+251,"Cement, concrete, gypsum, and plaster products",3,MANUFACTURING,high
+252,Structural clay products,3,MANUFACTURING,high
+261,Pottery and related products,3,MANUFACTURING,high
+262,Miscellaneous nonmetallic mineral and stone products,3,MANUFACTURING,high
+270,"Blast furnaces, steelworks, and finishing mills",3,MANUFACTURING,high
+271,Iron and steel foundries,3,MANUFACTURING,high
+272,Primary aluminum industries,3,MANUFACTURING,high
+280,Other primary metal industries,3,MANUFACTURING,high
+281,"Cutlery, handtools, and general hardware",3,MANUFACTURING,high
+282,Fabricated structural metal products,3,MANUFACTURING,high
+290,Screw machine products,3,MANUFACTURING,high
+291,Metal forgings and stampings,3,MANUFACTURING,high
+292,Ordnance,3,MANUFACTURING,high
+300,Miscellaneous fabricated metal products,3,MANUFACTURING,high
+301,Not specified metal industries,3,MANUFACTURING,high
+310,Engines and turbines,3,MANUFACTURING,high
+311,Farm machinery and equipment,3,MANUFACTURING,high
+312,Construction and material handling machines,3,MANUFACTURING,high
+320,Metalworking machinery,3,MANUFACTURING,high
+321,Office and accounting machines,3,MANUFACTURING,high
+322,Computers and related equipment,3,MANUFACTURING,high
+331,"Machinery, except electrical, not elsewhere classified (N.E.C.)",3,MANUFACTURING,high
+332,Not specified machinery,3,MANUFACTURING,high
+340,Household appliances,3,MANUFACTURING,high
+341,"Radio, tv, and communication equipment",3,MANUFACTURING,high
+342,"Electrical machinery, equipment, and supplies, not elsewhere classified (N.E.C.)",3,MANUFACTURING,high
+350,"Not specified electrical machinery, equipment, and supplies",3,MANUFACTURING,high
+351,Motor vehicles and motor vehicle equipment,3,MANUFACTURING,high
+352,Aircraft and parts,3,MANUFACTURING,high
+360,Ship and boat building and repairing,3,MANUFACTURING,high
+361,Railroad locomotives and equipment,3,MANUFACTURING,high
+362,"Guided missiles, space vehicles, and parts",3,MANUFACTURING,high
+370,Cycles and miscellaneous transportation equipment,3,MANUFACTURING,high
+371,Scientific and controlling instruments,3,MANUFACTURING,high
+372,"Medical, dental, and optical instruments and supplies",3,MANUFACTURING,high
+380,Photographic equipment and supplies,3,MANUFACTURING,high
+381,"Watches, clocks, and clockwork operated devices",3,MANUFACTURING,high
+390,"Toys, amusement, and sporting goods",3,MANUFACTURING,high
+391,Miscellaneous manufacturing industries,3,MANUFACTURING,high
+392,Not specified manufacturing industries,3,MANUFACTURING,high
+400,Railroads,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+401,Bus service and urban transit,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+402,Taxicab service,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+410,Trucking service,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+411,Warehousing and storage,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+412,U.S. postal service,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+420,Water transportation,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+421,Air transportation,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+422,"Pipe lines, except natural gas",6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+432,Services incidental to transportation,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+440,Radio and television broadcasting and cable,7,INFORMATION,high
+441,Telephone communications,7,INFORMATION,high
+442,Telegraph and miscellaneous communications services,7,INFORMATION,high
+450,Electric light and power,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+451,Gas and steam supply systems,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+452,"Electric and gas, and other combinations",6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+470,Water supply and irrigation,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+471,Sanitary services,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,medium
+472,Not specified utilities,6,TRANSPORTATION AND WAREHOUSING AND UTILITIES,high
+500,Motor vehicles and equipment,4,WHOLESALE TRADE,high
+501,Furniture and home furnishings,4,WHOLESALE TRADE,high
+502,Lumber and construction materials,4,WHOLESALE TRADE,high
+510,Professional and commercial equip. and supplies,4,WHOLESALE TRADE,high
+511,"Metals and minerals, except petroleum",4,WHOLESALE TRADE,high
+512,Electrical goods,4,WHOLESALE TRADE,high
+521,"Hardware, plumbing and heating supplies",4,WHOLESALE TRADE,high
+530,"Machinery, equipment, and supplies",4,WHOLESALE TRADE,high
+531,Scrap and waste materials,4,WHOLESALE TRADE,high
+532,"Miscellaneous wholesale, durable goods",4,WHOLESALE TRADE,high
+540,Paper and paper products,4,WHOLESALE TRADE,high
+541,"Drugs, chemicals and allied products",4,WHOLESALE TRADE,high
+542,"Apparel, fabrics, and notions",4,WHOLESALE TRADE,high
+550,Groceries and related products,4,WHOLESALE TRADE,high
+551,Farm-product raw materials,4,WHOLESALE TRADE,high
+552,Petroleum products,4,WHOLESALE TRADE,high
+560,Alcoholic beverages,4,WHOLESALE TRADE,high
+561,Farm supplies,4,WHOLESALE TRADE,high
+562,"Miscellaneous wholesale, nondurable goods",4,WHOLESALE TRADE,high
+571,Not specified wholesale trade,4,WHOLESALE TRADE,high
+580,Lumber and building material retailing,5,RETAIL TRADE,high
+581,Hardware stores,5,RETAIL TRADE,high
+582,Retail nurseries and garden stores,5,RETAIL TRADE,high
+590,Mobile home dealers,5,RETAIL TRADE,high
+591,Department stores,5,RETAIL TRADE,high
+592,Variety stores,5,RETAIL TRADE,high
+600,Miscellaneous general merchandise stores,5,RETAIL TRADE,high
+601,Grocery stores,5,RETAIL TRADE,high
+602,Dairy products stores,5,RETAIL TRADE,high
+610,Retail bakeries,5,RETAIL TRADE,high
+611,"Food stores, not elsewhere classified (N.E.C.)",5,RETAIL TRADE,high
+612,Motor vehicle dealers,5,RETAIL TRADE,high
+620,Auto and home supply stores,5,RETAIL TRADE,high
+621,Gasoline service stations,5,RETAIL TRADE,high
+622,Miscellaneous vehicle dealers,5,RETAIL TRADE,high
+623,"Apparel and accessory stores, except shoe",5,RETAIL TRADE,high
+630,Shoe stores,5,RETAIL TRADE,high
+631,Furniture and home furnishings stores,5,RETAIL TRADE,high
+632,Household appliance stores,5,RETAIL TRADE,high
+633,"Radio, tv, and computer stores",5,RETAIL TRADE,high
+640,Music stores,5,RETAIL TRADE,high
+641,Eating and drinking places,11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+642,Drug stores,5,RETAIL TRADE,high
+650,Liquor stores,5,RETAIL TRADE,high
+651,"Sporting goods, bicycles, and hobby stores",5,RETAIL TRADE,high
+652,Book and stationery stores,5,RETAIL TRADE,high
+660,Jewelry stores,5,RETAIL TRADE,high
+661,"Gift, novelty, and souvenir shops",5,RETAIL TRADE,high
+662,"Sewing, needlework and piece goods stores",5,RETAIL TRADE,high
+663,Catalog and mail order houses,5,RETAIL TRADE,high
+670,Vending machine operators,5,RETAIL TRADE,high
+671,Direct selling establishments,5,RETAIL TRADE,high
+672,Fuel dealers,5,RETAIL TRADE,high
+681,Retail florists,5,RETAIL TRADE,high
+682,Miscellaneous retail stores,5,RETAIL TRADE,high
+691,Not specified retail trade,5,RETAIL TRADE,high
+700,Banking,8,"FINANCE AND INSURANCE, AND REAL ESTATE, AND RENTAL AND LEASING",high
+701,"Savings institutions, including credit unions",8,"FINANCE AND INSURANCE, AND REAL ESTATE, AND RENTAL AND LEASING",high
+702,"Credit agencies, not elsewhere classified (N.E.C.)",8,"FINANCE AND INSURANCE, AND REAL ESTATE, AND RENTAL AND LEASING",high
+710,"Security, commodity brokerage, and investment companies",8,"FINANCE AND INSURANCE, AND REAL ESTATE, AND RENTAL AND LEASING",high
+711,Insurance,8,"FINANCE AND INSURANCE, AND REAL ESTATE, AND RENTAL AND LEASING",high
+712,"Real estate, including real estate-insurance offices",8,"FINANCE AND INSURANCE, AND REAL ESTATE, AND RENTAL AND LEASING",high
+721,Advertising,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+722,Services to dwellings and other buildings,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+731,Personnel supply services,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+732,Computer and data processing services,7,INFORMATION,high
+740,Detective and protective services,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+741,"Business services, not elsewhere classified (N.E.C.)",9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+742,"Automotive rental and leasing, without drivers",8,"FINANCE AND INSURANCE, AND REAL ESTATE, AND RENTAL AND LEASING",high
+750,Automobile parking and carwashes,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+751,Automotive repair and related services,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+752,Electrical repair shops,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+760,Miscellaneous repair services,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+761,Private households,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+762,Hotels and motels,11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+770,"Lodging places, except hotels and motels",11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+771,"Laundry, cleaning, and garment services",12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+772,Beauty shops,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+780,Barber shops,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+781,Funeral service and crematories,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+782,Shoe repair shops,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+790,Dressmaking shops,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+791,Miscellaneous personal services,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+800,Theaters and motion pictures,11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+801,Video tape rental,11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+802,Bowling centers,11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+810,Miscellaneous entertainment and recreation services,11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+812,Offices and clinics of physicians,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+820,Offices and clinics of dentists,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+821,Offices and clinics of chiropractors,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+822,Offices and clinics of optometrists,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+830,"Offices and clinics of health practitioners, not elsewhere classified (N.E.C.)",10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+831,Hospitals,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+832,Nursing and personal care facilities,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+840,"Health services, not elsewhere classified (N.E.C.)",10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+841,Legal services,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+842,Elementary and secondary schools,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+850,Colleges and universities,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+851,Vocational schools,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+852,Libraries,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",medium
+860,"Educational services, not elsewhere classified (N.E.C.)",10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+861,Job training and vocational rehabilitation services,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+862,Child day care services,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+863,Family child care homes,10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+870,"Residential care facilities, without nursing",10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+871,"Social services, not elsewhere classified (N.E.C.)",10,"EDUCATIONAL SERVICES, AND HEALTH CARE AND SOCIAL ASSISTANCE",high
+872,"Museums, art galleries, and zoos",11,"ARTS, ENTERTAINMENT, AND RECREATION, AND ACCOMMODATION AND FOOD SERVICES",high
+873,Labor unions,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+880,Religious organizations,12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+881,"Membership organizations, not elsewhere classified (N.E.C.)",12,"OTHER SERVICES, EXCEPT PUBLIC ADMINISTRATION",high
+882,"Engineering, architectural, and surveying services",9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+890,"Accounting, auditing, and bookkeeping services",9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+891,"Research, development, and testing services",9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+892,Management and public relations services,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+893,Miscellaneous professional and related services,9,"PROFESSIONAL, SCIENTIFIC, AND MANAGEMENT, AND ADMINISTRATIVE, AND WASTE MANAGEMENT SERVICES",high
+900,Executive and legislative offices,13,PUBLIC ADMINISTRATION,high
+901,"General government, not elsewhere classified (N.E.C.)",13,PUBLIC ADMINISTRATION,high
+910,"Justice, public order, and safety",13,PUBLIC ADMINISTRATION,high
+921,"Public finance, taxation, and monetary policy",13,PUBLIC ADMINISTRATION,high
+922,Administration of human resources programs,13,PUBLIC ADMINISTRATION,high
+930,Administration of environmental quality and housing programs,13,PUBLIC ADMINISTRATION,high
+931,Administration of economic programs,13,PUBLIC ADMINISTRATION,high
+932,National security and international affairs,13,PUBLIC ADMINISTRATION,high
+940,Army,14,MILITARY,high
+941,Air force,14,MILITARY,high
+942,Navy,14,MILITARY,high
+950,Marines,14,MILITARY,high
+951,Coast guard,14,MILITARY,high
+952,"Armed reserves, branch not specified",14,MILITARY,high
+960,Military reserves or national guard,14,MILITARY,high

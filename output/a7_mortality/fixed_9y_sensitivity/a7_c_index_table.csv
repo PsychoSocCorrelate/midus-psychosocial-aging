@@ -1,0 +1,5 @@
+endpoint,model,n,n_events,n_features,c_index,mortality_file,censor_year,horizon_years
+fixed_9y,Age only,6651,608,1,0.7806946466267694,MIDUS_Core_MortalityCauseData_N2822_20260511.sav + MIDUS_Refresher_MortalityCauseData_N454_20260511.sav,2025,9
+fixed_9y,T1,6651,608,17,0.8043053948465281,MIDUS_Core_MortalityCauseData_N2822_20260511.sav + MIDUS_Refresher_MortalityCauseData_N454_20260511.sav,2025,9
+fixed_9y,T1+T2,6651,608,178,0.8609389969268286,MIDUS_Core_MortalityCauseData_N2822_20260511.sav + MIDUS_Refresher_MortalityCauseData_N454_20260511.sav,2025,9
+fixed_9y,T1+A4top,6651,608,31,0.8295981444846735,MIDUS_Core_MortalityCauseData_N2822_20260511.sav + MIDUS_Refresher_MortalityCauseData_N454_20260511.sav,2025,9

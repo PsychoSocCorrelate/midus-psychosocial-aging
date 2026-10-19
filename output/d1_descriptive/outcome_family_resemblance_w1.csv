@@ -1,0 +1,17 @@
+Outcome,Variable,Display label,Wave,Type,Sibling stratum,N_pairs,Metric,Value,Pct_Agreement,Unique_var_n
+Frailty Index,FInoPsy_W1,Frailty Index,Wave 1,continuous,MZ,173,Pearson r,0.412,,>5
+Frailty Index,FInoPsy_W1,Frailty Index,Wave 1,continuous,DZ_SS,141,Pearson r,0.251,,>5
+Frailty Index,FInoPsy_W1,Frailty Index,Wave 1,continuous,DZ_OS,95,Pearson r,0.189,,>5
+Frailty Index,FInoPsy_W1,Frailty Index,Wave 1,continuous,All_paired,409,Pearson r,0.298,,>5
+Cognitive Composite,btactComp_W1,Cognitive Composite,Wave 1,continuous,MZ,135,Pearson r,0.699,,>5
+Cognitive Composite,btactComp_W1,Cognitive Composite,Wave 1,continuous,DZ_SS,106,Pearson r,0.583,,>5
+Cognitive Composite,btactComp_W1,Cognitive Composite,Wave 1,continuous,DZ_OS,69,Pearson r,0.285,,>5
+Cognitive Composite,btactComp_W1,Cognitive Composite,Wave 1,continuous,All_paired,310,Pearson r,0.573,,>5
+Allostatic Load,ALcomp_W1,Allostatic Load,Wave 1,continuous,MZ,81,Pearson r,0.647,,>5
+Allostatic Load,ALcomp_W1,Allostatic Load,Wave 1,continuous,DZ_SS,37,Pearson r,0.276,,>5
+Allostatic Load,ALcomp_W1,Allostatic Load,Wave 1,continuous,DZ_OS,28,Pearson r,0.04,,>5
+Allostatic Load,ALcomp_W1,Allostatic Load,Wave 1,continuous,All_paired,146,Pearson r,0.451,,>5
+PhenoAge (residualized),phenoAge_res,PhenoAge (residualized),Cross-sectional,continuous,MZ,33,Pearson r,0.8,,>5
+PhenoAge (residualized),phenoAge_res,PhenoAge (residualized),Cross-sectional,continuous,DZ_SS,23,Pearson r,0.877,,>5
+PhenoAge (residualized),phenoAge_res,PhenoAge (residualized),Cross-sectional,continuous,DZ_OS,15,Pearson r,0.7,,>5
+PhenoAge (residualized),phenoAge_res,PhenoAge (residualized),Cross-sectional,continuous,All_paired,71,Pearson r,0.806,,>5

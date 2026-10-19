@@ -1,0 +1,535 @@
+# All ordinal variables are recoded so that higher values indicate
+# "more" of the construct (e.g. better health, higher frequency,
+# stronger agreement) unless noted otherwise.
+
+# Demographics
+
+sampleId:
+  1: Main RDD
+  2: Sibling
+  3: Twin
+  4: City oversample
+  13: Milwaukee
+  14: Boston new
+  20: MIDUS Refresher
+  21: Milwaukee Refresher
+
+cohort:
+  MIDUS2: MIDUS 2 (2004-06)
+  MIDUSR: MIDUS Refresher
+
+sib_type:
+  MZ: Monozygotic (identical)
+  DZ_SS: Dizygotic same-sex
+  DZ_OS: Dizygotic opposite-sex
+
+female:
+  0: Male
+  1: Female
+
+hispanic:
+  0: Non-Hispanic
+  1: Hispanic
+
+race:
+  1: White
+  2: Black
+  3: Asian/Pac Isl./Nat Amer
+  4: Other
+
+education:
+  1: No school/some grade school
+  2: 8th grade/junior high
+  3: Some high school
+  4: GED
+  5: High school graduate
+  6: 1-2 yr college, no degree
+  7: 3+ yr college, no degree
+  8: 2-yr degree (AA)
+  9: 4-yr degree (BA/BS)
+  10: Some graduate school
+  11: Master's degree
+  12: Doctoral/professional degree
+
+relatStatus:
+  Married: Married
+  Cohabiting(not married): Cohabiting
+  Divorced(not cohabiting): Divorced
+  Separated(not cohabiting): Separated
+  Widowed(not cohabiting): Widowed
+  Never married(not cohabiting): Never married
+
+sexualOrientation:
+  1: Heterosexual
+  2: Gay/Lesbian
+  3: Bisexual
+
+# Health status
+
+mentalHealth:
+  1: Poor
+  2: Fair
+  3: Good
+  4: Very good
+  5: Excellent
+
+subjheartAttackRisk:
+  0: No chance
+  1: Very unlikely
+  2: Unlikely
+  3: Moderate
+  4: Likely
+  5: Very likely
+  6: Almost certain
+
+subjcancerRisk:
+  0: No chance
+  1: Very unlikely
+  2: Unlikely
+  3: Moderate
+  4: Likely
+  5: Very likely
+  6: Almost certain
+
+# Healthcare utilisation (binary)
+
+privateClinic:
+  0: "No"
+  1: "Yes"
+
+HMOClinic:
+  0: "No"
+  1: "Yes"
+
+publicClinic:
+  0: "No"
+  1: "Yes"
+
+outPatient:
+  0: "No"
+  1: "Yes"
+
+emergencyCare:
+  0: "No"
+  1: "Yes"
+
+urgentCare:
+  0: "No"
+  1: "Yes"
+
+needMedNotGetting:
+  0: "No"
+  1: "Yes"
+
+haveHealthInsurance:
+  0: "No"
+  1: "Yes"
+
+medicare:
+  0: "No"
+  1: "Yes"
+
+medicaid:
+  0: "No"
+  1: "Yes"
+
+# Complementary/alternative medicine frequency (past 12 months)
+#   five_vars recode (6 - x); 1 = Never to 5 = 5+ times
+
+chiropractorFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+physicalPTFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+exercisePTFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+herbalPTFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+megaVitaminFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+massageFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+prayerFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+mediateFreq:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+physicianDiet:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+weightControl:
+  1: Never
+  2: Once only
+  3: 1-2 times
+  4: 3-4 times
+  5: 5+ times
+
+# Substance use & medication
+
+usePainkiller:
+  0: "No"
+  1: "Yes"
+
+useDepression:
+  0: "No"
+  1: "Yes"
+
+alcohProb:
+  0: "No"
+  1: "Yes"
+
+alcohMoreIntended:
+  0: Very frequently
+  1: 5+ times
+  2: 3-4 times
+  3: 1-2 times
+  4: Once only
+  5: Never
+
+drinkExposure_PA59:
+  0: "No"
+  1: "Yes"
+
+smokeStatus:
+  Never smoked regular: Never smoked
+  Former light smoker: Former smoker (below-median cig/day)
+  Former heavy smoker: Former smoker (above-median cig/day)
+  Current light smoker: Current smoker (below-median cig/day)
+  Current heavy smoker: Current smoker (above-median cig/day)
+
+# drinkStatus: 2-axis (frequency × binge). PA51 reverse-coded (1=daily..5=<1/wk).
+drinkStatus:
+  Past-month abstainer: Past-month abstainer
+  Infrequent-non-binge: Infrequent, no binge (≤2 days/wk)
+  Frequent-non-binge: Frequent, no binge (≥3 days/wk)
+  Binge: Binge (>1 episode)
+
+# Weight change
+
+weightChangeHealthIssue:
+  0: "No"
+  1: "Yes"
+
+weightChangeExercise:
+  0: "No"
+  1: "Yes"
+
+# Work & financial
+
+workStatus:
+  Working now: Working now
+  Self-employed: Self-employed
+  Laid-off/Seeking-work: Laid-off/Seeking work
+  Retired: Retired
+  Homemaker: Homemaker
+  Student: Student
+  Disabled: Disabled
+  Other work: Other
+
+manageRole:
+  0: Non-manager
+  1: Manager/supervisor
+
+occGroup:
+  1: Executive/Managerial
+  2: Professional
+  3: Technician / Support
+  4: Sales
+  5: Admin support
+  6: Service
+  7: Farm/Forest/Fishing
+  8: Production
+  9: Operation/Labor
+  10: Military
+
+workIndustry:
+  1: Agriculture
+  2: Construction
+  3: Manufacturing
+  4: Wholesale
+  5: Retail
+  6: Transportation
+  7: Information
+  8: Finance Svc
+  9: Professional Svc
+  10: Education
+  11: Arts/Entertainment/Recreation/Food
+  12: Other
+  13: Public Admin
+  14: Military
+
+spouseWork:
+  1: Working
+  2: Self-employed
+  3: Seeking work
+  4: Retired
+  5: Homemaker
+  6: Student
+  7: Maternity
+  8: Temp leave
+  9: Volunteer
+  10: Disabled
+  11: Other
+
+moneyForNeeds:
+  1: Not enough
+  2: Just enough
+  3: More than enough
+
+housingStatus:
+  0: Rent
+  1: Own
+
+# Social contact
+#   famContact is passthrough (higher = LESS frequent).
+#   friendContact is reverse-coded 9 - x (higher = MORE frequent).
+
+famContact:
+  1: Several times a day
+  2: About once a day
+  3: Several times a week
+  4: About once a week
+  5: 2-3 times a month
+  6: About once a month
+  7: Less than once a month
+  8: Never/hardly ever
+
+friendContact:
+  1: Never/hardly ever
+  2: Less than once a month
+  3: About once a month
+  4: 2-3 times a month
+  5: About once a week
+  6: Several times a week
+  7: About once a day
+  8: Several times a day
+
+contactNeighb:
+  0: Never
+  1: A few times a year
+  2: About once a month
+  3: Several times a month
+  4: Several times a week
+  5: Almost every day
+
+talkNeighb:
+  0: Never
+  1: A few times a year
+  2: About once a month
+  3: Several times a month
+  4: Several times a week
+  5: Almost every day
+
+# Sexuality
+
+sexFrequency:
+  0: Did not have sex
+  1: Once a month or less
+  2: 2-3 times a month
+  3: About once a week
+  4: 2-3 times a week
+  5: More than 3 times a week
+  6: Not applicable
+
+sexImportance:
+  1: Not at all
+  2: A little
+  3: Somewhat
+  4: A lot
+
+sexPartner:
+  0: None
+  1: One
+  2: Two
+  3: Three
+  4: Four
+  5: Five
+  6: Six or more
+
+# Personality single-items & self-evaluation
+#   four_vars recode (5 - x); 1 = Not at all to 4 = A lot
+
+outgoing1item:
+  1: Not at all
+  2: A little
+  3: Some
+  4: A lot
+
+worry1item:
+  1: Not at all
+  2: A little
+  3: Some
+  4: A lot
+
+curious1item:
+  1: Not at all
+  2: A little
+  3: Some
+  4: A lot
+
+optim1item:
+  1: Not at all
+  2: A little
+  3: Some
+  4: A lot
+
+foresight:
+  1: Not at all
+  2: A little
+  3: Some
+  4: A lot
+
+contributeToOthers:
+  0: Not at all
+  1: A little
+  2: Some
+  3: Quite a bit
+  4: A lot
+
+subAchievement:
+  1: Much better than expected
+  2: Somewhat better
+  3: A little better
+  4: A little worse
+  5: Somewhat worse
+  6: Much worse than expected
+
+# Cognitive leisure activities
+#   six_vars recode (6 - x); 0 = Never to 5 = Daily
+
+readBook:
+  0: Never
+  1: Once a year or less
+  2: Several times a year
+  3: Several times a month
+  4: Several times a week
+  5: Daily
+
+wordGames:
+  0: Never
+  1: Once a year or less
+  2: Several times a year
+  3: Several times a month
+  4: Several times a week
+  5: Daily
+
+playCard:
+  0: Never
+  1: Once a year or less
+  2: Several times a year
+  3: Several times a month
+  4: Several times a week
+  5: Daily
+
+attendLectu:
+  0: Never
+  1: Once a year or less
+  2: Several times a year
+  3: Several times a month
+  4: Several times a week
+  5: Daily
+
+writing:
+  0: Never
+  1: Once a year or less
+  2: Several times a year
+  3: Several times a month
+  4: Several times a week
+  5: Daily
+
+useComputer:
+  0: Never
+  1: Once a year or less
+  2: Several times a year
+  3: Several times a month
+  4: Several times a week
+  5: Daily
+
+# Family & life events
+
+lossChild:
+  0: "No"
+  1: "Yes"
+
+homeless:
+  0: "No"
+  1: "Yes"
+
+careGivStatus:
+  Never caregiver: Never
+  Former caregiver: Former
+  Current caregiver: Current
+
+# familyHeartAttack / familyCancer: hierarchical: only the closest
+# affected relation is recorded (Parent > Sibling > Children).
+familyHeartAttack:
+  No family history: No family history
+  Parent: Parent
+  Sibling: Sibling
+  Children: Children
+
+familyCancer:
+  No family history: No family history
+  Parent: Parent
+  Sibling: Sibling
+  Children: Children
+
+# Adverse Childhood Experiences (ACE)
+
+ecoACE_1item:
+  0: "No"
+  1: "Yes"
+
+educationACE_3item:
+  0: None
+  1: 1 item
+  2: 2 items
+  3: 3 items
+
+famDysfuncACE_3item:
+  0: None
+  1: 1 item
+  2: 2 items
+  3: 3 items

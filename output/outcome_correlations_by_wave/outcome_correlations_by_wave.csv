@@ -1,0 +1,7 @@
+wave,wave_label,outcome_1,outcome_2,r,ci_lo,ci_hi,n,p
+W1,Baseline (Wave 1),Frailty Index,Cognitive Composite,-0.204,-0.229,-0.178,5489,1.3871761870086731e-52
+W1,Baseline (Wave 1),Frailty Index,Allostatic Load,0.306,0.263,0.348,1768,1.1696407876668457e-39
+W1,Baseline (Wave 1),Cognitive Composite,Allostatic Load,-0.16,-0.207,-0.113,1623,8.02988825755229e-11
+W2,9-year follow-up (Wave 2),Frailty Index,Cognitive Composite,-0.217,-0.248,-0.185,3481,2.5790462338655434e-38
+W2,9-year follow-up (Wave 2),Frailty Index,Allostatic Load,0.22,0.142,0.297,580,8.110801216612348e-08
+W2,9-year follow-up (Wave 2),Cognitive Composite,Allostatic Load,-0.109,-0.189,-0.028,576,0.008582445093609406

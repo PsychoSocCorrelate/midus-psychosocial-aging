@@ -1,0 +1,162 @@
+predictor,subdomain,overlap_code,frailty_items_involved,rationale
+agreeableness,personality,c,,No content overlap with physical frailty items
+extraversion,personality,c,,No content overlap with physical frailty items
+neuroticism,personality,b,"insomnia, lonely",Personality risk factor for insomnia and loneliness; shared affective variance
+conscientiousness,personality,c,,No content overlap with physical frailty items
+openness,personality,c,,No content overlap with physical frailty items
+mpqWellbeing,personality,c,,Trait well-being; no direct physical frailty overlap
+mpqPotency,personality,c,,Trait social potency; no physical frailty overlap
+mpqAchievement,personality,c,,Trait achievement motivation; no physical frailty overlap
+mpqCloseness,personality,c,,Trait social closeness; no physical frailty overlap
+mpqStress,personality,b,"insomnia, lonely",Stress reactivity associated with insomnia and social isolation
+mpqAggression,personality,c,,Trait aggression; no physical frailty overlap
+mpqAlienation,personality,b,lonely,Alienation shares variance with loneliness/social isolation
+mpqControl,personality,c,,Impulse control; no direct physical frailty overlap
+mpqTradition,personality,c,,Traditionalism; no physical frailty overlap
+mpqHarmAvoid,personality,c,,Harm avoidance; no physical frailty overlap
+worry1item,personality,c,,Single worry item; no direct physical frailty overlap
+curious1item,personality,c,,Curiosity; no physical frailty overlap
+optim1item,personality,c,,Optimism; no physical frailty overlap
+outgoing1item,personality,c,,Outgoingness; no physical frailty overlap
+psychWellbeing,psychological_wellbeing,c,,Composite psychological well-being; distinct from physical frailty
+posAffect,psychological_wellbeing,c,,Positive affect frequency; no direct physical frailty overlap
+controlOverHealth,psychological_wellbeing,c,,Perceived health control; belief not health state
+effortInHealth,psychological_wellbeing,c,,Perceived health effort; belief not health state
+healthLocControl,psychological_wellbeing,c,,Health locus of control (internal); belief construct
+healthLocOther,psychological_wellbeing,c,,Health locus of control (others); belief construct
+interdependence,psychological_wellbeing,c,,Self-construal; no physical frailty overlap
+independence,psychological_wellbeing,c,,Self-construal; no physical frailty overlap
+agency,psychological_wellbeing,c,,Sense of agency; no physical frailty overlap
+optimism,psychological_wellbeing,c,,Dispositional optimism; no physical frailty overlap
+pessimism,psychological_wellbeing,c,,Dispositional pessimism; no physical frailty overlap
+subAchievement,psychological_wellbeing,c,,Subjective achievement; no physical frailty overlap
+generativity,psychological_wellbeing,c,,Generativity concern; no physical frailty overlap
+mindfulness,psychological_wellbeing,c,,Mindfulness; no physical frailty overlap
+religiosity,psychological_wellbeing,c,,Religiosity; no physical frailty overlap
+dailtySpirtural,psychological_wellbeing,c,,Daily spiritual experiences; no physical frailty overlap
+prayerFreq,psychological_wellbeing,c,,Prayer frequency; no physical frailty overlap
+depressedAffect,mental_health_symptoms,b,lonely,Depressive symptoms share variance with loneliness (FInoPsy item); affective overlap
+anhedonia,mental_health_symptoms,b,lonely,Loss of interest/pleasure proximal to social withdrawal and loneliness
+anxietyScore,mental_health_symptoms,b,"chestPain, heartTrouble",Anxiety symptoms can manifest as chest pain and cardiac symptoms
+panicScore,mental_health_symptoms,b,"chestPain, heartTrouble",Panic attacks produce chest pain and cardiac-like symptoms
+mentalHealth,mental_health_symptoms,b,lonely,Global mental health inversely related to loneliness
+negAffect,mental_health_symptoms,b,lonely,Negative affect shares variance with loneliness and isolation
+activeCoping,coping_resilience,c,,Coping strategy; no physical frailty overlap
+secondControl,coping_resilience,c,,Secondary control coping; no physical frailty overlap
+selfPlanning,coping_resilience,c,,Planning coping; no physical frailty overlap
+ventEmotion,coping_resilience,c,,Emotional venting; no physical frailty overlap
+denial,coping_resilience,c,,Denial coping; no physical frailty overlap
+behavDisengage,coping_resilience,c,,Behavioral disengagement; no physical frailty overlap
+foodCope,coping_resilience,b,"cholesterol, diabetes",Using food to cope is proximal to metabolic disease risk factors
+live4Today,coping_resilience,c,,Present-focused orientation; no physical frailty overlap
+insightPast,coping_resilience,c,,Past insight; no physical frailty overlap
+foresight,coping_resilience,c,,Future planning; no physical frailty overlap
+selfSufficiency,coping_resilience,c,,Self-sufficiency; no physical frailty overlap
+lifeSatisfaction,life_evaluation,c,,Life satisfaction; no physical frailty overlap
+lifeTenYearsAgo,life_evaluation,c,,Retrospective life rating; no physical frailty overlap
+lifeFuture,life_evaluation,c,,Prospective life rating; no physical frailty overlap
+lifeControl,life_evaluation,c,,Perceived life control; no physical frailty overlap
+lifeEffort,life_evaluation,c,,Perceived life effort; no physical frailty overlap
+lifeDiscriminate,life_evaluation,c,,Perceived discrimination; no physical frailty overlap
+dailyDiscriminate,life_evaluation,c,,Daily discrimination; no physical frailty overlap
+startMiddleAge,life_evaluation,c,,Subjective middle-age start; no physical frailty overlap
+endMiddleAge,life_evaluation,c,,Subjective middle-age end; no physical frailty overlap
+contributeToOthers,social_relationships,c,,Social contribution; no physical frailty overlap
+socMeaningful,social_relationships,c,,Social meaning; no physical frailty overlap
+socIntegration,social_relationships,c,,Social integration; no physical frailty overlap
+acceptOthers,social_relationships,c,,Social acceptance; no physical frailty overlap
+socContribution,social_relationships,c,,Social contribution scale; no physical frailty overlap
+socActualization,social_relationships,c,,Social actualization; no physical frailty overlap
+sympathy,social_relationships,c,,Empathic concern; no physical frailty overlap
+contactNeighb,social_relationships,c,,Neighbor contact frequency; no physical frailty overlap
+talkNeighb,social_relationships,c,,Neighbor conversation; no physical frailty overlap
+yearsNeighb,social_relationships,c,,Years in neighborhood; no physical frailty overlap
+neighborQual,social_relationships,c,,Neighborhood quality; no physical frailty overlap
+homeInequal,social_relationships,c,,Home inequality perception; no physical frailty overlap
+familyQuality,social_relationships,c,,Family relationship quality; no physical frailty overlap
+famContact,social_relationships,c,,Family contact frequency; no physical frailty overlap
+childRelationQuality,social_relationships,c,,Child relationship quality; no physical frailty overlap
+childRelationInequality,social_relationships,c,,Child relationship inequality; no physical frailty overlap
+giveSupport,social_relationships,c,,Support giving; no physical frailty overlap
+recSupport,social_relationships,c,,Support receiving; no physical frailty overlap
+friendQuality,social_relationships,c,,Friend relationship quality; no physical frailty overlap
+friendContact,social_relationships,c,,Friend contact frequency; no physical frailty overlap
+spouseQuality,intimate_partner,c,,Spouse relationship quality; no physical frailty overlap
+spouseWork,intimate_partner,c,,Spouse work status; no physical frailty overlap
+relatCohabLength,intimate_partner,c,,Cohabitation length; no physical frailty overlap
+timesMarried,intimate_partner,c,,Marriage count; no physical frailty overlap
+partnerAgeGap,intimate_partner,c,,Partner age difference; no physical frailty overlap
+partnerEduGap,intimate_partner,c,,Partner education gap; no physical frailty overlap
+sexualSatisfaction,intimate_partner,c,,Sexual satisfaction; no physical frailty overlap
+sexPartner,intimate_partner,c,,Number of sex partners; no physical frailty overlap
+sexFrequency,intimate_partner,c,,Sexual frequency; no physical frailty overlap
+sexImportance,intimate_partner,c,,Sexual importance rating; no physical frailty overlap
+householdSize,household_caregiving,c,,Household size; no physical frailty overlap
+childInHH,household_caregiving,c,,Children in household; no physical frailty overlap
+adultKidHome,household_caregiving,c,,Adult children at home; no physical frailty overlap
+homeless,household_caregiving,c,,Homelessness history; no physical frailty overlap
+housingStatus,household_caregiving,c,,Housing ownership; no physical frailty overlap
+relatStatus,household_caregiving,c,,Relationship status; no physical frailty overlap
+careGivStatus,household_caregiving,c,,Caregiving status; no physical frailty overlap
+careGivIntensity,household_caregiving,c,,Caregiving intensity; no physical frailty overlap
+chiropractorFreq,health_behaviors,b,"backPain, jointPain, arthritis",Chiropractic visits are proximal to musculoskeletal pain and arthritis
+vmJobAct_vig,health_behaviors,a,"limitWalking, limitModAct",Vigorous job activity directly measures physical capacity; inverse of ADL limitations
+vmLeisureAct_vig,health_behaviors,a,"limitWalking, limitModAct, limitTravel",Vigorous leisure activity directly measures physical capacity; inverse of ADL limitations
+vmChoresAct_vig,health_behaviors,a,"limitWalking, limitModAct, limitGrocery",Vigorous chore activity directly measures physical capacity; inverse of ADL limitations
+lightAct,health_behaviors,a,"limitWalking, limitModAct",Light activity level directly reflects physical functional capacity
+sleepAvg,health_behaviors,a,insomnia,Sleep duration is the inverse construct of insomnia
+napFreq,health_behaviors,a,insomnia,Nap frequency reflects daytime sleepiness; directly related to insomnia/sleep quality
+physicianDiet,health_behaviors,b,"chronicIllness, diabetes, cholesterol",Diet prescribed by physician implies existing chronic condition management
+weightControl,health_behaviors,b,"cholesterol, diabetes",Weight management efforts proximal to metabolic disease burden
+weightChangeExercise,health_behaviors,c,,Weight change due to exercise; behavioral not disease state
+suppAmount,health_behaviors,c,,Supplement amount; health behavior not disease state
+herbalPTFreq,health_behaviors,c,,Herbal treatment frequency; complementary medicine use
+megaVitaminFreq,health_behaviors,c,,Megavitamin use; health behavior
+massageFreq,health_behaviors,c,,Massage frequency; health behavior
+mediateFreq,health_behaviors,c,,Meditation frequency; health behavior
+exercisePTFreq,health_behaviors,c,,Exercise program frequency; health behavior
+physicalPTFreq,health_behaviors,c,,Physical therapy frequency; health behavior
+whr,health_behaviors,a,"diabetes, cholesterol, heartTrouble, highBP",Waist-hip ratio is a direct anthropometric marker of cardiometabolic risk
+bmi,health_behaviors,a,"diabetes, cholesterol, heartTrouble, highBP",BMI is a direct anthropometric marker of cardiometabolic risk
+readBook,cognitive_activities,c,,Reading frequency; no physical frailty overlap
+wordGames,cognitive_activities,c,,Word game frequency; no physical frailty overlap
+playCard,cognitive_activities,c,,Card game frequency; no physical frailty overlap
+attendLectu,cognitive_activities,c,,Lecture attendance; no physical frailty overlap
+writing,cognitive_activities,c,,Writing frequency; no physical frailty overlap
+useComputer,cognitive_activities,c,,Computer use; no physical frailty overlap
+intellAging,cognitive_activities,c,,Belief about intellectual aging; no physical frailty overlap
+attendMeetingFreq,cognitive_activities,c,,Meeting attendance; no physical frailty overlap
+attendSportsFreq,cognitive_activities,c,,Sports event attendance; no physical frailty overlap
+smokeStatus,substance_use,b,"lungProb, asthma, heartTrouble, stroke",Smoking status is a causal risk factor for respiratory and cardiovascular frailty items
+smokeDuration,substance_use,b,"lungProb, asthma, heartTrouble, stroke",Smoking duration proximal to respiratory and cardiovascular disease
+smokeAmount,substance_use,b,"lungProb, asthma, heartTrouble, stroke",Smoking quantity proximal to respiratory and cardiovascular disease
+smokeExposure_3item,substance_use,b,"lungProb, asthma",Secondhand smoke exposure proximal to respiratory conditions
+drinkStatus,substance_use,b,"heartTrouble, highBP, diabetes",Alcohol use is a risk factor for cardiovascular and metabolic conditions
+drinkExposure_PA59,substance_use,b,"heartTrouble, highBP",Alcohol exposure proximal to cardiovascular conditions
+alcohMoreIntended,substance_use,b,"heartTrouble, highBP",Problematic drinking proximal to cardiovascular and metabolic disease
+alcohProb,substance_use,b,"heartTrouble, highBP, diabetes",Alcohol problems proximal to cardiovascular and metabolic conditions
+workStatus,work_occupation,c,,Employment status; no physical frailty overlap
+manageRole,work_occupation,c,,Managerial role; no physical frailty overlap
+rateCurrentWork,work_occupation,c,,Work satisfaction; no physical frailty overlap
+jobSkillDiscretion,work_occupation,c,,Job skill discretion; no physical frailty overlap
+jobDecisionAuthority,work_occupation,c,,Decision authority; no physical frailty overlap
+jobDemands,work_occupation,c,,Job demands; no physical frailty overlap
+jobCoworkerSupp,work_occupation,c,,Coworker support; no physical frailty overlap
+jobSupervisorSupp,work_occupation,c,,Supervisor support; no physical frailty overlap
+jobDiscrimination,work_occupation,c,,Job discrimination; no physical frailty overlap
+workInequality,work_occupation,c,,Work inequality; no physical frailty overlap
+occGroup,work_occupation,c,,Occupation group; no physical frailty overlap
+workIndustry,work_occupation,c,,Work industry; no physical frailty overlap
+financialControl,socioeconomic,c,,Financial control; no physical frailty overlap
+financialEffort,socioeconomic,c,,Financial effort; no physical frailty overlap
+moneyForNeeds,socioeconomic,c,,Money adequacy; no physical frailty overlap
+financial10YrAgo,socioeconomic,c,,Financial situation past; no physical frailty overlap
+financial10YrFuture,socioeconomic,c,,Financial situation future; no physical frailty overlap
+personalIncome,socioeconomic,c,,Personal income; no physical frailty overlap
+hhPersonalEarn,socioeconomic,c,,Household personal earnings; no physical frailty overlap
+hhPension,socioeconomic,c,,Pension income; no physical frailty overlap
+hhSocialSecurity,socioeconomic,c,,Social security income; no physical frailty overlap
+householdIncome,socioeconomic,c,,Household income; no physical frailty overlap
+haveHealthInsurance,socioeconomic,c,,Health insurance status; structural access not health state
+medicare,socioeconomic,c,,Medicare enrollment; structural access not health state
+medicaid,socioeconomic,c,,Medicaid enrollment; structural access not health state

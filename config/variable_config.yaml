@@ -1,0 +1,434 @@
+# Variable tier assignments and sub-domain groupings.
+
+tier1:
+  # Demographics
+  - female
+  - hispanic
+  - race                    # categorical
+  - sexualOrientation       # categorical
+  # Early life
+  - education
+  - ageFirstWork
+  - ageFirstCig
+  - ageFirstAlcoh
+  - educationACE_3item
+  - famDysfuncACE_3item
+  - ecoACE_1item
+  - lossChild
+  # Family history
+  - familyHeartAttack       # categorical
+  - familyCancer            # categorical
+  # Socioeconomic status
+  - householdIncome
+  - hhPension
+  - hhSocialSecurity
+
+tier2:
+  # Personality (19)
+  - agreeableness
+  - extraversion
+  - neuroticism
+  - conscientiousness
+  - openness
+  - mpqWellbeing
+  - mpqPotency
+  - mpqAchievement
+  - mpqCloseness
+  - mpqStress
+  - mpqAggression
+  - mpqAlienation
+  - mpqControl
+  - mpqTradition
+  - mpqHarmAvoid
+  - worry1item
+  - curious1item
+  - optim1item
+  - outgoing1item
+  # Psychological well-being (17)
+  - psychWellbeing
+  - posAffect
+  - controlOverHealth
+  - effortInHealth
+  - healthLocControl
+  - healthLocOther
+  - interdependence
+  - independence
+  - agency
+  - optimism
+  - pessimism
+  - subAchievement
+  - generativity
+  - mindfulness
+  - religiosity
+  - dailtySpirtural
+  - prayerFreq
+  # Mental health symptoms (6)
+  - depressedAffect
+  - anhedonia
+  - anxietyScore
+  - panicScore
+  - mentalHealth
+  - negAffect
+  # Coping & self-regulation (11)
+  - activeCoping
+  - secondControl
+  - selfPlanning
+  - ventEmotion
+  - denial
+  - behavDisengage
+  - foodCope
+  - live4Today
+  - insightPast
+  - foresight
+  - selfSufficiency
+  # Life evaluation & discrimination (9)
+  - lifeSatisfaction
+  - lifeTenYearsAgo
+  - lifeFuture
+  - lifeControl
+  - lifeEffort
+  - lifeDiscriminate
+  - dailyDiscriminate
+  - startMiddleAge
+  - endMiddleAge
+  # Social relationships (20)
+  - contributeToOthers
+  - socMeaningful
+  - socIntegration
+  - acceptOthers
+  - socContribution
+  - socActualization
+  - sympathy
+  - contactNeighb
+  - talkNeighb
+  - yearsNeighb
+  - neighborQual
+  - homeInequal
+  - familyQuality
+  - famContact
+  - childRelationQuality
+  - childRelationInequality
+  - giveSupport
+  - recSupport
+  - friendQuality
+  - friendContact
+  # Intimate partner (10)
+  - spouseQuality
+  - spouseWork
+  - relatCohabLength
+  - timesMarried
+  - partnerAgeGap
+  - partnerEduGap
+  - sexualSatisfaction
+  - sexPartner
+  - sexFrequency
+  - sexImportance
+  # Household & caregiving (8)
+  - householdSize
+  - childInHH
+  - adultKidHome
+  - homeless
+  - housingStatus
+  - relatStatus              # categorical
+  - careGivStatus            # categorical
+  - careGivIntensity
+  # Health behaviors (19)
+  - chiropractorFreq
+  - vmJobAct_vig
+  - vmLeisureAct_vig
+  - vmChoresAct_vig
+  - lightAct
+  - sleepAvg
+  - napFreq
+  - physicianDiet
+  - weightControl
+  - weightChangeExercise
+  - suppAmount
+  - herbalPTFreq
+  - megaVitaminFreq
+  - massageFreq
+  - mediateFreq
+  - exercisePTFreq
+  - physicalPTFreq
+  - whr
+  - bmi
+  # Engagement activities (9)
+  - readBook
+  - wordGames
+  - playCard
+  - attendLectu
+  - writing
+  - useComputer
+  - intellAging
+  - attendMeetingFreq
+  - attendSportsFreq
+  # Substance use (8)
+  - smokeStatus               # categorical
+  - smokeDuration
+  - smokeAmount
+  - smokeExposure_3item
+  - drinkStatus               # categorical
+  - drinkExposure_PA59
+  - alcohMoreIntended
+  - alcohProb
+  # Work & occupation (12)
+  - workStatus                # categorical
+  - manageRole
+  - rateCurrentWork
+  - jobSkillDiscretion
+  - jobDecisionAuthority
+  - jobDemands
+  - jobCoworkerSupp
+  - jobSupervisorSupp
+  - jobDiscrimination
+  - workInequality
+  - occGroup                  # categorical
+  - workIndustry              # categorical
+  # Financial & insurance (8)
+  # personalIncome and hhPersonalEarn excluded (r = .78/.87 with householdIncome).
+  # householdIncome, hhPension and hhSocialSecurity are in Tier 1.
+  - financialControl
+  - financialEffort
+  - moneyForNeeds
+  - financial10YrAgo
+  - financial10YrFuture
+  - haveHealthInsurance
+  - medicare
+  - medicaid
+  # Healthcare access (structural)
+  - privateClinic
+  - HMOClinic
+  - publicClinic
+  - outPatient
+  - emergencyCare
+  - urgentCare
+
+tier3:
+  # Current disease burden / health state; supplementary analyses only.
+  - usePainkiller
+  - useDepression
+  - srhPh
+  - subjheartAttackRisk
+  - subjcancerRisk
+  - weightChangeHealthIssue
+  - needMedNotGetting
+  - seeMedDoc
+  - seeMentDoc
+
+subdomain:
+  personality:
+    - agreeableness
+    - extraversion
+    - neuroticism
+    - conscientiousness
+    - openness
+    - mpqWellbeing
+    - mpqPotency
+    - mpqAchievement
+    - mpqCloseness
+    - mpqStress
+    - mpqAggression
+    - mpqAlienation
+    - mpqControl
+    - mpqTradition
+    - mpqHarmAvoid
+    - worry1item
+    - curious1item
+    - optim1item
+    - outgoing1item
+  psychological_wellbeing:
+    - psychWellbeing
+    - posAffect
+    - controlOverHealth
+    - effortInHealth
+    - healthLocControl
+    - healthLocOther
+    - interdependence
+    - independence
+    - agency
+    - optimism
+    - pessimism
+    - subAchievement
+    - generativity
+    - mindfulness
+    - religiosity
+    - dailtySpirtural
+    - prayerFreq
+  mental_health_symptoms:
+    - depressedAffect
+    - anhedonia
+    - anxietyScore
+    - panicScore
+    - mentalHealth
+    - negAffect
+  coping_resilience:
+    - activeCoping
+    - secondControl
+    - selfPlanning
+    - ventEmotion
+    - denial
+    - behavDisengage
+    - foodCope
+    - live4Today
+    - insightPast
+    - foresight
+    - selfSufficiency
+  life_evaluation:
+    - lifeSatisfaction
+    - lifeTenYearsAgo
+    - lifeFuture
+    - lifeControl
+    - lifeEffort
+    - lifeDiscriminate
+    - dailyDiscriminate
+    - startMiddleAge
+    - endMiddleAge
+  social_relationships:
+    - contributeToOthers
+    - socMeaningful
+    - socIntegration
+    - acceptOthers
+    - socContribution
+    - socActualization
+    - sympathy
+    - contactNeighb
+    - talkNeighb
+    - yearsNeighb
+    - neighborQual
+    - homeInequal
+    - familyQuality
+    - famContact
+    - childRelationQuality
+    - childRelationInequality
+    - giveSupport
+    - recSupport
+    - friendQuality
+    - friendContact
+  intimate_partner:
+    - spouseQuality
+    - spouseWork
+    - relatCohabLength
+    - timesMarried
+    - partnerAgeGap
+    - partnerEduGap
+    - sexualSatisfaction
+    - sexPartner
+    - sexFrequency
+    - sexImportance
+  household_caregiving:
+    - householdSize
+    - childInHH
+    - adultKidHome
+    - homeless
+    - housingStatus
+    - relatStatus
+    - careGivStatus
+    - careGivIntensity
+  health_behaviors:
+    - chiropractorFreq
+    - vmJobAct_vig
+    - vmLeisureAct_vig
+    - vmChoresAct_vig
+    - lightAct
+    - sleepAvg
+    - napFreq
+    - physicianDiet
+    - weightControl
+    - weightChangeExercise
+    - suppAmount
+    - herbalPTFreq
+    - megaVitaminFreq
+    - massageFreq
+    - mediateFreq
+    - exercisePTFreq
+    - physicalPTFreq
+    - whr
+    - bmi
+  cognitive_activities:
+    - readBook
+    - wordGames
+    - playCard
+    - attendLectu
+    - writing
+    - useComputer
+    - intellAging
+    - attendMeetingFreq
+    - attendSportsFreq
+  substance_use:
+    - smokeStatus
+    - smokeDuration
+    - smokeAmount
+    - smokeExposure_3item
+    - drinkStatus
+    - drinkExposure_PA59
+    - alcohMoreIntended
+    - alcohProb
+  work_occupation:
+    - workStatus
+    - manageRole
+    - rateCurrentWork
+    - jobSkillDiscretion
+    - jobDecisionAuthority
+    - jobDemands
+    - jobCoworkerSupp
+    - jobSupervisorSupp
+    - jobDiscrimination
+    - workInequality
+    - occGroup
+    - workIndustry
+  socioeconomic_subjective:
+    # T2 financial perception + insurance coverage.
+    # T1 SES structural vars (householdIncome/hhPension/hhSocialSecurity) live in tier_1.
+    - financialControl
+    - financialEffort
+    - moneyForNeeds
+    - financial10YrAgo
+    - financial10YrFuture
+    - haveHealthInsurance
+    - medicare
+    - medicaid
+  healthcare_access:
+    - privateClinic
+    - HMOClinic
+    - publicClinic
+    - outPatient
+    - emergencyCare
+    - urgentCare
+  tier_1:
+    # Unified bucket for all 17 Tier-1 structural/background predictors
+    # (demographics + early life + family history + SES structural).
+    # Demographics
+    - female
+    - hispanic
+    - race
+    - sexualOrientation
+    # Early life
+    - education
+    - ageFirstWork
+    - ageFirstCig
+    - ageFirstAlcoh
+    - educationACE_3item
+    - famDysfuncACE_3item
+    - ecoACE_1item
+    - lossChild
+    # Family history
+    - familyHeartAttack
+    - familyCancer
+    # Socioeconomic (SES structural)
+    - householdIncome
+    - hhPension
+    - hhSocialSecurity
+  tier_3:
+    # Explicit single-bucket domain for all Tier-3 vars (supplementary analyses only).
+    # Not subdivided: Tier 3 is a coarse post-hoc adjustment block.
+    - usePainkiller
+    - useDepression
+    - srhPh
+    - subjheartAttackRisk
+    - subjcancerRisk
+    - weightChangeHealthIssue
+    - needMedNotGetting
+    - seeMedDoc
+    - seeMentDoc
+  unassigned: []
+

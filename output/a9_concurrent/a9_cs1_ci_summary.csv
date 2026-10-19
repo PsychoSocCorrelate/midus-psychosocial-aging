@@ -1,0 +1,4 @@
+outcome,n_features,n_ci_overlap,n_ci_disjoint,pct_overlap
+FInoPsy_W2,177,176,1,99.4
+btactComp_W2,177,176,1,99.4
+ALcomp_W2,177,177,0,100.0

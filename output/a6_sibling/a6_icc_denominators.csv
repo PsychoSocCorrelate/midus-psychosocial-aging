@@ -1,0 +1,19 @@
+analysis,outcome,group,denominator_type,n_pairs,icc,sigma2_u,sigma2_e,note
+cs,FInoPsy,MZ,overview/ICC outcome pairs,173,0.36883924618511427,0.0032534642427670137,0.005567354789961826,
+cs,FInoPsy,DZ_SS,overview/ICC outcome pairs,141,0.16461942284282263,0.0018117622331434084,0.009194000038743945,
+cs,FInoPsy,All_paired,overview/ICC outcome pairs,409,0.24325519983923957,0.0024051221633252275,0.007482116279736645,
+cs,btactComp,MZ,overview/ICC outcome pairs,135,0.6175764855836685,0.4662062823516029,0.2886901446245531,
+cs,btactComp,DZ_SS,overview/ICC outcome pairs,106,0.5162993280334537,0.47375233298710845,0.4438400543429242,
+cs,btactComp,All_paired,overview/ICC outcome pairs,310,0.47297600838431725,0.3719958975611595,0.41450466687950827,
+cs,ALcomp,MZ,overview/ICC outcome pairs,81,0.5905497240610396,0.07318081125447728,0.05073900154508517,ALcomp biomarker-specific denominator
+cs,ALcomp,DZ_SS,overview/ICC outcome pairs,37,0.25236380842403855,0.039707906244349576,0.11763599537259582,ALcomp biomarker-specific denominator
+cs,ALcomp,All_paired,overview/ICC outcome pairs,146,0.3889003489738296,0.04992619775835742,0.07845167047985575,ALcomp biomarker-specific denominator
+change,FInoPsy,MZ,overview/ICC outcome pairs,89,0.17650360888713057,0.000914533103478943,0.0042668516242620235,
+change,FInoPsy,DZ_SS,overview/ICC outcome pairs,71,0.000996315173133154,6.447005974074991e-06,0.006464402929795569,
+change,FInoPsy,All_paired,overview/ICC outcome pairs,208,0.0235866072286408,0.0001222805690393612,0.005062041527564599,
+change,btactComp,MZ,overview/ICC outcome pairs,70,0.3192049799739969,0.04433686162654,0.09456091380964454,
+change,btactComp,DZ_SS,overview/ICC outcome pairs,57,0.2868856618037249,0.03873677139927762,0.09628835030157508,
+change,btactComp,All_paired,overview/ICC outcome pairs,168,0.232764865906404,0.03218569324016668,0.10608987130791558,
+change,ALcomp,MZ,overview/ICC outcome pairs,44,0.26254518904862484,0.016043142216493785,0.045063070678241474,ALcomp biomarker-specific denominator
+change,ALcomp,DZ_SS,overview/ICC outcome pairs,23,0.2948453886731215,0.014166600001091122,0.03388095490503914,ALcomp biomarker-specific denominator
+change,ALcomp,All_paired,overview/ICC outcome pairs,79,0.22035482944315635,0.019839641068373933,0.07019533170036155,ALcomp biomarker-specific denominator

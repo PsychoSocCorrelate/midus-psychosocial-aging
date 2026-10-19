@@ -1,0 +1,13 @@
+outcome,outcome_key,profile,prediction,ci_lo,ci_hi,percentile,outcome_sd
+Frailty,FInoPsy_W1,favorable,-0.0849,-0.0952,-0.0737,19.1,0.1057
+Frailty,FInoPsy_W1,neutral,-0.0567,-0.0666,-0.0505,33.9,0.1057
+Frailty,FInoPsy_W1,unfavorable,-0.0115,-0.03,0.0067,56.1,0.1057
+Frailty,FInoPsy_W1,favorable_minus_unfavorable,-0.0734,-0.0937,-0.053,,0.1057
+Cognition,btactComp_W1,favorable,0.8369,0.6375,0.8858,81.5,0.9192
+Cognition,btactComp_W1,neutral,0.3573,0.2049,0.4846,64.7,0.9192
+Cognition,btactComp_W1,unfavorable,-0.2853,-0.4777,-0.1505,38.2,0.9192
+Cognition,btactComp_W1,favorable_minus_unfavorable,1.1222,0.8935,1.266,,0.9192
+Allostatic load,ALcomp_W1,favorable,-0.4238,-0.4602,-0.3486,12.1,0.3998
+Allostatic load,ALcomp_W1,neutral,-0.0802,-0.1449,-0.0254,46.0,0.3998
+Allostatic load,ALcomp_W1,unfavorable,0.2631,0.1643,0.334,78.5,0.3998
+Allostatic load,ALcomp_W1,favorable_minus_unfavorable,-0.6868,-0.7508,-0.5553,,0.3998

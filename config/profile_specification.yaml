@@ -1,0 +1,369 @@
+meta:
+  procedure: 'Hybrid: reproducible top-K stable mean|SHAP| selection (independent per outcome) + empirical-percentile
+    values oriented by SHAP-dependence direction, with documented expert overrides.'
+  K: 6
+  stability_threshold: 0.6
+  value_percentiles:
+    favorable_or_unfavorable:
+    - 10
+    - 90
+    neutral: 50
+  selection_source: output/cs1_cross_sectional/shap/<outcome>_T1T2_bootstrap_shap.csv
+  direction_source: output/cs1_cross_sectional/shap_raw/<outcome>_T1T2_robust_shap.csv
+  eligibility: modifiable exposures only; excludes demographic identity and health-service-utilization/clinical-care
+    items (reverse-causation prone)
+  excluded_identity:
+  - female
+  - hispanic
+  - race
+  - sexualOrientation
+  excluded_care_utilization:
+  - HMOClinic
+  - chiropractorFreq
+  - emergencyCare
+  - haveHealthInsurance
+  - medicaid
+  - medicare
+  - needMedNotGetting
+  - outPatient
+  - physicalPTFreq
+  - physicianDiet
+  - privateClinic
+  - publicClinic
+  - urgentCare
+  - useDepression
+  - usePainkiller
+  - weightChangeHealthIssue
+  exclusions:
+    FInoPsy_W1: construct-overlap codes a,b (config/frailty_overlap_audit.csv)
+  non_focal_baseline: sample median (numeric) / modal category (categorical)
+  generated_by: analysis/profile_comparison/build_profiles.py
+outcomes:
+  FInoPsy_W1:
+    label: Frailty
+    healthier_direction: lower
+    focal:
+    - name: controlOverHealth
+      mean_abs_shap: 0.0193
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 10.0
+        source: P90
+      neutral:
+        value: 8.0
+        source: median
+      unfavorable:
+        value: 5.0
+        source: P10
+      shap_feature_spearman: -0.954
+      monotone: true
+    - name: posAffect
+      mean_abs_shap: 0.0056
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 4.5
+        source: P90
+      neutral:
+        value: 3.75
+        source: median
+      unfavorable:
+        value: 2.5
+        source: P10
+      shap_feature_spearman: -0.932
+      monotone: true
+    - name: workStatus
+      mean_abs_shap: 0.0046
+      top20_stability: 0.835
+      type: categorical
+      favorable:
+        value: Self-employed
+        source: min/max mean-SHAP level
+      neutral:
+        value: Working now
+        source: modal category
+      unfavorable:
+        value: Disabled
+        source: min/max mean-SHAP level
+      level_mean_shap:
+        Disabled: 0.0066
+        Homemaker: -0.0012
+        Laid-off/Seeking-work: -0.0
+        Other work: 0.005
+        Retired: 0.002
+        Self-employed: -0.0013
+        Working now: -0.0006
+    - name: lifeSatisfaction
+      mean_abs_shap: 0.0046
+      top20_stability: 0.995
+      type: continuous
+      favorable:
+        value: 1.0869
+        source: P90
+      neutral:
+        value: 0.0845
+        source: median
+      unfavorable:
+        value: -1.4262
+        source: P10
+      shap_feature_spearman: -0.959
+      monotone: true
+    - name: intellAging
+      mean_abs_shap: 0.0032
+      top20_stability: 0.95
+      type: continuous
+      favorable:
+        value: 6.2222
+        source: P90
+      neutral:
+        value: 4.8889
+        source: median
+      unfavorable:
+        value: 3.6667
+        source: P10
+      shap_feature_spearman: -0.971
+      monotone: true
+    - name: workIndustry
+      mean_abs_shap: 0.0031
+      top20_stability: 0.995
+      type: categorical
+      favorable:
+        value: '4.0'
+        source: min/max mean-SHAP level
+      neutral:
+        value: '10.0'
+        source: modal category
+      unfavorable:
+        value: '12.0'
+        source: min/max mean-SHAP level
+      level_mean_shap:
+        '1.0': -0.0011
+        '10.0': 0.0019
+        '11.0': -0.0024
+        '12.0': 0.0054
+        '13.0': 0.0032
+        '2.0': 0.0005
+        '3.0': -0.002
+        '4.0': -0.0056
+        '5.0': -0.0011
+        '6.0': -0.0004
+        '7.0': 0.0
+        '8.0': -0.0004
+        '9.0': -0.005
+    dropped_non_monotone:
+    - manageRole
+  btactComp_W1:
+    label: Cognition
+    healthier_direction: higher
+    focal:
+    - name: education
+      mean_abs_shap: 0.171
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 11.0
+        source: P90
+      neutral:
+        value: 8.0
+        source: median
+      unfavorable:
+        value: 5.0
+        source: P10
+      shap_feature_spearman: 0.942
+      monotone: true
+    - name: wordGames
+      mean_abs_shap: 0.0782
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 5.0
+        source: P90
+      neutral:
+        value: 1.0
+        source: median
+      unfavorable:
+        value: 0.0
+        source: P10
+      shap_feature_spearman: 0.948
+      monotone: true
+    - name: useComputer
+      mean_abs_shap: 0.0695
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 5.0
+        source: P90
+      neutral:
+        value: 5.0
+        source: median
+      unfavorable:
+        value: 0.0
+        source: P10
+      shap_feature_spearman: 0.788
+      monotone: true
+    - name: occGroup
+      mean_abs_shap: 0.0643
+      top20_stability: 1.0
+      type: categorical
+      favorable:
+        value: '2.0'
+        source: min/max mean-SHAP level
+      neutral:
+        value: '2.0'
+        source: modal category
+      unfavorable:
+        value: '9.0'
+        source: min/max mean-SHAP level
+      level_mean_shap:
+        '1.0': 0.0628
+        '2.0': 0.064
+        '3.0': -0.0472
+        '4.0': 0.0008
+        '5.0': -0.0238
+        '6.0': -0.1048
+        '7.0': -0.0928
+        '8.0': -0.0663
+        '9.0': -0.1063
+    - name: whr
+      mean_abs_shap: 0.0491
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 0.7848
+        source: P10
+      neutral:
+        value: 0.9111
+        source: median
+      unfavorable:
+        value: 1.0385
+        source: P90
+      shap_feature_spearman: -0.977
+      monotone: true
+    - name: intellAging
+      mean_abs_shap: 0.0426
+      top20_stability: 0.975
+      type: continuous
+      favorable:
+        value: 6.2222
+        source: P90
+      neutral:
+        value: 4.8889
+        source: median
+      unfavorable:
+        value: 3.6667
+        source: P10
+      shap_feature_spearman: 0.963
+      monotone: true
+    dropped_non_monotone: []
+  ALcomp_W1:
+    label: Allostatic load
+    healthier_direction: lower
+    focal:
+    - name: bmi
+      mean_abs_shap: 0.135
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 22.0
+        source: override
+      neutral:
+        value: 27.2912
+        source: median
+      unfavorable:
+        value: 34.0
+        source: override
+      shap_feature_spearman: 0.986
+      monotone: true
+      override_rationale: Clinical bands (normal vs class-1 obesity) preferred over raw percentiles.
+    - name: whr
+      mean_abs_shap: 0.0405
+      top20_stability: 1.0
+      type: continuous
+      favorable:
+        value: 0.7778
+        source: P10
+      neutral:
+        value: 0.907
+        source: median
+      unfavorable:
+        value: 1.0375
+        source: P90
+      shap_feature_spearman: 0.982
+      monotone: true
+    - name: lifeSatisfaction
+      mean_abs_shap: 0.0192
+      top20_stability: 0.99
+      type: continuous
+      favorable:
+        value: 1.0332
+        source: P90
+      neutral:
+        value: 0.1289
+        source: median
+      unfavorable:
+        value: -1.3985
+        source: P10
+      shap_feature_spearman: -0.89
+      monotone: true
+    - name: drinkStatus
+      mean_abs_shap: 0.017
+      top20_stability: 0.995
+      type: categorical
+      favorable:
+        value: Frequent-non-binge
+        source: min/max mean-SHAP level
+      neutral:
+        value: Infrequent-non-binge
+        source: modal category
+      unfavorable:
+        value: Past-month abstainer
+        source: min/max mean-SHAP level
+      level_mean_shap:
+        Binge: -0.0137
+        Frequent-non-binge: -0.0327
+        Infrequent-non-binge: 0.002
+        Past-month abstainer: 0.0244
+    - name: vmLeisureAct_vig
+      mean_abs_shap: 0.0159
+      top20_stability: 0.985
+      type: continuous
+      favorable:
+        value: 6.0
+        source: P90
+      neutral:
+        value: 1.5
+        source: median
+      unfavorable:
+        value: 0.0
+        source: P10
+      shap_feature_spearman: -0.9
+      monotone: true
+    - name: workIndustry
+      mean_abs_shap: 0.0142
+      top20_stability: 1.0
+      type: categorical
+      favorable:
+        value: '1.0'
+        source: min/max mean-SHAP level
+      neutral:
+        value: '10.0'
+        source: modal category
+      unfavorable:
+        value: '12.0'
+        source: min/max mean-SHAP level
+      level_mean_shap:
+        '1.0': -0.0175
+        '10.0': -0.0071
+        '11.0': -0.0094
+        '12.0': 0.0192
+        '13.0': 0.0048
+        '2.0': -0.0172
+        '3.0': 0.0006
+        '4.0': 0.0056
+        '5.0': 0.0115
+        '6.0': -0.0038
+        '7.0': 0.0116
+        '8.0': -0.0146
+        '9.0': 0.016
+    dropped_non_monotone: []

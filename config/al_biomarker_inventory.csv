@@ -1,0 +1,17 @@
+code,biomarker,midus2,midus3,refresher1,risk_direction,medication_adjustment
+SBP,Systolic blood pressure (mmHg),B4P1GS,C4P1GS,RA4P1GS,High,+10 mmHg if antihypertensive
+DBP,Diastolic blood pressure (mmHg),B4P1GD,C4P1GD,RA4P1GD,High,+5 mmHg if antihypertensive
+pulse,Resting pulse rate (bpm),B4P1D,C4P1D,RA4P1D,High,
+cholHDL_ratio,Total cholesterol / HDL ratio,B4BRTHDL,C4BRTHDL,RA4BRTHDL,High,"+20 mg/dL total cholesterol, ratio recomputed, if antilipidemic"
+HDL,HDL cholesterol (mg/dL),B4BHDL,C4BHDL,RA4BHDL,Low,−5 mg/dL if antilipidemic
+triglycerides,Triglycerides (mg/dL),B4BTRIGL,C4BTRIGL,RA4BTRIGL,High,
+HbA1c,Glycated hemoglobin (%),B4BHA1C,C4BHA1C,RA4BHA1C,High,+1.0% if antidiabetic
+glucose,Fasting glucose (mg/dL),B4BGLUC,C4BGLUC,RA4BGLUC,High,+20 mg/dL if antidiabetic
+insulin,Fasting insulin (µIU/mL),B4BINSLN,C4BINSLN,RA4BINSLN,High,
+IGF1,Insulin-like growth factor-1 (ng/mL),B4BIGF1,C4BIGF1,RA4BIGF1,Low,
+DHEAS,Dehydroepiandrosterone sulfate (µg/dL),B4BDHEAS,C4BDHEAS,RA4BDHEAS,Low,
+CRP,C-reactive protein (µg/mL),B4BCRP,C4BCRP,RA4BCRP,High,
+IL6,Interleukin-6 (pg/mL),B4BIL6,C4BIL6,RA4BIL6,High,
+fibrinogen,Fibrinogen (mg/dL),B4BFGN,C4BFGN,RA4BFGN,High,
+sIL6R,Soluble interleukin-6 receptor (pg/mL),B4BSIL6R,C4BSIL6R,RA4BSIL6R,High,
+creatinine,Serum creatinine (mg/dL),B4BSCREA,C4BSCREA,RA4BSCREA,High,
